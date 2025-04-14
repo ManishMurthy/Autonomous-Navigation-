@@ -1,0 +1,656 @@
+<?xml version="1.0" ?> 
+<robot name="cropMap_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro"> 
+  <!-- Gazebo plugin includes --> 
+  <gazebo> 
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"> 
+      <robotNamespace>/cropMap_urdf</robotNamespace> 
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType> 
+    </plugin> 
+  </gazebo> 
+ 
+  <!-- Include Gazebo colors --> 
+  <material name="dark_grey"> 
+    <color rgba="0.3 0.3 0.3 1.0"/> 
+  </material> 
+  <material name="light_grey"> 
+    <color rgba="0.79216 0.81961 0.93333 1"/> 
+  </material> 
+  <material name="blue"> 
+    <color rgba="0.0 0.0 0.8 1.0"/> 
+  </material> 
+  <material name="black"> 
+    <color rgba="0.0 0.0 0.0 1.0"/> 
+  </material> 
+  <material name="red"> 
+    <color rgba="0.8 0.0 0.0 1.0"/> 
+  </material> 
+ 
+  <!-- Base Link --> 
+  <link name="base_link"> 
+    <inertial> 
+      <origin xyz="0.018582 -0.00058815 -0.099852" rpy="0 0 0" /> 
+      <mass value="32.31" /> 
+      <inertia 
+        ixx="0.92" ixy="0" ixz="0" 
+        iyy="3.12" iyz="0" 
+        izz="2.87" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/base_link.STL" /> 
+      </geometry> 
+      <material name="light_grey"/> 
+    </visual> 
+    <collision> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/base_link.STL" /> 
+      </geometry> 
+    </collision> 
+  </link> 
+ 
+  <!-- Gazebo material for base_link --> 
+  <gazebo reference="base_link"> 
+    <material>Gazebo/Gray</material> 
+  </gazebo> 
+ 
+  <!-- Base footprint --> 
+  <link name="base_footprint"/> 
+  <joint name="base_footprint_ref_joint" type="fixed"> 
+    <origin xyz="0 0 .25" rpy="0 0 0" /> 
+    <parent link="base_footprint" /> 
+    <child link="base_link" /> 
+    <axis xyz="0 1 0" /> 
+  </joint> 
+ 
+  <!-- Front Right Wheel --> 
+  <link name="wheel_front_right"> 
+    <inertial> 
+      <origin xyz="-3.8916E-11 0.012822 1.02E-07" rpy="0 0 0" /> 
+      <mass value=".041" /> 
+      <inertia 
+        ixx="0.04" ixy="0.0" ixz="0.0" 
+        iyy="0.05" iyz="0.0" 
+        izz="0.04" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/wheel_front_right.STL" /> 
+      </geometry> 
+      <material name="light_grey"/> 
+    </visual> 
+    <collision> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/wheel_front_right.STL" /> 
+      </geometry> 
+    </collision> 
+  </link> 
+ 
+  <joint name="wheel_front_right_joint" type="continuous"> 
+    <origin xyz="0.37976 0.2802 -0.078259" rpy="0 0 0" /> 
+    <parent link="base_link" /> 
+    <child link="wheel_front_right" /> 
+    <axis xyz="0 1 0" /> 
+    <dynamics damping="0.0001" friction="0.0001" /> 
+  </joint> 
+ 
+  <!-- Gazebo plugin for front right wheel --> 
+  <gazebo reference="wheel_front_right"> 
+    <material>Gazebo/DarkGray</material> 
+    <mu1>1.0</mu1> 
+    <mu2>1.0</mu2> 
+    <kp>1000000.0</kp> 
+    <kd>100.0</kd> 
+    <minDepth>0.001</minDepth> 
+    <maxVel>1.0</maxVel> 
+    <fdir1>1 0 0</fdir1> 
+  </gazebo> 
+ 
+  <!-- Back Right Wheel --> 
+  <link name="wheel_back_right"> 
+    <inertial> 
+      <origin xyz="-3.8916E-11 0.012822 1.02E-07" rpy="0 0 0" /> 
+      <mass value=".041" /> 
+      <inertia 
+        ixx="0.04" ixy="0.0" ixz="0.0" 
+        iyy="0.05" iyz="0.0" 
+        izz="0.04" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/wheel_back_right.STL" /> 
+      </geometry> 
+      <material name="light_grey"/> 
+    </visual> 
+    <collision> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/wheel_back_right.STL" /> 
+      </geometry> 
+    </collision> 
+  </link> 
+ 
+  <joint name="wheel_back_right_joint" type="continuous"> 
+    <origin xyz="-0.38026 0.2802 -0.078259" rpy="0 0 0" /> 
+    <parent link="base_link" /> 
+    <child link="wheel_back_right" /> 
+    <axis xyz="0 1 0" /> 
+    <dynamics damping="0.0001" friction="0.0001" /> 
+  </joint> 
+ 
+  <!-- Gazebo plugin for back right wheel --> 
+  <gazebo reference="wheel_back_right"> 
+    <material>Gazebo/DarkGray</material> 
+    <mu1>1.0</mu1> 
+    <mu2>1.0</mu2> 
+    <kp>1000000.0</kp> 
+    <kd>100.0</kd> 
+    <minDepth>0.001</minDepth> 
+    <maxVel>1.0</maxVel> 
+    <fdir1>1 0 0</fdir1> 
+  </gazebo> 
+ 
+  <!-- Back Left Wheel --> 
+  <link name="wheel_back_left"> 
+    <inertial> 
+      <origin xyz="-1.02E-07 -0.012822 3.8916E-11" rpy="0 0 0" /> 
+      <mass value=".041" /> 
+      <inertia 
+        ixx="0.04" ixy="0.0" ixz="0.0" 
+        iyy="0.05" iyz="0.0" 
+        izz="0.04" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/wheel_back_left.STL" /> 
+      </geometry> 
+      <material name="light_grey"/> 
+    </visual> 
+    <collision> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/wheel_back_left.STL" /> 
+      </geometry> 
+    </collision> 
+  </link> 
+ 
+  <joint name="wheel_back_left_joint" type="continuous"> 
+    <origin xyz="-0.38026 -0.2802 -0.078259" rpy="0 0 0" /> 
+    <parent link="base_link" /> 
+    <child link="wheel_back_left" /> 
+    <axis xyz="0 1 0" /> 
+    <dynamics damping="0.0001" friction="0.0001" /> 
+  </joint> 
+ 
+  <!-- Gazebo plugin for back left wheel --> 
+  <gazebo reference="wheel_back_left"> 
+    <material>Gazebo/DarkGray</material> 
+    <mu1>1.0</mu1> 
+    <mu2>1.0</mu2> 
+    <kp>1000000.0</kp> 
+    <kd>100.0</kd> 
+    <minDepth>0.001</minDepth> 
+    <maxVel>1.0</maxVel> 
+    <fdir1>1 0 0</fdir1> 
+  </gazebo> 
+ 
+  <!-- Front Left Wheel --> 
+  <link name="wheel_front_left"> 
+    <inertial> 
+      <origin xyz="3.8916E-11 -0.012822 1.02E-07" rpy="0 0 0" /> 
+      <mass value=".041" /> 
+      <inertia 
+        ixx="0.04" ixy="0.0" ixz="0.0" 
+        iyy="0.05" iyz="0.0" 
+        izz="0.04" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/wheel_front_left.STL" /> 
+      </geometry> 
+      <material name="light_grey"/> 
+    </visual> 
+    <collision> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/wheel_front_left.STL" /> 
+      </geometry> 
+    </collision> 
+  </link> 
+ 
+  <joint name="wheel_front_left_joint" type="continuous"> 
+    <origin xyz="0.37976 -0.2802 -0.078259" rpy="0 0 0" /> 
+    <parent link="base_link" /> 
+    <child link="wheel_front_left" /> 
+    <axis xyz="0 1 0" /> 
+    <dynamics damping="0.0001" friction="0.0001" /> 
+  </joint> 
+ 
+  <!-- Gazebo plugin for front left wheel --> 
+  <gazebo reference="wheel_front_left"> 
+    <material>Gazebo/DarkGray</material> 
+    <mu1>1.0</mu1> 
+    <mu2>1.0</mu2> 
+    <kp>1000000.0</kp> 
+    <kd>100.0</kd> 
+    <minDepth>0.001</minDepth> 
+    <maxVel>1.0</maxVel> 
+    <fdir1>1 0 0</fdir1> 
+  </gazebo> 
+ 
+  <!-- Back Camera --> 
+  <link name="back_camera"> 
+    <inertial> 
+      <origin xyz="-0.032487 0.0089676 -0.0027971" rpy="0 0 0" /> 
+      <mass value="0.1" /> 
+      <inertia 
+        ixx="0.001" ixy="0.0" ixz="0.0" 
+        iyy="0.001" iyz="0.0" 
+        izz="0.001" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/back_camera.STL" /> 
+      </geometry> 
+      <material name="black"/> 
+    </visual> 
+  </link> 
+ 
+  <joint name="back_camera_joint" type="fixed"> 
+    <origin xyz="-0.40479 -0.0089685 0.073466" rpy="0 0 0" /> 
+    <parent link="base_link" /> 
+    <child link="back_camera" /> 
+  </joint> 
+ 
+  <!-- Gazebo plugin for back camera --> 
+  <gazebo reference="back_camera"> 
+    <material>Gazebo/Black</material> 
+    <sensor type="camera" name="back_camera_sensor"> 
+      <update_rate>30.0</update_rate> 
+      <camera name="back_camera"> 
+        <horizontal_fov>1.3962634</horizontal_fov> 
+        <image> 
+          <width>640</width> 
+          <height>480</height> 
+          <format>R8G8B8</format> 
+        </image> 
+        <clip> 
+          <near>0.02</near> 
+          <far>300</far> 
+        </clip> 
+        <noise> 
+          <type>gaussian</type> 
+          <mean>0.0</mean> 
+          <stddev>0.007</stddev> 
+        </noise> 
+      </camera> 
+      <plugin name="back_camera_controller" filename="libgazebo_ros_camera.so"> 
+        <alwaysOn>true</alwaysOn> 
+        <updateRate>0.0</updateRate> 
+        <cameraName>cropMap/back_camera</cameraName> 
+        <imageTopicName>image_raw</imageTopicName> 
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName> 
+        <frameName>back_camera_dummy</frameName> 
+        <hackBaseline>0.07</hackBaseline> 
+        <distortionK1>0.0</distortionK1> 
+        <distortionK2>0.0</distortionK2> 
+        <distortionK3>0.0</distortionK3> 
+        <distortionT1>0.0</distortionT1> 
+        <distortionT2>0.0</distortionT2> 
+      </plugin> 
+    </sensor> 
+  </gazebo> 
+ 
+  <!-- Front Camera --> 
+  <link name="front_camera"> 
+    <inertial> 
+      <origin xyz="0.012395 -0.012586 0.0091516" rpy="0 0 0" /> 
+      <mass value="0.1" /> 
+      <inertia 
+        ixx="0.001" ixy="0.0" ixz="0.0" 
+        iyy="0.001" iyz="0.0" 
+        izz="0.001" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/front_camera.STL" /> 
+      </geometry> 
+      <material name="black"/> 
+    </visual> 
+  </link> 
+ 
+  <joint name="front_camera_joint" type="fixed"> 
+    <origin xyz="0.42423 0.0126 0.060602" rpy="0 0 0" /> 
+    <parent link="base_link" /> 
+    <child link="front_camera" /> 
+  </joint> 
+ 
+  <!-- Gazebo plugin for front camera --> 
+  <gazebo reference="front_camera"> 
+    <material>Gazebo/Black</material> 
+    <sensor type="camera" name="front_camera_sensor"> 
+      <update_rate>30.0</update_rate> 
+      <camera name="front_camera"> 
+        <horizontal_fov>1.3962634</horizontal_fov> 
+        <image> 
+          <width>640</width> 
+          <height>480</height> 
+          <format>R8G8B8</format> 
+        </image> 
+        <clip> 
+          <near>0.02</near> 
+          <far>300</far> 
+        </clip> 
+        <noise> 
+          <type>gaussian</type> 
+          <mean>0.0</mean> 
+          <stddev>0.007</stddev> 
+        </noise> 
+      </camera> 
+      <plugin name="front_camera_controller" filename="libgazebo_ros_camera.so"> 
+        <alwaysOn>true</alwaysOn> 
+        <updateRate>0.0</updateRate> 
+        <cameraName>cropMap/front_camera</cameraName> 
+        <imageTopicName>image_raw</imageTopicName> 
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName> 
+        <frameName>front_camera_dummy</frameName> 
+        <hackBaseline>0.07</hackBaseline> 
+        <distortionK1>0.0</distortionK1> 
+        <distortionK2>0.0</distortionK2> 
+        <distortionK3>0.0</distortionK3> 
+        <distortionT1>0.0</distortionT1> 
+        <distortionT2>0.0</distortionT2> 
+      </plugin> 
+    </sensor> 
+  </gazebo> 
+ 
+  <!-- TC_V0 --> 
+  <link name="TC_V0"> 
+    <inertial> 
+      <origin xyz="-7.5077E-05 -2.3538E-06 -0.015092" rpy="0 0 0" /> 
+      <mass value="14.01" /> 
+      <inertia 
+        ixx="0.66" ixy="0.0" ixz="0.0" 
+        iyy="1.01" iyz="0.0" 
+        izz="1.66" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/TC_V0.STL" /> 
+      </geometry> 
+      <material name="light_grey"/> 
+    </visual> 
+    <collision> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <mesh filename="package://cropMap_urdf/meshes/TC_V0.STL" /> 
+      </geometry> 
+    </collision> 
+  </link> 
+ 
+  <joint name="TC_V0_joint" type="fixed"> 
+    <origin xyz="0 0 0.16825" rpy="0 0 0" /> 
+    <parent link="base_link" /> 
+    <child link="TC_V0" /> 
+  </joint> 
+ 
+  <gazebo reference="TC_V0"> 
+    <material>Gazebo/Gray</material> 
+  </gazebo> 
+ 
+  <!-- Camera dummy frames --> 
+  <link name="front_camera_dummy"/> 
+  <joint name="front_camera_dummy_joint" type="fixed"> 
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708" /> 
+    <parent link="front_camera" /> 
+    <child link="front_camera_dummy" /> 
+    <axis xyz="1 0 0" /> 
+  </joint> 
+ 
+  <link name="back_camera_dummy"/> 
+  <joint name="back_camera_dummy_joint" type="fixed"> 
+    <origin xyz="0 0 0" rpy="-1.5708 0 1.5708" /> 
+    <parent link="back_camera" /> 
+    <child link="back_camera_dummy" /> 
+    <axis xyz="1 0 0" /> 
+  </joint> 
+ 
+  <!-- Add RGB-D Sensor --> 
+  <link name="rgbd_camera_link"> 
+    <inertial> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <mass value="0.125" /> 
+      <inertia 
+        ixx="0.001" ixy="0.0" ixz="0.0" 
+        iyy="0.001" iyz="0.0" 
+        izz="0.001" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <box size="0.07 0.025 0.025"/> 
+      </geometry> 
+      <material name="red"/> 
+    </visual> 
+    <collision> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <box size="0.07 0.025 0.025"/> 
+      </geometry> 
+    </collision> 
+  </link> 
+ 
+  <joint name="rgbd_camera_joint" type="fixed"> 
+    <origin xyz="0.43 0 0.1" rpy="0 0 0" /> 
+    <parent link="base_link" /> 
+    <child link="rgbd_camera_link" /> 
+  </joint> 
+ 
+  <!-- RGB-D Camera Gazebo Plugin --> 
+  <gazebo reference="rgbd_camera_link"> 
+    <material>Gazebo/Red</material> 
+    <sensor type="depth" name="rgbd_camera"> 
+      <update_rate>20.0</update_rate> 
+      <camera name="depth"> 
+        <horizontal_fov>1.047198</horizontal_fov> 
+        <image> 
+          <width>640</width> 
+          <height>480</height> 
+          <format>R8G8B8</format> 
+        </image> 
+        <clip> 
+          <near>0.05</near> 
+          <far>8.0</far> 
+        </clip> 
+        <noise> 
+          <type>gaussian</type> 
+          <mean>0.0</mean> 
+          <stddev>0.007</stddev> 
+        </noise> 
+      </camera> 
+      <plugin name="rgbd_camera_controller" filename="libgazebo_ros_openni_kinect.so"> 
+        <baseline>0.2</baseline> 
+        <alwaysOn>true</alwaysOn> 
+        <updateRate>0.0</updateRate> 
+        <cameraName>cropMap/rgbd_camera</cameraName> 
+        <imageTopicName>rgb/image_raw</imageTopicName> 
+        <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName> 
+        <depthImageTopicName>depth/image_raw</depthImageTopicName> 
+        <depthImageInfoTopicName>depth/camera_info</depthImageInfoTopicName> 
+        <pointCloudTopicName>depth/points</pointCloudTopicName> 
+        <frameName>rgbd_camera_optical_frame</frameName> 
+        <pointCloudCutoff>0.5</pointCloudCutoff> 
+        <pointCloudCutoffMax>8.0</pointCloudCutoffMax> 
+        <distortionK1>0.00000001</distortionK1> 
+        <distortionK2>0.00000001</distortionK2> 
+        <distortionK3>0.00000001</distortionK3> 
+        <distortionT1>0.00000001</distortionT1> 
+        <distortionT2>0.00000001</distortionT2> 
+        <CxPrime>0</CxPrime> 
+        <Cx>0</Cx> 
+        <Cy>0</Cy> 
+        <focalLength>0</focalLength> 
+        <hackBaseline>0</hackBaseline> 
+      </plugin> 
+    </sensor> 
+  </gazebo> 
+ 
+  <!-- RGB-D Camera Optical Frame --> 
+  <link name="rgbd_camera_optical_frame"/> 
+  <joint name="rgbd_camera_optical_joint" type="fixed"> 
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708" /> 
+    <parent link="rgbd_camera_link" /> 
+    <child link="rgbd_camera_optical_frame" /> 
+  </joint> 
+ 
+  <!-- Add LiDAR sensor --> 
+  <link name="lidar_link"> 
+    <inertial> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <mass value="0.1" /> 
+      <inertia 
+        ixx="0.001" ixy="0.0" ixz="0.0" 
+        iyy="0.001" iyz="0.0" 
+        izz="0.001" /> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <cylinder radius="0.05" length="0.04"/> 
+      </geometry> 
+      <material name="black"/> 
+    </visual> 
+    <collision> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <geometry> 
+        <cylinder radius="0.05" length="0.04"/> 
+      </geometry> 
+    </collision> 
+  </link> 
+ 
+  <joint name="lidar_joint" type="fixed"> 
+    <origin xyz="0 0 0.25" rpy="0 0 0" /> 
+    <parent link="TC_V0" /> 
+    <child link="lidar_link" /> 
+  </joint> 
+ 
+  <!-- Gazebo plugin for LiDAR --> 
+  <gazebo reference="lidar_link"> 
+    <material>Gazebo/Black</material> 
+    <sensor type="ray" name="lidar_sensor"> 
+      <pose>0 0 0 0 0 0</pose> 
+      <visualize>true</visualize> 
+      <update_rate>10</update_rate> 
+      <ray> 
+        <scan> 
+          <horizontal> 
+            <samples>360</samples> 
+            <resolution>1</resolution> 
+            <min_angle>-3.14159</min_angle> 
+            <max_angle>3.14159</max_angle> 
+          </horizontal> 
+        </scan> 
+        <range> 
+          <min>0.1</min> 
+          <max>30.0</max> 
+          <resolution>0.01</resolution> 
+        </range> 
+        <noise> 
+          <type>gaussian</type> 
+          <mean>0.0</mean> 
+          <stddev>0.01</stddev> 
+        </noise> 
+      </ray> 
+      <plugin name="lidar_controller" filename="libgazebo_ros_ray_sensor.so"> 
+        <ros> 
+          <namespace>/cropMap</namespace> 
+          <remapping>~/out:=scan</remapping> 
+        </ros> 
+        <output_type>sensor_msgs/LaserScan</output_type> 
+        <frame_name>lidar_link</frame_name> 
+      </plugin> 
+    </sensor> 
+  </gazebo> 
+ 
+  <!-- Skid Steering Drive Controller --> 
+  <gazebo> 
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so"> 
+      <updateRate>50.0</updateRate> 
+      <robotNamespace>/cropMap</robotNamespace> 
+      <leftFrontJoint>wheel_front_left_joint</leftFrontJoint> 
+      <rightFrontJoint>wheel_front_right_joint</rightFrontJoint> 
+      <leftRearJoint>wheel_back_left_joint</leftRearJoint> 
+      <rightRearJoint>wheel_back_right_joint</rightRearJoint> 
+      <wheelSeparation>0.5604</wheelSeparation> 
+      <wheelDiameter>0.2</wheelDiameter> 
+      <robotBaseFrame>base_link</robotBaseFrame> 
+      <torque>20</torque> 
+      <topicName>cmd_vel</topicName> 
+      <broadcastTF>true</broadcastTF> 
+      <odometryTopic>odom</odometryTopic> 
+      <odometryFrame>odom</odometryFrame> 
+      <covariance_x>0.0001</covariance_x> 
+      <covariance_y>0.0001</covariance_y> 
+      <covariance_yaw>0.01</covariance_yaw> 
+    </plugin> 
+  </gazebo> 
+ 
+  <!-- IMU Sensor --> 
+  <link name="imu_link"> 
+    <inertial> 
+      <mass value="0.01"/> 
+      <origin xyz="0 0 0" rpy="0 0 0"/> 
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/> 
+    </inertial> 
+    <visual> 
+      <origin xyz="0 0 0" rpy="0 0 0"/> 
+      <geometry> 
+        <box size="0.02 0.02 0.01"/> 
+      </geometry> 
+      <material name="blue"/> 
+    </visual> 
+    <collision> 
+      <origin xyz="0 0 0" rpy="0 0 0"/> 
+      <geometry> 
+        <box size="0.02 0.02 0.01"/> 
+      </geometry> 
+    </collision> 
+  </link> 
+ 
+  <joint name="imu_joint" type="fixed"> 
+    <parent link="base_link"/> 
+    <child link="imu_link"/> 
+    <origin xyz="0 0 0.1" rpy="0 0 0"/> 
+  </joint> 
+ 
+  <gazebo reference="imu_link"> 
+    <material>Gazebo/Blue</material> 
+    <gravity>true</gravity> 
+    <sensor name="imu_sensor" type="imu"> 
+      <always_on>true</always_on> 
+      <update_rate>100</update_rate> 
+      <visualize>true</visualize> 
+      <topic>__default_topic__</topic> 
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin"> 
+        <topicName>imu</topicName> 
+        <bodyName>imu_link</bodyName> 
+        <updateRateHZ>100.0</updateRateHZ> 
+        <gaussianNoise>0.0</gaussianNoise> 
+        <xyzOffset>0 0 0</xyzOffset> 
+        <rpyOffset>0 0 0</rpyOffset> 
+        <frameName>imu_link</frameName> 
+        <initialOrientationAsReference>false</initialOrientationAsReference> 
+      </plugin> 
+      <pose>0 0 0 0 0 0</pose> 
+    </sensor> 
+  </gazebo> 
+</robot> 

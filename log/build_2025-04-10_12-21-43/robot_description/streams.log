@@ -1,0 +1,21 @@
+[0.005s] Invoking command in '/home/student/eiratech_ws/build/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/student/eiratech_ws/build/robot_description -- -j28 -l28
+[0.027s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.833s] Traceback (most recent call last):
+[0.833s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.833s]     from ament_package.templates import get_environment_hook_template_path
+[0.833s] ModuleNotFoundError: No module named 'ament_package'
+[0.848s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.848s]   execute_process(/usr/bin/python3
+[0.848s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.848s]   /home/student/eiratech_ws/build/robot_description/ament_cmake_package_templates/templates.cmake)
+[0.848s]   returned error code 1
+[0.848s] Call Stack (most recent call first):
+[0.848s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.848s]   /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.848s]   /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.848s]   CMakeLists.txt:9 (find_package)
+[0.848s] 
+[0.848s] [0m
+[0.848s] -- Configuring incomplete, errors occurred!
+[0.850s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.851s] Invoked command in '/home/student/eiratech_ws/build/robot_description' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/student/eiratech_ws/build/robot_description -- -j28 -l28

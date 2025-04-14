@@ -1,0 +1,45 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+diff_drive_controller:
+  ros__parameters:
+    # Group all left wheels together and all right wheels together for skid steering
+    left_wheel_names: ['wheel_front_left_joint', 'wheel_back_left_joint']
+    right_wheel_names: ['wheel_front_right_joint', 'wheel_back_right_joint']
+
+    # Adjust for skid steering physics
+    wheel_separation: 0.4  # Distance between left and right wheels
+    wheel_radius: 0.1  # Wheel radius
+    wheel_separation_multiplier: 1.0  # Fine-tune if needed for skid steering
+    
+    # Enable skid steering kinematics
+    wheels_per_side: 2  # Number of wheels on each side
+    publish_rate: 50.0  # Controller publish rate
+    
+    # Odometry configuration
+    use_stamped_vel: false
+    base_frame_id: base_link
+    odom_frame_id: odom
+    # Adjust covariance for skid steering (typically less accurate)
+    pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.03]
+    twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.03]
+
+    # Speed limits for skid steering (may need lower acceleration values)
+    linear.x.has_velocity_limits: true
+    linear.x.has_acceleration_limits: true
+    linear.x.has_jerk_limits: false
+    linear.x.max_velocity: 1.0
+    linear.x.max_acceleration: 0.8
+
+    angular.z.has_velocity_limits: true
+    angular.z.has_acceleration_limits: true
+    angular.z.has_jerk_limits: false
+    angular.z.max_velocity: 1.5
+    angular.z.max_acceleration: 0.6
