@@ -1,0 +1,13 @@
+teleop_twist_keyboard_node:
+  ros__parameters:
+    # Increase these for higher control sensitivity
+    speed: 0.5  # Linear velocity in m/s
+    turn: 0.8   # Angular velocity in rad/s
+    speed_step: 0.1  # Speed increment
+    turn_step: 0.2   # Turn increment
+    
+    # These are typically only needed in special cases
+    repeat_rate: 0.0  # Auto-repeat rate in Hz (0.0 = no repeat)
+    key_timeout: 0.5  # Seconds
+    stamped: false    # Use TwistStamped message instead of Twist
+    frame_id: ""      # Frame ID for TwistStamped message
