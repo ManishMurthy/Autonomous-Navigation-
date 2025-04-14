@@ -10,6 +10,7 @@
 /home/student/eiratech_ws/install/robot_description/share/robot_description/urdf/dummy.urdf
 /home/student/eiratech_ws/install/robot_description/share/robot_description/urdf/cropMap_urdf.urdf
 /home/student/eiratech_ws/install/robot_description/share/robot_description/rviz/robot.rviz
+/home/student/eiratech_ws/install/robot_description/share/robot_description/config/bridge.yaml
 /home/student/eiratech_ws/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
 /home/student/eiratech_ws/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
 /home/student/eiratech_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.sh

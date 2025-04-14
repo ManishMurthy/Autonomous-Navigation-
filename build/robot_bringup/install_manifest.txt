@@ -5,7 +5,6 @@
 /home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/bridge.launch.py
 /home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/test.launch.py
 /home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/complete_demo.launch.py
-/home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/.farm_world.world.swp
 /home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/farm_world.world
 /home/student/eiratech_ws/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
 /home/student/eiratech_ws/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup

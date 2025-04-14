@@ -47,6 +47,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/home/student/eiratech_ws/src/robot_description/meshes"
     "/home/student/eiratech_ws/src/robot_description/urdf"
     "/home/student/eiratech_ws/src/robot_description/rviz"
+    "/home/student/eiratech_ws/src/robot_description/config"
     )
 endif()
 

@@ -1,104 +1,68 @@
-from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, ExecuteProcess, IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution
-from launch_ros.actions import Node
-from launch_ros.substitutions import FindPackageShare
 import os
+from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch.actions import ExecuteProcess, IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.actions import Node
 
 def generate_launch_description():
-    # Get the package share directory
-    pkg_share = FindPackageShare('robot_description').find('robot_description')
-    robot_control_pkg_share = FindPackageShare('robot_control').find('robot_control')
-    bringup_pkg_share = FindPackageShare('robot_bringup').find('robot_bringup')
+    # Package paths
+    pkg_share = get_package_share_directory('robot_description')
     
-    # Declare launch arguments
-    use_sim_time = LaunchConfiguration('use_sim_time', default='true')
+    # Robot description path
+    urdf_path = os.path.join(pkg_share, 'urdf', 'cropMap_urdf.urdf')
     
-    # Paths
-    xacro_file = os.path.join(pkg_share, 'urdf', 'robot.urdf.xacro')
-    controller_config = os.path.join(robot_control_pkg_share, 'config', 'controller_config.yaml')
-    world_file = os.path.join(bringup_pkg_share, 'worlds', 'farm_world.world')
+    # Bridge config path
+    bridge_config_path = os.path.join(pkg_share, 'config', 'bridge.yaml')
     
-    # Get robot description from xacro
-    robot_description_content = Command(
-        [
-            FindExecutable(name='xacro'), ' ',
-            xacro_file,
-            ' use_sim:=true'
-        ]
+    # Launch Gazebo Harmonic
+    gazebo = ExecuteProcess(
+        cmd=['gz', 'sim', '-r', 'empty.sdf'],
+        output='screen'
     )
     
-    robot_description = {'robot_description': robot_description_content}
-    
-    # Robot state publisher node
-    robot_state_publisher_node = Node(
+    # Robot state publisher
+    robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
+        name='robot_state_publisher',
         output='screen',
-        parameters=[robot_description, {'use_sim_time': use_sim_time}]
+        parameters=[{'robot_description': open(urdf_path, 'r').read(),
+                    'use_sim_time': True}]
     )
     
-    # Launch Gazebo
-    gazebo = ExecuteProcess(
-        cmd=['gz', 'sim', '-r', world_file],
+    # Spawn robot in Gazebo
+    spawn_robot = ExecuteProcess(
+        cmd=['gz', 'service', '-s', '/world/empty/create',
+             '--reqtype', 'gz.msgs.EntityFactory',
+             '--reptype', 'gz.msgs.Boolean',
+             '--timeout', '300',
+             '--req', 'sdf_filename: "' + urdf_path + '", name: "cropmap_robot"'],
         output='screen'
     )
     
-    # Spawn the robot
-    spawn_entity = Node(
-        package='ros_gz_sim',
-        executable='create',
-        arguments=[
-            '-topic', 'robot_description',
-            '-name', 'cropMap_urdf',
-            '-z', '0.1'
-        ],
+    # ROS - Gazebo Bridge
+    bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        name='bridge',
+        parameters=[{'config_file': bridge_config_path}],
         output='screen'
     )
     
-    # Include the bridge launch file
-    bridge_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            PathJoinSubstitution([bringup_pkg_share, 'launch', 'bridge.launch.py'])
-        ]),
-        launch_arguments={'use_sim_time': use_sim_time}.items()
-    )
-    
-    # Controller manager
-    controller_manager = Node(
-        package='controller_manager',
-        executable='ros2_control_node',
-        parameters=[robot_description, controller_config],
-        output='screen'
-    )
-    
-    # Joint state broadcaster
-    joint_state_broadcaster_spawner = Node(
-        package='controller_manager',
-        executable='spawner',
-        arguments=['joint_state_broadcaster', '--controller-manager', '/controller_manager'],
-        output='screen'
-    )
-    
-    # Diff drive controller
-    diff_drive_controller_spawner = Node(
-        package='controller_manager',
-        executable='spawner',
-        arguments=['diff_drive_controller', '--controller-manager', '/controller_manager'],
+    # Teleop keyboard for testing movement
+    teleop = Node(
+        package='teleop_twist_keyboard',
+        executable='teleop_twist_keyboard',
+        name='teleop',
+        prefix='xterm -e',
         output='screen'
     )
     
     return LaunchDescription([
-        DeclareLaunchArgument(
-            'use_sim_time',
-            default_value='true',
-            description='Use simulation clock if true'),
-        robot_state_publisher_node,
         gazebo,
-        spawn_entity,
-        bridge_launch,
-        controller_manager,
-        joint_state_broadcaster_spawner,
-        diff_drive_controller_spawner
+        robot_state_publisher,
+        spawn_robot,
+        bridge,
+        teleop
     ])
