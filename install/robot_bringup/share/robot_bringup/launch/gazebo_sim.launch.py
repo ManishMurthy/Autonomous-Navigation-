@@ -1,68 +1,122 @@
+#!/usr/bin/env python3
+
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import ExecuteProcess, IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+from launch_ros.descriptions import ParameterValue
 
 def generate_launch_description():
-    # Package paths
-    pkg_share = get_package_share_directory('robot_description')
     
-    # Robot description path
-    urdf_path = os.path.join(pkg_share, 'urdf', 'cropMap_urdf.urdf')
+    # Get package directories
+    robot_description_dir = get_package_share_directory('robot_description')
     
-    # Bridge config path
-    bridge_config_path = os.path.join(pkg_share, 'config', 'bridge.yaml')
+    # Launch configuration
+    use_sim_time = LaunchConfiguration('use_sim_time')
     
-    # Launch Gazebo Harmonic
-    gazebo = ExecuteProcess(
-        cmd=['gz', 'sim', '-r', 'empty.sdf'],
-        output='screen'
+    # Declare launch arguments
+    declare_use_sim_time = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='true',
+        description='Use simulation (Gazebo) clock if true'
     )
     
-    # Robot state publisher
-    robot_state_publisher = Node(
+    # Robot description file path
+    urdf_file = os.path.join(robot_description_dir, 'urdf', 'cropMap_urdf.urdf')
+    
+    # Read URDF file and wrap it properly as string parameter
+    with open(urdf_file, 'r') as infp:
+        robot_desc = infp.read()
+    
+    robot_description_param = ParameterValue(robot_desc, value_type=str)
+    
+    # Robot State Publisher
+    robot_state_publisher_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
         output='screen',
-        parameters=[{'robot_description': open(urdf_path, 'r').read(),
-                    'use_sim_time': True}]
+        parameters=[{
+            'robot_description': robot_description_param,
+            'use_sim_time': use_sim_time
+        }]
     )
     
-    # Spawn robot in Gazebo
-    spawn_robot = ExecuteProcess(
-        cmd=['gz', 'service', '-s', '/world/empty/create',
-             '--reqtype', 'gz.msgs.EntityFactory',
-             '--reptype', 'gz.msgs.Boolean',
-             '--timeout', '300',
-             '--req', 'sdf_filename: "' + urdf_path + '", name: "cropmap_robot"'],
+    # Joint State Publisher - ESSENTIAL for wheel transforms
+    joint_state_publisher_node = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        name='joint_state_publisher',
+        output='screen',
+        parameters=[{
+            'use_sim_time': use_sim_time
+        }]
+    )
+    
+    # Launch Gazebo
+    gazebo = ExecuteProcess(
+        cmd=['gz', 'sim', 'empty.sdf', '-r'],
         output='screen'
     )
     
-    # ROS - Gazebo Bridge
-    bridge = Node(
-        package='ros_gz_bridge',
-        executable='parameter_bridge',
-        name='bridge',
-        parameters=[{'config_file': bridge_config_path}],
-        output='screen'
+    # Spawn robot in Gazebo after delay
+    spawn_robot = TimerAction(
+        period=3.0,
+        actions=[
+            Node(
+                package='ros_gz_sim',
+                executable='create',
+                arguments=[
+                    '-topic', 'robot_description',
+                    '-name', 'cropmap_robot',
+                    '-z', '0.5'
+                ],
+                output='screen'
+            )
+        ]
     )
     
-    # Teleop keyboard for testing movement
-    teleop = Node(
-        package='teleop_twist_keyboard',
-        executable='teleop_twist_keyboard',
-        name='teleop',
-        prefix='xterm -e',
-        output='screen'
+    # ROS-Gazebo Bridge - Add sensor data
+    ros_gz_bridge = TimerAction(
+        period=5.0,
+        actions=[
+            Node(
+                package='ros_gz_bridge',
+                executable='parameter_bridge',
+                arguments=[
+                    '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
+                    '/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry',
+                    '/lidar@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
+                    '/imu@sensor_msgs/msg/Imu@gz.msgs.IMU',
+                    '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock'
+                ],
+                parameters=[{'use_sim_time': use_sim_time}],
+                output='screen',
+                remappings=[
+                    ('/lidar', '/scan'),
+                ]
+            )
+        ]
+    )
+    
+    # Launch RViz with proper fixed frame
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
     )
     
     return LaunchDescription([
+        declare_use_sim_time,
+        robot_state_publisher_node,
+        joint_state_publisher_node,  # This is crucial!
         gazebo,
-        robot_state_publisher,
         spawn_robot,
-        bridge,
-        teleop
+        ros_gz_bridge,
+        rviz_node
     ])
+

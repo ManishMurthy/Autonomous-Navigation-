@@ -1,0 +1,4 @@
+Invoking command in '/home/student/eiratech_ws/build/cropmap_nav2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/student/eiratech_ws/build/cropmap_nav2 -- -j28 -l28
+Invoked command in '/home/student/eiratech_ws/build/cropmap_nav2' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/student/eiratech_ws/build/cropmap_nav2 -- -j28 -l28
+Invoking command in '/home/student/eiratech_ws/build/cropmap_nav2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/student/eiratech_ws/build/cropmap_nav2
+Invoked command in '/home/student/eiratech_ws/build/cropmap_nav2' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/student/eiratech_ws/build/cropmap_nav2

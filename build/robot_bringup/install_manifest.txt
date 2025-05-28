@@ -1,5 +1,6 @@
 /home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/basic_test.launch.py
 /home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/rviz.launch.py
+/home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/mini.launch.py
 /home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/gazebo_sim.launch.py
 /home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/teleop.launch.py
 /home/student/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/bridge.launch.py

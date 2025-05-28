@@ -1,0 +1,69 @@
+[0.007s] Invoking command in '/home/student/eiratech_ws/build/cropmap_nav2': AMENT_PREFIX_PATH=/home/student/eiratech_ws/install/robot_bringup:/home/student/eiratech_ws/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/eiratech_ws/install/robot_bringup:/home/student/eiratech_ws/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/student/eiratech_ws/build/cropmap_nav2 -- -j28 -l28
+[0.029s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.157s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.172s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.176s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.181s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.188s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.218s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.219s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.230s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.260s] -- Found nav2_common: 1.3.6 (/opt/ros/jazzy/share/nav2_common/cmake)
+[0.260s] -- Found nav2_bringup: 1.3.6 (/opt/ros/jazzy/share/nav2_bringup/cmake)
+[0.260s] -- Found slam_toolbox: 2.8.3 (/opt/ros/jazzy/share/slam_toolbox/cmake)
+[0.401s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.403s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.404s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.453s] -- Setting OGRE_DIR to: '/opt/ros/jazzy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[0.454s] -- Found OGRE
+[0.454s] --   static     : OFF
+[0.454s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[0.454s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.454s] --   media      : /opt/ros/jazzy/opt/rviz_ogre_vendor/share/OGRE/Media
+[0.454s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[0.454s] -- OGRE_LIBRARY_DIRS: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib
+[0.454s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.454s] -- OGRE_PLUGIN_DIR: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/OGRE
+[0.454s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.454s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.454s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.454s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.519s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[0.603s] -- Found nav2_map_server: 1.3.6 (/opt/ros/jazzy/share/nav2_map_server/cmake)
+[0.709s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.760s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.761s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.761s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.761s] -- Added test 'lint_cmake' to check CMake code style
+[0.761s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.761s] -- Added test 'xmllint' to check XML markup files
+[0.762s] -- Configuring done (0.7s)
+[0.765s] -- Generating done (0.0s)
+[0.767s] -- Build files have been written to: /home/student/eiratech_ws/build/cropmap_nav2
+[0.789s] Invoked command in '/home/student/eiratech_ws/build/cropmap_nav2' returned '0': AMENT_PREFIX_PATH=/home/student/eiratech_ws/install/robot_bringup:/home/student/eiratech_ws/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/eiratech_ws/install/robot_bringup:/home/student/eiratech_ws/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/student/eiratech_ws/build/cropmap_nav2 -- -j28 -l28
+[0.798s] Invoking command in '/home/student/eiratech_ws/build/cropmap_nav2': AMENT_PREFIX_PATH=/home/student/eiratech_ws/install/robot_bringup:/home/student/eiratech_ws/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/eiratech_ws/install/robot_bringup:/home/student/eiratech_ws/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/student/eiratech_ws/build/cropmap_nav2
+[0.808s] -- Install configuration: ""
+[0.808s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2//launch
+[0.808s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2//launch/slam.launch.py
+[0.808s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2//config
+[0.808s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2//config/mapper_params_online_async.yaml
+[0.808s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2//config/controller_config.yaml
+[0.808s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2//rviz
+[0.808s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2//rviz/slam_config.rviz
+[0.808s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2//maps
+[0.808s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/ament_index/resource_index/package_run_dependencies/cropmap_nav2
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/ament_index/resource_index/parent_prefix_path/cropmap_nav2
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/environment/ament_prefix_path.sh
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/environment/ament_prefix_path.dsv
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/environment/path.sh
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/environment/path.dsv
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/local_setup.bash
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/local_setup.sh
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/local_setup.zsh
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/local_setup.dsv
+[0.809s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/package.dsv
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/ament_index/resource_index/packages/cropmap_nav2
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/cmake/cropmap_nav2Config.cmake
+[0.809s] -- Up-to-date: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/cmake/cropmap_nav2Config-version.cmake
+[0.809s] -- Installing: /home/student/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/package.xml
+[0.810s] Invoked command in '/home/student/eiratech_ws/build/cropmap_nav2' returned '0': AMENT_PREFIX_PATH=/home/student/eiratech_ws/install/robot_bringup:/home/student/eiratech_ws/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/eiratech_ws/install/robot_bringup:/home/student/eiratech_ws/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/student/eiratech_ws/build/cropmap_nav2
