@@ -57,7 +57,7 @@ def generate_launch_description():
     
     # Launch Gazebo
     gazebo = ExecuteProcess(
-        cmd=['gz', 'sim', 'empty.sdf', '-r'],
+        cmd=['gz', 'sim', 'model.sdf', '-r'],
         output='screen'
     )
     
