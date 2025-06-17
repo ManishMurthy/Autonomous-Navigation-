@@ -1,24 +1,38 @@
+#!/usr/bin/env python3
+
 from launch import LaunchDescription
-from launch.substitutions import PathJoinSubstitution
+from launch.actions import ExecuteProcess, LogInfo
 from launch_ros.actions import Node
-from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
-    # Get the package share directory
-    robot_control_pkg_share = FindPackageShare('robot_control').find('robot_control')
     
-    # Paths
-    teleop_config = PathJoinSubstitution([robot_control_pkg_share, 'config', 'teleop_config.yaml'])
-    
-    # Teleop twist keyboard node
-    teleop_node = Node(
+    # Method 1: Simple teleop_twist_keyboard (if package is installed)
+    teleop_keyboard = Node(
         package='teleop_twist_keyboard',
         executable='teleop_twist_keyboard',
+        name='teleop_keyboard',
         output='screen',
-        prefix='xterm -e',
-        remappings=[('/cmd_vel', '/diff_drive_controller/cmd_vel_unstamped')]
+        prefix='gnome-terminal --',  # Use gnome-terminal instead of xterm
+        remappings=[
+            ('/cmd_vel', '/cmd_vel')  # Direct mapping to your robot's cmd_vel
+        ],
+        parameters=[{
+            'speed': 0.5,       # Linear speed
+            'turn': 1.0,        # Angular speed  
+            'repeat_rate': 10.0 # Publishing rate
+        }]
+    )
+    
+    # Method 2: Simple manual control via terminal commands
+    info_message = LogInfo(
+        msg="Teleop ready! Use WASD keys to control robot:\n"
+            "W/S: Forward/Backward\n"
+            "A/D: Turn Left/Right\n"
+            "X: Stop\n"
+            "Q: Increase speed, Z: Decrease speed"
     )
     
     return LaunchDescription([
-        teleop_node
+        info_message,
+        teleop_keyboard
     ])

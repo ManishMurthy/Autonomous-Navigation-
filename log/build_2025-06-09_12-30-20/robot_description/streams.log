@@ -1,0 +1,51 @@
+[0.007s] Invoking command in '/home/manish/eiratech_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/manish/eiratech_ws/build/robot_description -- -j12 -l12
+[0.024s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.120s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.173s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.175s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.176s] -- Added test 'lint_cmake' to check CMake code style
+[0.176s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.178s] -- Added test 'xmllint' to check XML markup files
+[0.179s] -- Configuring done
+[0.183s] -- Generating done
+[0.185s] -- Build files have been written to: /home/manish/eiratech_ws/build/robot_description
+[0.199s] Invoked command in '/home/manish/eiratech_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/manish/eiratech_ws/build/robot_description -- -j12 -l12
+[0.204s] Invoking command in '/home/manish/eiratech_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/manish/eiratech_ws/build/robot_description
+[0.209s] -- Install configuration: "Release"
+[0.209s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf
+[0.209s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/robot_urdf.urdf
+[0.209s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/robot.urdf.xacro
+[0.209s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/dummy.urdf
+[0.209s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/cropMap_urdf.urdf
+[0.209s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/robot.urdf.xacro_backup
+[0.209s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes
+[0.209s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/base_link.STL
+[0.209s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/back_camera.STL
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/TC_V0.STL
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_left.STL
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/front_camera.STL
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_right.STL
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_right.STL
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_left.STL
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/config
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/config/bridge.yaml
+[0.210s] -- Installing: /home/manish/eiratech_ws/install/robot_description/share/robot_description/launch
+[0.210s] -- Installing: /home/manish/eiratech_ws/install/robot_description/share/robot_description/launch/robot_state.launch.py
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/rviz
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/rviz/robot.rviz
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+[0.210s] -- Installing: /home/manish/eiratech_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+[0.210s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/environment/path.sh
+[0.211s] -- Installing: /home/manish/eiratech_ws/install/robot_description/share/robot_description/environment/path.dsv
+[0.211s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/local_setup.bash
+[0.211s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/local_setup.sh
+[0.211s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/local_setup.zsh
+[0.211s] -- Installing: /home/manish/eiratech_ws/install/robot_description/share/robot_description/local_setup.dsv
+[0.211s] -- Installing: /home/manish/eiratech_ws/install/robot_description/share/robot_description/package.dsv
+[0.211s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/ament_index/resource_index/packages/robot_description
+[0.211s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+[0.211s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+[0.211s] -- Up-to-date: /home/manish/eiratech_ws/install/robot_description/share/robot_description/package.xml
+[0.212s] Invoked command in '/home/manish/eiratech_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/manish/eiratech_ws/build/robot_description

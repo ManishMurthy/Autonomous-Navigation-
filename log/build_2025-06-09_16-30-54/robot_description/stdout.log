@@ -1,0 +1,33 @@
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/cropMap_urdf.urdf
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/dummy.urdf
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/robot.urdf.xacro
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/robot.urdf.xacro_backup
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/urdf/robot_urdf.urdf
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/TC_V0.STL
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/back_camera.STL
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/base_link.STL
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/front_camera.STL
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_left.STL
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_right.STL
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_left.STL
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_right.STL
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/config/config/bridge.yaml
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/launch/launch/robot_state.launch.py
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/rviz/robot.rviz
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/environment/path.sh
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/environment/path.dsv
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/local_setup.bash
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/local_setup.sh
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/local_setup.zsh
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/local_setup.dsv
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/package.dsv
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/ament_index/resource_index/packages/robot_description
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+-- Symlinking: /home/manish/eiratech_ws/install/robot_description/share/robot_description/package.xml

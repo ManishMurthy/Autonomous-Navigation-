@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+
+import os
+from launch import LaunchDescription
+from launch.substitutions import Command, LaunchConfiguration
+from launch_ros.actions import Node
+from launch_ros.parameter_descriptions import ParameterValue
+from ament_index_python.packages import get_package_share_directory
+
+def generate_launch_description():
+    
+    # Get the URDF file path
+    urdf_file = os.path.join(
+        get_package_share_directory('robot_description'),
+        'urdf',
+        'robot.urdf.xacro'  # Use the fixed URDF without mesh dependencies
+    )
+    
+    # Alternative: Process xacro file properly
+    robot_description_content = Command(['xacro ', urdf_file])
+    
+    # For now, read the fixed URDF directly
+    with open(urdf_file, 'r') as infp:
+        robot_desc = infp.read()
+
+    robot_description = {'robot_description': robot_desc}
+
+    # Robot state publisher
+    robot_state_publisher_node = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        name='robot_state_publisher',
+        output='screen',
+        parameters=[robot_description, {'use_sim_time': LaunchConfiguration('use_sim_time', default='false')}]
+    )
+    
+    # Joint state publisher (for testing wheel movements)
+    joint_state_publisher_node = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        name='joint_state_publisher',
+        output='screen'
+    )
+    
+    # RViz for visualization
+    rviz_config_file = os.path.join(
+        get_package_share_directory('robot_description'),
+        'rviz',
+        'robot_view.rviz'
+    )
+    
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='screen',
+        arguments=['-d', rviz_config_file] if os.path.exists(rviz_config_file) else []
+    )
+    
+    return LaunchDescription([
+        robot_state_publisher_node,
+        joint_state_publisher_node,
+        rviz_node
+    ])

@@ -53,21 +53,33 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        FRONT_CAMERA:
+        TC_V0:
           Value: true
-        FRONT_WHEEL_LEFT:
+        back_camera:
           Value: true
-        FRONT_WHEEL_RIGHT:
+        back_camera_dummy:
           Value: true
-        REAR_CAMERA:
-          Value: true
-        REAR_WHEEL_LEFT:
-          Value: true
-        REAR_WHEEL_RIGHT:
-          Value: true
-        TOOL_CHANGER:
+        base_footprint:
           Value: true
         base_link:
+          Value: true
+        front_camera:
+          Value: true
+        front_camera_dummy:
+          Value: true
+        gps_link:
+          Value: true
+        imu_link:
+          Value: true
+        lidar_link:
+          Value: true
+        wheel_back_left:
+          Value: true
+        wheel_back_right:
+          Value: true
+        wheel_front_left:
+          Value: true
+        wheel_front_right:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -75,21 +87,29 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        base_link:
-          FRONT_CAMERA:
-            {}
-          FRONT_WHEEL_LEFT:
-            {}
-          FRONT_WHEEL_RIGHT:
-            {}
-          REAR_CAMERA:
-            {}
-          REAR_WHEEL_LEFT:
-            {}
-          REAR_WHEEL_RIGHT:
-            {}
-          TOOL_CHANGER:
-            {}
+        base_footprint:
+          base_link:
+            TC_V0:
+              gps_link:
+                {}
+              lidar_link:
+                {}
+            back_camera:
+              back_camera_dummy:
+                {}
+            front_camera:
+              front_camera_dummy:
+                {}
+            imu_link:
+              {}
+            wheel_back_left:
+              {}
+            wheel_back_right:
+              {}
+            wheel_front_left:
+              {}
+            wheel_front_right:
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -109,43 +129,70 @@ Visualization Manager:
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
-        FRONT_CAMERA:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        FRONT_WHEEL_LEFT:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        FRONT_WHEEL_RIGHT:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         Link Tree Style: Links in Alphabetic Order
-        REAR_CAMERA:
+        TC_V0:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        REAR_WHEEL_LEFT:
+        back_camera:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        REAR_WHEEL_RIGHT:
+        back_camera_dummy:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        TOOL_CHANGER:
+        base_footprint:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera_dummy:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        gps_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        lidar_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_back_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_back_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_front_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_front_right:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -161,7 +208,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_link
+    Fixed Frame: base_footprint
     Frame Rate: 30
   Name: root
   Tools:
@@ -204,7 +251,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 4.883630752563477
+      Distance: 3.2712607383728027
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -219,11 +266,51 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3553982377052307
+      Pitch: 0.3903979957103729
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.6203975081443787
-    Saved: ~
+      Yaw: 0.570399820804596
+    Saved:
+      - Class: rviz_default_plugins/Orbit
+        Distance: 4.883630752563477
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: Orbit
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.3553982377052307
+        Target Frame: <Fixed Frame>
+        Value: Orbit (rviz)
+        Yaw: 0.6203975081443787
+      - Class: rviz_default_plugins/Orbit
+        Distance: 4.055349826812744
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: Orbit
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.08039817214012146
+        Target Frame: <Fixed Frame>
+        Value: Orbit (rviz)
+        Yaw: 1.2203973531723022
 Window Geometry:
   Displays:
     collapsed: false

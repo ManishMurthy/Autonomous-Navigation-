@@ -1,122 +1,115 @@
 #!/usr/bin/env python3
 
-import os
-from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, ExecuteProcess, TimerAction
-from launch.substitutions import LaunchConfiguration
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, ExecuteProcess
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
 from launch_ros.actions import Node
-from launch_ros.descriptions import ParameterValue
+from launch_ros.substitutions import FindPackageShare
+from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
     
-    # Get package directories
-    robot_description_dir = get_package_share_directory('robot_description')
-    
-    # Launch configuration
-    use_sim_time = LaunchConfiguration('use_sim_time')
-    
-    # Declare launch arguments
-    declare_use_sim_time = DeclareLaunchArgument(
+    # Declare arguments
+    use_sim_time_arg = DeclareLaunchArgument(
         'use_sim_time',
         default_value='true',
-        description='Use simulation (Gazebo) clock if true'
+        description='Use simulation time if true'
     )
     
-    # Robot description file path
-    urdf_file = os.path.join(robot_description_dir, 'urdf', 'cropMap_urdf.urdf')
+    world_arg = DeclareLaunchArgument(
+        name='world',
+        default_value=PathJoinSubstitution([
+            FindPackageShare('robot_bringup'),
+            'worlds',
+            'field_obstacles.world'
+        ]),
+        description='Full path to world file'
+    )
+
+    # Get robot description file path
+    robot_description_path = PathJoinSubstitution([
+        FindPackageShare('robot_description'),
+        'urdf',
+        'robot.urdf.xacro'
+    ])
     
-    # Read URDF file and wrap it properly as string parameter
-    with open(urdf_file, 'r') as infp:
-        robot_desc = infp.read()
-    
-    robot_description_param = ParameterValue(robot_desc, value_type=str)
-    
-    # Robot State Publisher
-    robot_state_publisher_node = Node(
+    # Robot state publisher
+    robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
         output='screen',
         parameters=[{
-            'robot_description': robot_description_param,
-            'use_sim_time': use_sim_time
+            'robot_description': ParameterValue(
+                Command(['xacro ', robot_description_path]),
+                value_type=str
+            ),
+            'use_sim_time': LaunchConfiguration('use_sim_time')
         }]
     )
     
-    # Joint State Publisher - ESSENTIAL for wheel transforms
-    joint_state_publisher_node = Node(
+    # Gazebo launch
+    gazebo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            PathJoinSubstitution([
+                FindPackageShare('gazebo_ros'),
+                'launch',
+                'gazebo.launch.py'
+            ])
+        ]),
+        launch_arguments={
+            'world': LaunchConfiguration('world'),
+            'verbose': 'true'
+        }.items()
+    )
+    
+    # Spawn robot entity
+    spawn_robot = Node(
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        name='spawn_robot',
+        output='screen',
+        arguments=[
+            '-topic', 'robot_description',
+            '-entity', 'cropmap_v0',
+            '-x', '10.0',
+            '-y', '10.0', 
+            '-z', '1.0'
+        ]
+    )
+    
+    # Joint state publisher
+    joint_state_publisher = Node(
         package='joint_state_publisher',
         executable='joint_state_publisher',
         name='joint_state_publisher',
-        output='screen',
         parameters=[{
-            'use_sim_time': use_sim_time
+            'use_sim_time': LaunchConfiguration('use_sim_time')
         }]
     )
     
-    # Launch Gazebo
-    gazebo = ExecuteProcess(
-        cmd=['gz', 'sim', 'empty.sdf', '-r'],
-        output='screen'
-    )
-    
-    # Spawn robot in Gazebo after delay
-    spawn_robot = TimerAction(
-        period=3.0,
-        actions=[
-            Node(
-                package='ros_gz_sim',
-                executable='create',
-                arguments=[
-                    '-topic', 'robot_description',
-                    '-name', 'cropmap_robot',
-                    '-z', '0.5'
-                ],
-                output='screen'
-            )
-        ]
-    )
-    
-    # ROS-Gazebo Bridge - Add sensor data
-    ros_gz_bridge = TimerAction(
-        period=5.0,
-        actions=[
-            Node(
-                package='ros_gz_bridge',
-                executable='parameter_bridge',
-                arguments=[
-                    '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
-                    '/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry',
-                    '/lidar@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
-                    '/imu@sensor_msgs/msg/Imu@gz.msgs.IMU',
-                    '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock'
-                ],
-                parameters=[{'use_sim_time': use_sim_time}],
-                output='screen',
-                remappings=[
-                    ('/lidar', '/scan'),
-                ]
-            )
-        ]
-    )
-    
-    # Launch RViz with proper fixed frame
-    rviz_node = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
+    map_server_node = Node(
+        package='nav2_map_server',
+        executable='map_server',
+        name='map_server',
         output='screen',
-        parameters=[{'use_sim_time': use_sim_time}]
+        parameters=[{
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'yaml_filename': PathJoinSubstitution([
+                FindPackageShare('robot_bringup'),
+                'maps',
+                'my_field_map.yaml'
+            ])
+        }]
     )
     
     return LaunchDescription([
-        declare_use_sim_time,
-        robot_state_publisher_node,
-        joint_state_publisher_node,  # This is crucial!
+        use_sim_time_arg,
+        world_arg,
+        robot_state_publisher,
         gazebo,
         spawn_robot,
-        ros_gz_bridge,
-        rviz_node
+        joint_state_publisher,
+        map_server_node
     ])
-

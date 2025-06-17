@@ -20,9 +20,14 @@ install(
   DESTINATION share/${PROJECT_NAME}/meshes
 )
 
-install(DIRECTORY
-  config
-  DESTINATION share/${PROJECT_NAME}
+install(
+	DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}/config
+)
+
+install(
+	DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}/launch
 )
 
 # Install RViz config files (if you have them)

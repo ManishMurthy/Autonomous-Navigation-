@@ -14,6 +14,12 @@ install(
   DESTINATION share/${PROJECT_NAME}/launch
 )
 
+# Install launch files
+install(
+  DIRECTORY rviz/
+  DESTINATION share/${PROJECT_NAME}/rviz
+)
+
 # Install world files
 install(
   DIRECTORY worlds/
