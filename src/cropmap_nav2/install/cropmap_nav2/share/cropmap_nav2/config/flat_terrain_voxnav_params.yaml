@@ -1,0 +1,44 @@
+# Flat Terrain Vox Nav Configuration
+# Simple setup for field_obstacles.world
+
+vox_nav_planner_server_rclcpp_node:
+  ros__parameters:
+    use_sim_time: true
+    
+    # Simple SE2 planner for flat terrain
+    planner_plugin: "SE2Planner"
+    expected_planner_frequency: 1.0
+    planner_name: "RRTstar"
+    planner_timeout: 15.0
+    interpolation_parameter: 10
+    
+    # CropMap V0 robot dimensions
+    robot_body_dimens:
+      x: 1.2
+      y: 0.8
+      z: 0.6
+    robot_mesh_path: ""
+    
+    SE2Planner:
+      plugin: "vox_nav_planning::SE2Planner"
+      se2_space: "REEDS"
+      z_elevation: 0.1                      # Small elevation for flat terrain
+      rho: 1.5
+      
+      # Reasonable bounds for field_obstacles world
+      state_space_boundries:
+        minx: -15.0
+        maxx: 15.0
+        miny: -15.0
+        maxy: 15.0
+        minyaw: -3.14159
+        maxyaw: 3.14159
+
+# Simplified navigator config
+navigate_to_pose_server_node:
+  ros__parameters:
+    use_sim_time: true
+    robot_base_frame: "base_link"
+    global_frame: "map"
+    odom_topic: "/odometry/filtered"
+    cmd_vel_topic: "/cmd_vel_nav"

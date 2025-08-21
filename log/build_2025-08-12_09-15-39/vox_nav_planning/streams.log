@@ -1,0 +1,303 @@
+[0.013s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_planning': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_planning -- -j12 -l12
+[0.044s] -- Found OpenCV version 4.5.4
+[0.044s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.141s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.169s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.172s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.178s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.187s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.199s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.230s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.232s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.311s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.362s] -- Found rclcpp_action: 16.0.14 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.390s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.434s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.448s] -- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.506s] -- Found octomap_msgs: 2.0.1 (/opt/ros/humble/share/octomap_msgs/cmake)
+[0.519s] -- Found tf2_eigen: 0.25.15 (/opt/ros/humble/share/tf2_eigen/cmake)
+[0.521s] -- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.524s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.525s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.527s] -- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[0.542s] -- Found vox_nav_msgs: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_msgs/share/vox_nav_msgs/cmake)
+[0.578s] -- Found vox_nav_utilities: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_utilities/share/vox_nav_utilities/cmake)
+[0.626s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.648s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.923s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.927s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.037s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.041s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.044s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.156s] -- Found Qhull version 8.0.2
+[1.262s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.395s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[1.751s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.810s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.811s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.814s] -- Configured cppcheck include dirs: /home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include
+[1.814s] -- Configured cppcheck exclude dirs and/or files: 
+[1.815s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.815s] -- Configured cpplint exclude dirs and/or files: 
+[1.816s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.816s] -- Added test 'lint_cmake' to check CMake code style
+[1.817s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.818s] -- Added test 'uncrustify' to check C / C++ code style
+[1.818s] -- Configured uncrustify additional arguments: 
+[1.819s] -- Added test 'xmllint' to check XML markup files
+[1.821s] -- Configuring done
+[2.156s] -- Generating done
+[2.214s] -- Build files have been written to: /home/manish/eiratech_ws/build/vox_nav_planning
+[2.242s] [35m[1mConsolidate compiler generated dependencies of target se3_planner[0m
+[2.243s] [35m[1mConsolidate compiler generated dependencies of target se2_planner[0m
+[2.243s] [35m[1mConsolidate compiler generated dependencies of target elevation_planner[0m
+[2.244s] [35m[1mConsolidate compiler generated dependencies of target planner_server[0m
+[2.248s] [35m[1mConsolidate compiler generated dependencies of target polytunnel_planner[0m
+[2.250s] [35m[1mConsolidate compiler generated dependencies of target vox_nav_ompl_planners[0m
+[2.251s] [  4%] [32mBuilding CXX object CMakeFiles/optimal_elevation_planner.dir/src/plugins/optimal_elevation_planner.cpp.o[0m
+[2.267s] [ 23%] Built target se3_planner
+[2.267s] [ 23%] Built target se2_planner
+[2.274s] [ 33%] Built target elevation_planner
+[2.278s] [ 42%] Built target planner_server
+[2.280s] [ 52%] Built target polytunnel_planner
+[2.295s] [ 76%] Built target vox_nav_ompl_planners
+[2.306s] [35m[1mConsolidate compiler generated dependencies of target osm_elevation_planner[0m
+[2.306s] [35m[1mConsolidate compiler generated dependencies of target elevation_control_planner[0m
+[2.334s] [ 90%] Built target osm_elevation_planner
+[2.334s] [ 95%] Built target elevation_control_planner
+[2.557s] In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+[2.557s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+[2.557s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[2.557s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[2.557s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[2.558s]       |  [01;35m[K^~~~~~~[m[K
+[10.641s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.641s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+[10.641s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+[10.641s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[10.641s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::OptimalElevationPlanner::createPlan(const PoseStamped&, const PoseStamped&)[m[K’:
+[10.641s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:223:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::map<unsigned int, std::shared_ptr<pcl::Supervoxel<pcl::PointXYZRGBA> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.641s]   223 |     RCLCPP_INFO(logger_, [01;35m[K"Found %d supervoxels"[m[K, [32m[Ksupervoxel_clusters_.size()[m[K);
+[10.641s]       |                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.641s]       |                                                                           [32m[K|[m[K
+[10.641s]       |                                                                           [32m[Kstd::map<unsigned int, std::shared_ptr<pcl::Supervoxel<pcl::PointXYZRGBA> > >::size_type {aka long unsigned int}[m[K
+[10.641s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:223:34:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[10.641s]   223 |     RCLCPP_INFO(logger_, "Found [01;36m[K%d[m[K supervoxels", supervoxel_clusters_.size());
+[10.642s]       |                                 [01;36m[K~^[m[K
+[10.642s]       |                                  [01;36m[K|[m[K
+[10.642s]       |                                  [01;36m[Kint[m[K
+[10.642s]       |                                 [32m[K%ld[m[K
+[10.663s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.664s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+[10.664s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+[10.664s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[10.664s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:393:7:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kboost::detail::adj_list_gen<boost::adjacency_list<boost::setS, boost::vecS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float> >, boost::vecS, boost::setS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float>, boost::no_property, boost::listS>::config::vertices_size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.664s]   393 |       [01;35m[K"Constructed a Boost Graph from supervoxel clustering with %d vertices and %d edges"[m[K,
+[10.664s]       |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.664s]   394 |       [32m[Kboost::num_vertices(g)[m[K,
+[10.664s]       |       [32m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.664s]       |                          [32m[K|[m[K
+[10.664s]       |                          [32m[Kboost::detail::adj_list_gen<boost::adjacency_list<boost::setS, boost::vecS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float> >, boost::vecS, boost::setS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float>, boost::no_property, boost::listS>::config::vertices_size_type {aka long unsigned int}[m[K
+[10.664s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:393:67:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[10.664s]   393 |       "Constructed a Boost Graph from supervoxel clustering with [01;36m[K%d[m[K vertices and %d edges",
+[10.664s]       |                                                                  [01;36m[K~^[m[K
+[10.664s]       |                                                                   [01;36m[K|[m[K
+[10.664s]       |                                                                   [01;36m[Kint[m[K
+[10.664s]       |                                                                  [32m[K%ld[m[K
+[10.664s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.665s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+[10.665s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+[10.665s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[10.665s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:393:7:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kboost::detail::adj_list_gen<boost::adjacency_list<boost::setS, boost::vecS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float> >, boost::vecS, boost::setS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float>, boost::no_property, boost::listS>::config::edges_size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.665s]   393 |       [01;35m[K"Constructed a Boost Graph from supervoxel clustering with %d vertices and %d edges"[m[K,
+[10.665s]       |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.665s]   394 |       boost::num_vertices(g),
+[10.665s]   395 |       [32m[Kboost::num_edges(g)[m[K);
+[10.665s]       |       [32m[K~~~~~~~~~~~~~~~~~~~[m[K
+[10.665s]       |                       [32m[K|[m[K
+[10.665s]       |                       [32m[Kboost::detail::adj_list_gen<boost::adjacency_list<boost::setS, boost::vecS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float> >, boost::vecS, boost::setS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float>, boost::no_property, boost::listS>::config::edges_size_type {aka long unsigned int}[m[K
+[10.665s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:393:83:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[10.665s]   393 |       "Constructed a Boost Graph from supervoxel clustering with %d vertices and [01;36m[K%d[m[K edges",
+[10.665s]       |                                                                                  [01;36m[K~^[m[K
+[10.665s]       |                                                                                   [01;36m[K|[m[K
+[10.665s]       |                                                                                   [01;36m[Kint[m[K
+[10.665s]       |                                                                                  [32m[K%ld[m[K
+[10.674s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.674s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+[10.674s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+[10.675s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[10.675s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:564:16:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.675s]   564 |       logger_, [01;35m[K"Found path with %s search %d which includes poses,"[m[K,
+[10.675s]       |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.675s]   565 |       graph_search_method_.c_str(), [32m[Kplan_poses.size()[m[K);
+[10.675s]       |                                     [32m[K~~~~~~~~~~~~~~~~~[m[K
+[10.675s]       |                                                    [32m[K|[m[K
+[10.675s]       |                                                    [32m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[10.675s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:564:44:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[10.675s]   564 |       logger_, "Found path with %s search [01;36m[K%d[m[K which includes poses,",
+[10.675s]       |                                           [01;36m[K~^[m[K
+[10.675s]       |                                            [01;36m[K|[m[K
+[10.675s]       |                                            [01;36m[Kint[m[K
+[10.675s]       |                                           [32m[K%ld[m[K
+[10.689s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.690s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+[10.690s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+[10.690s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[10.690s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:[m[K In member function ‘[01m[Kvirtual void vox_nav_planning::OptimalElevationPlanner::setupMap()[m[K’:
+[10.690s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:719:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.690s]   719 |         [01;35m[K"Recieved a valid Octomap with %d nodes, A FCL collision tree will be created from this "[m[K
+[10.690s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.690s]   720 | [01;35m[K        "octomap for state validity (aka collision check)"[m[K, [32m[Koriginal_octomap_octree_->size()[m[K);
+[10.690s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.690s]       |                                                                                           [32m[K|[m[K
+[10.690s]       |                                                                                           [32m[Ksize_t {aka long unsigned int}[m[K
+[10.690s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:719:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[10.691s]   719 |         "Recieved a valid Octomap with [01;36m[K%d[m[K nodes, A FCL collision tree will be created from this "
+[10.691s]       |                                        [01;36m[K~^[m[K
+[10.691s]       |                                         [01;36m[K|[m[K
+[10.691s]       |                                         [01;36m[Kint[m[K
+[10.691s]       |                                        [32m[K%ld[m[K
+[10.691s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.691s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.691s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+[10.691s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+[10.691s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[10.691s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:724:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.691s]   724 |         [01;35m[K"Recieved a valid Octomap which represents Elevated surfels with %d nodes,"[m[K
+[10.691s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.691s]   725 | [01;35m[K        " A FCL collision tree will be created from this "[m[K
+[10.691s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.691s]   726 | [01;35m[K        "octomap for state validity (aka collision check)"[m[K,
+[10.691s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.692s]   727 |         [32m[Kelevated_surfel_octomap_octree_->size()[m[K);
+[10.692s]       |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.692s]       |                                              [32m[K|[m[K
+[10.692s]       |                                              [32m[Ksize_t {aka long unsigned int}[m[K
+[10.692s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:724:75:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[10.692s]   724 |         "Recieved a valid Octomap which represents Elevated surfels with [01;36m[K%d[m[K nodes,"
+[10.692s]       |                                                                          [01;36m[K~^[m[K
+[10.692s]       |                                                                           [01;36m[K|[m[K
+[10.692s]       |                                                                           [01;36m[Kint[m[K
+[10.692s]       |                                                                          [32m[K%ld[m[K
+[30.430s] [100%] [32m[1mLinking CXX shared library liboptimal_elevation_planner.so[0m
+[33.946s] [100%] Built target optimal_elevation_planner
+[33.956s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_planning' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_planning -- -j12 -l12
+[33.963s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_planning': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_planning
+[33.968s] -- Install configuration: ""
+[33.968s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libosm_elevation_planner.so
+[33.968s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_planner.so
+[33.969s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_control_planner.so
+[33.969s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libpolytunnel_planner.so
+[33.969s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libse2_planner.so
+[33.969s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libse3_planner.so
+[33.969s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libvox_nav_ompl_planners.so
+[33.969s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/vox_nav_planning/planner_server
+[33.969s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include/
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/se2_planner.hpp
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/elevation_planner.hpp
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/osm_elevation_planner.hpp
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/elevation_control_planner.hpp
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/polytunnel_planner.hpp
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/se3_planner.hpp
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/optimal_elevation_planner.hpp
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/InformedSGCP.hpp
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/KinoPlanner.hpp
+[33.970s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/CostTrustKinoPlanner.hpp
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/LQRPlanner.hpp
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/RRTStarF.hpp
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/LQRRRTStar.hpp
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/planner_server.hpp
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/planner_core.hpp
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/base_simplified.stl
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/car_control_planner_benchmarking.yaml
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/drone.stl
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/quadrotor_control_planner_benchmarking.yaml
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch/car_control_planner_benchmarking.launch.py
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch/quadrotor_control_planner_benchmarking.launch.py
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/library_path.sh
+[33.971s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/library_path.dsv
+[33.971s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/plugins.xml
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/package_run_dependencies/vox_nav_planning
+[33.972s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/parent_prefix_path/vox_nav_planning
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/ament_prefix_path.sh
+[33.972s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/ament_prefix_path.dsv
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/path.sh
+[33.972s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/path.dsv
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.bash
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.sh
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.zsh
+[33.972s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.dsv
+[33.972s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/package.dsv
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/packages/vox_nav_planning
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/vox_nav_planning__pluginlib__plugin/vox_nav_planning
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+[33.972s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/ament_cmake_export_libraries-extras.cmake
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/vox_nav_planningConfig.cmake
+[33.972s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/vox_nav_planningConfig-version.cmake
+[33.973s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/package.xml
+[33.973s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_planning' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_planning

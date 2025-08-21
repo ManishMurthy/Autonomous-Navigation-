@@ -22,7 +22,7 @@ def generate_launch_description():
         default_value=PathJoinSubstitution([
             FindPackageShare('robot_bringup'),
             'worlds',
-            'field_obstacles.world'
+            'terrain_1.world'
         ]),
         description='Full path to world file'
     )
@@ -73,9 +73,9 @@ def generate_launch_description():
         arguments=[
             '-topic', 'robot_description',
             '-entity', 'cropmap_v0',
-            '-x', '10.0',
-            '-y', '10.0', 
-            '-z', '1.0'
+            '-x', '0.0',
+            '-y', '0.0', 
+            '-z', '0.5'
         ]
     )
     
@@ -89,20 +89,20 @@ def generate_launch_description():
         }]
     )
     
-    map_server_node = Node(
-        package='nav2_map_server',
-        executable='map_server',
-        name='map_server',
-        output='screen',
-        parameters=[{
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
-            'yaml_filename': PathJoinSubstitution([
-                FindPackageShare('robot_bringup'),
-                'maps',
-                'my_field_map.yaml'
-            ])
-        }]
-    )
+ #   map_server_node = Node(
+ #       package='nav2_map_server',
+ #       executable='map_server',
+ #       name='map_server',
+ #       output='screen',
+ #       parameters=[{
+#            'use_sim_time': LaunchConfiguration('use_sim_time'),
+#            'yaml_filename': PathJoinSubstitution([
+#                FindPackageShare('robot_bringup'),
+#                'maps',
+#                'my_field_map.yaml'
+#            ])
+#        }]
+    #)
     
     return LaunchDescription([
         use_sim_time_arg,
@@ -111,5 +111,5 @@ def generate_launch_description():
         gazebo,
         spawn_robot,
         joint_state_publisher,
-        map_server_node
+        #map_server_node
     ])

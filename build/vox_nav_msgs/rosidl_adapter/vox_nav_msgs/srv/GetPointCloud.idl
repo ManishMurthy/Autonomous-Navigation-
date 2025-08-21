@@ -1,0 +1,52 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vox_nav_msgs/srv/GetPointCloud.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "sensor_msgs/msg/PointCloud2.idl"
+
+module vox_nav_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "The center point of the axis-aligned bounding box in the global frame")
+    struct GetPointCloud_Request {
+      geometry_msgs::msg::Point bounding_box_origin;
+
+      @verbatim (language="comment", text=
+        "The 3 side lenghts of the axis-aligned bounding box")
+      geometry_msgs::msg::Point bounding_box_lengths;
+
+      @verbatim (language="comment", text=
+        "The leaf size or resolution of the octomap")
+      double leaf_size;
+
+      @verbatim (language="comment", text=
+        "Indicate if the generated octomap should be published.")
+      boolean publish_pointcloud;
+
+      @verbatim (language="comment", text=
+        "The filename under which the octomap should be stored (only stored if set)")
+      string filename;
+    };
+    @verbatim (language="comment", text=
+      "The created octomap in gazebo coordinates")
+    struct GetPointCloud_Response {
+      sensor_msgs::msg::PointCloud2 cloud;
+
+      @verbatim (language="comment", text=
+        "The latitude of the gazebo coordinates origin")
+      @unit (value="deg")
+      double origin_latitude;
+
+      @verbatim (language="comment", text=
+        "The longitude of the gazebo coordinates origin")
+      @unit (value="deg")
+      double origin_longitude;
+
+      @verbatim (language="comment", text=
+        "The altitude of the gazebo coordinates origin")
+      @unit (value="m")
+      double origin_altitude;
+    };
+  };
+};

@@ -1,0 +1,133 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-25c70696f0913a929073.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vox_nav_utilities",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "elevation_state_space::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-elevation_state_space-32e92fc0acb174fe5c77.json",
+					"name" : "elevation_state_space",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gps_waypoint_collector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gps_waypoint_collector-8443019f0a6682e64c71.json",
+					"name" : "gps_waypoint_collector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gps_waypoint_collector_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gps_waypoint_collector_node-d56656c81d934de7afa1.json",
+					"name" : "gps_waypoint_collector_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_manager_helpers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_manager_helpers-3428afaf1c3fc2aa5267.json",
+					"name" : "map_manager_helpers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pcl2octomap_converter_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pcl2octomap_converter_node-d319d00eead8cb60d6d1.json",
+					"name" : "pcl2octomap_converter_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "planner_helpers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-planner_helpers-86a970a17b5dcd50ade6.json",
+					"name" : "planner_helpers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tf_helpers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tf_helpers-e8dfb178391cc2149b0a.json",
+					"name" : "tf_helpers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-65eda8991e9d38703599.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vox_nav_utilities_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vox_nav_utilities_uninstall-2178c46fff0c07e16054.json",
+					"name" : "vox_nav_utilities_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/manish/eiratech_ws/build/vox_nav_utilities",
+		"source" : "/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,173 @@
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::OptimalElevationPlanner::createPlan(const PoseStamped&, const PoseStamped&)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:223:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::map<unsigned int, std::shared_ptr<pcl::Supervoxel<pcl::PointXYZRGBA> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  223 |     RCLCPP_INFO(logger_, [01;35m[K"Found %d supervoxels"[m[K, [32m[Ksupervoxel_clusters_.size()[m[K);
+      |                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                           [32m[K|[m[K
+      |                                                                           [32m[Kstd::map<unsigned int, std::shared_ptr<pcl::Supervoxel<pcl::PointXYZRGBA> > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:223:34:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  223 |     RCLCPP_INFO(logger_, "Found [01;36m[K%d[m[K supervoxels", supervoxel_clusters_.size());
+      |                                 [01;36m[K~^[m[K
+      |                                  [01;36m[K|[m[K
+      |                                  [01;36m[Kint[m[K
+      |                                 [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:393:7:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kboost::detail::adj_list_gen<boost::adjacency_list<boost::setS, boost::vecS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float> >, boost::vecS, boost::setS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float>, boost::no_property, boost::listS>::config::vertices_size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  393 |       [01;35m[K"Constructed a Boost Graph from supervoxel clustering with %d vertices and %d edges"[m[K,
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  394 |       [32m[Kboost::num_vertices(g)[m[K,
+      |       [32m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                          [32m[K|[m[K
+      |                          [32m[Kboost::detail::adj_list_gen<boost::adjacency_list<boost::setS, boost::vecS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float> >, boost::vecS, boost::setS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float>, boost::no_property, boost::listS>::config::vertices_size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:393:67:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  393 |       "Constructed a Boost Graph from supervoxel clustering with [01;36m[K%d[m[K vertices and %d edges",
+      |                                                                  [01;36m[K~^[m[K
+      |                                                                   [01;36m[K|[m[K
+      |                                                                   [01;36m[Kint[m[K
+      |                                                                  [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:393:7:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kboost::detail::adj_list_gen<boost::adjacency_list<boost::setS, boost::vecS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float> >, boost::vecS, boost::setS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float>, boost::no_property, boost::listS>::config::edges_size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  393 |       [01;35m[K"Constructed a Boost Graph from supervoxel clustering with %d vertices and %d edges"[m[K,
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  394 |       boost::num_vertices(g),
+  395 |       [32m[Kboost::num_edges(g)[m[K);
+      |       [32m[K~~~~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[K|[m[K
+      |                       [32m[Kboost::detail::adj_list_gen<boost::adjacency_list<boost::setS, boost::vecS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float> >, boost::vecS, boost::setS, boost::undirectedS, vox_nav_utilities::VertexProperty, boost::property<boost::edge_weight_t, float>, boost::no_property, boost::listS>::config::edges_size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:393:83:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  393 |       "Constructed a Boost Graph from supervoxel clustering with %d vertices and [01;36m[K%d[m[K edges",
+      |                                                                                  [01;36m[K~^[m[K
+      |                                                                                   [01;36m[K|[m[K
+      |                                                                                   [01;36m[Kint[m[K
+      |                                                                                  [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:564:16:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  564 |       logger_, [01;35m[K"Found path with %s search %d which includes poses,"[m[K,
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  565 |       graph_search_method_.c_str(), [32m[Kplan_poses.size()[m[K);
+      |                                     [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                                    [32m[K|[m[K
+      |                                                    [32m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:564:44:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  564 |       logger_, "Found path with %s search [01;36m[K%d[m[K which includes poses,",
+      |                                           [01;36m[K~^[m[K
+      |                                            [01;36m[K|[m[K
+      |                                            [01;36m[Kint[m[K
+      |                                           [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:[m[K In member function ‘[01m[Kvirtual void vox_nav_planning::OptimalElevationPlanner::setupMap()[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:719:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  719 |         [01;35m[K"Recieved a valid Octomap with %d nodes, A FCL collision tree will be created from this "[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  720 | [01;35m[K        "octomap for state validity (aka collision check)"[m[K, [32m[Koriginal_octomap_octree_->size()[m[K);
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                           [32m[K|[m[K
+      |                                                                                           [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:719:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  719 |         "Recieved a valid Octomap with [01;36m[K%d[m[K nodes, A FCL collision tree will be created from this "
+      |                                        [01;36m[K~^[m[K
+      |                                         [01;36m[K|[m[K
+      |                                         [01;36m[Kint[m[K
+      |                                        [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/optimal_elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:724:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  724 |         [01;35m[K"Recieved a valid Octomap which represents Elevated surfels with %d nodes,"[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  725 | [01;35m[K        " A FCL collision tree will be created from this "[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  726 | [01;35m[K        "octomap for state validity (aka collision check)"[m[K,
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  727 |         [32m[Kelevated_surfel_octomap_octree_->size()[m[K);
+      |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                              [32m[K|[m[K
+      |                                              [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/optimal_elevation_planner.cpp:724:75:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  724 |         "Recieved a valid Octomap which represents Elevated surfels with [01;36m[K%d[m[K nodes,"
+      |                                                                          [01;36m[K~^[m[K
+      |                                                                           [01;36m[K|[m[K
+      |                                                                           [01;36m[Kint[m[K
+      |                                                                          [32m[K%ld[m[K

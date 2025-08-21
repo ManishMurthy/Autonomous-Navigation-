@@ -1,0 +1,16 @@
+[0.000000] (-) TimerEvent: {}
+[0.000267] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.000294] (-) JobUnselected: {'identifier': 'robot_control'}
+[0.000309] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.000321] (-) JobUnselected: {'identifier': 'vox_nav_bringup'}
+[0.000332] (-) JobUnselected: {'identifier': 'vox_nav_control'}
+[0.000343] (-) JobUnselected: {'identifier': 'vox_nav_map_server'}
+[0.000354] (-) JobUnselected: {'identifier': 'vox_nav_msgs'}
+[0.000365] (-) JobUnselected: {'identifier': 'vox_nav_navigators'}
+[0.000376] (-) JobUnselected: {'identifier': 'vox_nav_planning'}
+[0.000387] (-) JobUnselected: {'identifier': 'vox_nav_utilities'}
+[0.000397] (-) JobUnselected: {'identifier': 'vox_nav_waypoint_nav_clients'}
+[0.000411] (cropmap_nav2) JobQueued: {'identifier': 'cropmap_nav2', 'dependencies': OrderedDict([('vox_nav_msgs', '/home/manish/eiratech_ws/install/vox_nav_msgs'), ('vox_nav_utilities', '/home/manish/eiratech_ws/install/vox_nav_utilities'), ('vox_nav_control', '/home/manish/eiratech_ws/install/vox_nav_control'), ('vox_nav_map_server', '/home/manish/eiratech_ws/install/vox_nav_map_server'), ('vox_nav_navigators', '/home/manish/eiratech_ws/install/vox_nav_navigators'), ('vox_nav_planning', '/home/manish/eiratech_ws/install/vox_nav_planning')])}
+[0.000614] (cropmap_nav2) JobStarted: {'identifier': 'cropmap_nav2'}
+[0.021582] (cropmap_nav2) JobEnded: {'identifier': 'cropmap_nav2', 'rc': 1}
+[0.024709] (-) EventReactorShutdown: {}

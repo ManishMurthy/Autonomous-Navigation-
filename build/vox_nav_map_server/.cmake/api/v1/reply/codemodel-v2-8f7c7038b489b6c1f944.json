@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ea8b8deb756a1fed177a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vox_nav_map_server",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "map_manager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_manager-d24c8197ce3ec8b62066.json",
+					"name" : "map_manager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_manager_no_gps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_manager_no_gps-199e79a145051a5643f0.json",
+					"name" : "map_manager_no_gps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osm_map_manager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osm_map_manager-2a685dc45b5877f87520.json",
+					"name" : "osm_map_manager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-babbdf4c90bfd13e2c31.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vox_nav_map_server_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vox_nav_map_server_uninstall-58d01d37481bd0c64ae8.json",
+					"name" : "vox_nav_map_server_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/manish/eiratech_ws/build/vox_nav_map_server",
+		"source" : "/home/manish/eiratech_ws/src/vox_nav/vox_nav_map_server"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

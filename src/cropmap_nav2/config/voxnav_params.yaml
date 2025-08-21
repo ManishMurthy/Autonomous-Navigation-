@@ -1,0 +1,141 @@
+# Optimized for reliability and demonstration
+
+vox_nav_planner_server:
+  ros__parameters:
+    use_sim_time: true
+    planner_plugin: "vox_nav_planning::SE2Planner"
+    expected_planner_frequency: 5.0
+    planner_timeout: 10.0
+    action_server_result_timeout: 15.0
+    
+    # SE2 Planner Configuration
+    SE2Planner:
+      plugin: "vox_nav_planning::SE2Planner"
+      se2_space: "REEDS_SHEPP"
+      rho: 0.5
+      state_space_boundary_x_min: -30.0
+      state_space_boundary_x_max: 30.0
+      state_space_boundary_y_min: -30.0
+      state_space_boundary_y_max: 30.0
+      state_space_boundary_z_min: -1.0
+      state_space_boundary_z_max: 1.0
+      robot_mesh_path: ""
+      robot_bodytype: "cylinder"
+      robot_radius: 0.5
+      octomap_voxel_size: 0.1
+      octomap_publish_frequency: 1.0
+      planner_name: "PRMStar"
+      planner_timeout: 8.0
+      interpolate_path: true
+      interpolation_parameter: 0.1
+      use_ompl_environment: true
+
+vox_nav_controller_server:
+  ros__parameters:
+    use_sim_time: true
+    controller_frequency: 10.0
+    min_x_velocity_threshold: 0.001
+    min_y_velocity_threshold: 0.001
+    min_theta_velocity_threshold: 0.001
+    failure_tolerance: 0.5
+    progress_checker_plugin: "progress_checker"
+    goal_checker_plugins: ["general_goal_checker"]
+    controller_plugins: ["FollowPath"]
+    
+    progress_checker:
+      plugin: "nav2_controller::SimpleProgressChecker"
+      required_movement_radius: 0.3
+      movement_time_allowance: 20.0
+      
+    general_goal_checker:
+      stateful: true
+      plugin: "nav2_controller::SimpleGoalChecker"
+      xy_goal_tolerance: 0.3
+      yaw_goal_tolerance: 0.3
+      
+    FollowPath:
+      plugin: "vox_nav_control::LyapunovController"
+      robot_radius: 0.5
+      lookahead_distance: 1.5
+      max_linear_velocity: 0.8
+      max_angular_velocity: 0.6
+      min_linear_velocity: 0.0
+      min_angular_velocity: 0.0
+      linear_gain: 0.8
+      angular_gain: 1.5
+      transform_tolerance: 0.2
+      use_velocity_scaled_lookahead_dist: false
+      min_approach_linear_velocity: 0.1
+      approach_velocity_scaling_dist: 1.0
+
+vox_nav_map_manager:
+  ros__parameters:
+    use_sim_time: true
+    map_frame_id: "map"
+    robot_frame_id: "base_link"
+    utm_frame_id: "utm"
+    base_global_planner_frame: "map"
+    
+    # Octomap parameters
+    octomap_voxel_size: 0.1
+    octomap_publish_frequency: 1.0
+    max_range: 8.0
+    min_range: 0.2
+    raycast_range: 8.0
+    
+    # Point cloud processing
+    pointcloud_topic: "/scan"
+    use_height_map: false
+    height_map_resolution: 0.1
+    use_octomap_only: true
+    
+    # PCD map parameters
+    load_pcd_map: false
+    pcd_map_filename: ""
+    
+    # Traversability analysis
+    robot_height: 0.3
+    robot_radius: 0.5
+    traversability_radius: 0.6
+    
+    # Publishing
+    publish_octomap: true
+    publish_pointcloud: true
+    publish_markers: false
+
+vox_nav_navigator:
+  ros__parameters:
+    use_sim_time: true
+    global_frame: "map"
+    robot_base_frame: "base_link"
+    odom_topic: "/odom"
+    transform_tolerance: 0.3
+    
+    # Goal tolerance
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.3
+    
+    # Behavior tree
+    bt_loop_duration: 10
+    default_server_timeout: 30
+    action_server_result_timeout: 600.0
+    
+    # Plugin configuration
+    planner_plugins: ["GridBased"]
+    controller_plugins: ["FollowPath"]
+    progress_checker_plugins: ["progress_checker"]
+    goal_checker_plugins: ["general_goal_checker"]
+    
+    # Default plugins
+    default_planner_plugin: "GridBased"
+    default_controller_plugin: "FollowPath"
+    default_progress_checker_plugin: "progress_checker"
+    default_goal_checker_plugin: "general_goal_checker"
+
+# Additional configuration for demo reliability
+lifecycle_manager:
+  ros__parameters:
+    use_sim_time: true
+    autostart: true
+    node_names: ["vox_nav_planner_server", "vox_nav_controller_server", "vox_nav_navigator"]
+    bond_timeout: 10.0

@@ -1,0 +1,191 @@
+[0.025s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients -DCMAKE_INSTALL_PREFIX=/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients
+[0.134s] -- The C compiler identification is GNU 11.4.0
+[0.229s] -- The CXX compiler identification is GNU 11.4.0
+[0.244s] -- Detecting C compiler ABI info
+[0.369s] -- Detecting C compiler ABI info - done
+[0.382s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.382s] -- Detecting C compile features
+[0.382s] -- Detecting C compile features - done
+[0.386s] -- Detecting CXX compiler ABI info
+[0.530s] -- Detecting CXX compiler ABI info - done
+[0.545s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.545s] -- Detecting CXX compile features
+[0.546s] -- Detecting CXX compile features - done
+[0.552s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.881s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.074s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.147s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.157s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.174s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.198s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.225s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.312s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.318s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.478s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.535s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.604s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.622s] -- Looking for pthread.h
+[1.753s] -- Looking for pthread.h - found
+[1.756s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.896s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.897s] -- Found Threads: TRUE  
+[2.026s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[2.096s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.203s] -- Found tf2_geometry_msgs: 0.25.13 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.230s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.234s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.234s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.364s] -- Found vox_nav_msgs: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_msgs/share/vox_nav_msgs/cmake)
+[2.502s] -- Found robot_localization: 3.5.3 (/opt/ros/humble/share/robot_localization/cmake)
+[2.596s] -- Found vox_nav_utilities: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_utilities/share/vox_nav_utilities/cmake)
+[2.720s] -- Checking for module 'eigen3'
+[2.745s] --   Found eigen3, version 3.4.0
+[2.824s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.825s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.890s] -- Checking for module 'flann'
+[2.921s] --   Found flann, version 1.9.1
+[3.014s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[3.014s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[4.963s] -- Checking for module 'libusb-1.0'
+[5.000s] --   Found libusb-1.0, version 1.0.25
+[5.085s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[5.087s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.219s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.532s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.546s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.559s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.872s] -- Found Qhull version 8.0.2
+[6.189s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.504s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[6.510s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[6.512s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[6.517s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[6.519s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[6.522s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[6.524s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[6.525s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[6.527s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[6.530s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[6.532s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[6.536s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[6.539s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[6.541s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[6.543s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[6.549s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[6.554s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[6.559s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[6.562s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[6.563s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[6.564s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[6.565s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[6.565s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[6.569s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[6.573s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[6.737s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.934s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.940s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.941s] -- Configured cppcheck include dirs: /home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/include
+[6.942s] -- Configured cppcheck exclude dirs and/or files: 
+[6.943s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.943s] -- Configured cpplint exclude dirs and/or files: 
+[6.944s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.944s] -- Added test 'lint_cmake' to check CMake code style
+[6.945s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.946s] -- Added test 'uncrustify' to check C / C++ code style
+[6.946s] -- Configured uncrustify additional arguments: 
+[6.947s] -- Added test 'xmllint' to check XML markup files
+[6.949s] -- Configuring done
+[7.123s] -- Generating done
+[7.164s] -- Build files have been written to: /home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients
+[7.235s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients -DCMAKE_INSTALL_PREFIX=/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients
+[7.238s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients -- -j12 -l12
+[7.333s] [ 50%] [32mBuilding CXX object CMakeFiles/navigate_through_gps_poses_client.dir/src/navigate_through_gps_poses_client.cpp.o[0m
+[7.333s] [ 50%] [32mBuilding CXX object CMakeFiles/navigate_through_poses_client.dir/src/navigate_through_poses_client.cpp.o[0m
+[13.513s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[13.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[13.513s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/include/vox_nav_waypoint_nav_clients/navigate_through_poses_client.hpp:18[m[K,
+[13.513s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_poses_client.cpp:15[m[K:
+[13.513s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_poses_client.cpp:[m[K In member function ‘[01m[Kvoid vox_nav_waypoint_nav_clients::NavigateThroughPosesClient::feedbackCallback(rclcpp_action::ClientGoalHandle<vox_nav_msgs::action::NavigateThroughPoses>::SharedPtr, std::shared_ptr<const vox_nav_msgs::action::NavigateThroughPoses_Feedback_<std::allocator<void> > >)[m[K’:
+[13.514s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_poses_client.cpp:158:7:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[13.514s]   158 |       [01;35m[K"Current waypoint: %i"[m[K, [32m[Kfeedback->distance_remaining[m[K);
+[13.514s]       |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.514s]       |                                         [32m[K|[m[K
+[13.514s]       |                                         [32m[Kdouble[m[K
+[13.514s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_poses_client.cpp:158:27:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[13.514s]   158 |       "Current waypoint: [01;36m[K%i[m[K", feedback->distance_remaining);
+[13.514s]       |                          [01;36m[K~^[m[K
+[13.514s]       |                           [01;36m[K|[m[K
+[13.514s]       |                           [01;36m[Kint[m[K
+[13.515s]       |                          [32m[K%f[m[K
+[13.977s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[13.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[13.978s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/include/vox_nav_waypoint_nav_clients/navigate_through_gps_poses_client.hpp:18[m[K,
+[13.979s]                  from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_gps_poses_client.cpp:15[m[K:
+[13.979s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_gps_poses_client.cpp:[m[K In member function ‘[01m[Kvoid vox_nav_waypoint_nav_clients::NavigateThroughGPSPosesClient::feedbackCallback(rclcpp_action::ClientGoalHandle<vox_nav_msgs::action::NavigateThroughGPSPoses>::SharedPtr, std::shared_ptr<const vox_nav_msgs::action::NavigateThroughGPSPoses_Feedback_<std::allocator<void> > >)[m[K’:
+[13.979s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_gps_poses_client.cpp:156:7:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[13.979s]   156 |       [01;35m[K"Current gps waypoint: %i"[m[K, [32m[Kfeedback->distance_remaining[m[K);
+[13.979s]       |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.979s]       |                                             [32m[K|[m[K
+[13.979s]       |                                             [32m[Kdouble[m[K
+[13.979s] [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_gps_poses_client.cpp:156:31:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[13.979s]   156 |       "Current gps waypoint: [01;36m[K%i[m[K", feedback->distance_remaining);
+[13.979s]       |                              [01;36m[K~^[m[K
+[13.979s]       |                               [01;36m[K|[m[K
+[13.979s]       |                               [01;36m[Kint[m[K
+[13.979s]       |                              [32m[K%f[m[K
+[17.636s] [ 75%] [32m[1mLinking CXX executable navigate_through_poses_client[0m
+[18.342s] [100%] [32m[1mLinking CXX executable navigate_through_gps_poses_client[0m
+[20.337s] [100%] Built target navigate_through_gps_poses_client
+[21.345s] [100%] Built target navigate_through_poses_client
+[21.369s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients -- -j12 -l12
+[21.389s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients
+[21.405s] -- Install configuration: ""
+[21.405s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/lib/vox_nav_waypoint_nav_clients/navigate_through_poses_client
+[21.407s] -- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/lib/vox_nav_waypoint_nav_clients/navigate_through_poses_client" to ""
+[21.407s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/lib/vox_nav_waypoint_nav_clients/navigate_through_gps_poses_client
+[21.411s] -- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/lib/vox_nav_waypoint_nav_clients/navigate_through_gps_poses_client" to ""
+[21.411s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/include/
+[21.411s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/include//vox_nav_waypoint_nav_clients
+[21.411s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/include//vox_nav_waypoint_nav_clients/navigate_through_poses_client.hpp
+[21.411s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/include//vox_nav_waypoint_nav_clients/navigate_through_gps_poses_client.hpp
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/launch
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/launch/navigate_through_poses.launch.py
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/launch/navigate_through_gps_poses.launch.py
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/params
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/params/gps_poses.yaml
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/params/poses.yaml
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/ament_index/resource_index/package_run_dependencies/vox_nav_waypoint_nav_clients
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/ament_index/resource_index/parent_prefix_path/vox_nav_waypoint_nav_clients
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/environment/ament_prefix_path.sh
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/environment/ament_prefix_path.dsv
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/environment/path.sh
+[21.412s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/environment/path.dsv
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/local_setup.bash
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/local_setup.sh
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/local_setup.zsh
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/local_setup.dsv
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/package.dsv
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/ament_index/resource_index/packages/vox_nav_waypoint_nav_clients
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/cmake/ament_cmake_export_include_directories-extras.cmake
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/cmake/vox_nav_waypoint_nav_clientsConfig.cmake
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/cmake/vox_nav_waypoint_nav_clientsConfig-version.cmake
+[21.413s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients/share/vox_nav_waypoint_nav_clients/package.xml
+[21.420s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients

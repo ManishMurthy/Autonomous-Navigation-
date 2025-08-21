@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-edc3be6c7893bac73de7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vox_nav_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "lyapunov_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lyapunov_controller-1a2b1a38b86479193574.json",
+					"name" : "lyapunov_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpc_controller_casadi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpc_controller_casadi-44252ec2c25417f6f8be.json",
+					"name" : "mpc_controller_casadi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "traversability_based_plan_refiner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-traversability_based_plan_refiner-cf7e1fab2328f1e51b06.json",
+					"name" : "traversability_based_plan_refiner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d3fd1595c0590c5c3ba9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vox_nav_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vox_nav_control_uninstall-2d4e0ca32a555776f4d1.json",
+					"name" : "vox_nav_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vox_nav_controller_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vox_nav_controller_server-4a93e1f27c412ea13f96.json",
+					"name" : "vox_nav_controller_server",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/manish/eiratech_ws/build/vox_nav_control",
+		"source" : "/home/manish/eiratech_ws/src/vox_nav/vox_nav_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

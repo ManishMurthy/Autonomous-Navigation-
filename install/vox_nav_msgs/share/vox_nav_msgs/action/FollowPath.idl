@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from vox_nav_msgs/action/FollowPath.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "nav_msgs/msg/Path.idl"
+
+module vox_nav_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct FollowPath_Goal {
+      nav_msgs::msg::Path path;
+
+      string controller_id;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct FollowPath_Result {
+      builtin_interfaces::msg::Duration total_time;
+    };
+    @verbatim (language="comment", text=
+      "feedback")
+    struct FollowPath_Feedback {
+      float distance_to_goal;
+
+      float speed;
+
+      builtin_interfaces::msg::Duration elapsed_time;
+    };
+  };
+};

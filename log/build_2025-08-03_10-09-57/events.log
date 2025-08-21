@@ -1,0 +1,14 @@
+[0.000000] (-) TimerEvent: {}
+[0.000106] (-) JobUnselected: {'identifier': 'cropmap_nav2'}
+[0.000131] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.000148] (-) JobUnselected: {'identifier': 'robot_control'}
+[0.000163] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.000177] (-) JobUnselected: {'identifier': 'vox_nav_bringup'}
+[0.000191] (-) JobUnselected: {'identifier': 'vox_nav_control'}
+[0.000205] (-) JobUnselected: {'identifier': 'vox_nav_map_server'}
+[0.000219] (-) JobUnselected: {'identifier': 'vox_nav_msgs'}
+[0.000232] (-) JobUnselected: {'identifier': 'vox_nav_navigators'}
+[0.000246] (-) JobUnselected: {'identifier': 'vox_nav_planning'}
+[0.000259] (-) JobUnselected: {'identifier': 'vox_nav_utilities'}
+[0.000272] (-) JobUnselected: {'identifier': 'vox_nav_waypoint_nav_clients'}
+[0.000287] (-) EventReactorShutdown: {}

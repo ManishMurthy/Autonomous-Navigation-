@@ -1,0 +1,785 @@
+[0.000000] (-) TimerEvent: {}
+[0.000567] (-) JobUnselected: {'identifier': 'cropmap_nav2'}
+[0.000610] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.000631] (-) JobUnselected: {'identifier': 'robot_control'}
+[0.000648] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.000664] (-) JobUnselected: {'identifier': 'vox_nav_bringup'}
+[0.000680] (-) JobUnselected: {'identifier': 'vox_nav_control'}
+[0.000695] (-) JobUnselected: {'identifier': 'vox_nav_map_server'}
+[0.000710] (-) JobUnselected: {'identifier': 'vox_nav_msgs'}
+[0.000725] (-) JobUnselected: {'identifier': 'vox_nav_navigators'}
+[0.000740] (-) JobUnselected: {'identifier': 'vox_nav_utilities'}
+[0.000755] (-) JobUnselected: {'identifier': 'vox_nav_waypoint_nav_clients'}
+[0.000772] (vox_nav_planning) JobQueued: {'identifier': 'vox_nav_planning', 'dependencies': OrderedDict([('vox_nav_msgs', '/home/manish/eiratech_ws/install/vox_nav_msgs'), ('vox_nav_utilities', '/home/manish/eiratech_ws/install/vox_nav_utilities')])}
+[0.000794] (vox_nav_planning) JobStarted: {'identifier': 'vox_nav_planning'}
+[0.010656] (vox_nav_planning) JobProgress: {'identifier': 'vox_nav_planning', 'progress': 'cmake'}
+[0.011141] (vox_nav_planning) Command: {'cmd': ['/usr/bin/cmake', '/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning', '-DCMAKE_INSTALL_PREFIX=/home/manish/eiratech_ws/install/vox_nav_planning'], 'cwd': '/home/manish/eiratech_ws/build/vox_nav_planning', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('LANGUAGE', 'en_IE:en'), ('USER', 'manish'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manish'), ('OLDPWD', '/home/manish/eiratech_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1191'), ('SYSTEMD_EXEC_PID', '1719'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2470'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manish/eiratech_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manish'), ('JOURNAL_STREAM', '8:15782'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'manish'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/manish/eiratech_ws/install/robot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/manish-Precision-7750:@/tmp/.ICE-unix/1690,unix/manish-Precision-7750:/tmp/.ICE-unix/1690'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/manish/.ros/DEFAULT_FASTRTPS_PROFILES.xml'), ('INVOCATION_ID', '16586a4b5ae8461aa3185be6e8c58e84'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BDPIA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:35c9b79d-f539-4158-ac41-c541a4381cd8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/manish/eiratech_ws/build/vox_nav_planning'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/path/to/your_ws/install/gazebo_ros2_control/lib:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/manish/eiratech_ws/install/vox_nav_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble')]), 'shell': False}
+[0.096381] (vox_nav_planning) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099863] (-) TimerEvent: {}
+[0.146422] (vox_nav_planning) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.152969] (vox_nav_planning) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200007] (-) TimerEvent: {}
+[0.214194] (vox_nav_planning) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.222410] (vox_nav_planning) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.222614] (vox_nav_planning) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.222969] (vox_nav_planning) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.226114] (vox_nav_planning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300072] (-) TimerEvent: {}
+[0.302706] (vox_nav_planning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.312261] (vox_nav_planning) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.312603] (vox_nav_planning) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.313163] (vox_nav_planning) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.317789] (vox_nav_planning) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.318457] (vox_nav_planning) StdoutLine: {'line': b"-- Checking for module 'fcl>=0.7.0'\n"}
+[0.329738] (vox_nav_planning) StdoutLine: {'line': b'--   Found fcl, version 0.7.0\n'}
+[0.372075] (vox_nav_planning) StdoutLine: {'line': b'-- Found OpenCV version 4.5.4\n'}
+[0.374323] (vox_nav_planning) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400146] (-) TimerEvent: {}
+[0.500346] (-) TimerEvent: {}
+[0.506048] (vox_nav_planning) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.593184] (vox_nav_planning) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600414] (-) TimerEvent: {}
+[0.630935] (vox_nav_planning) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.636631] (vox_nav_planning) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.645273] (vox_nav_planning) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.658144] (vox_nav_planning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.674767] (vox_nav_planning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700519] (-) TimerEvent: {}
+[0.720655] (vox_nav_planning) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.723676] (vox_nav_planning) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.797858] (vox_nav_planning) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.800591] (-) TimerEvent: {}
+[0.822649] (vox_nav_planning) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.860330] (vox_nav_planning) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.869373] (vox_nav_planning) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.900808] (-) TimerEvent: {}
+[1.001112] (vox_nav_planning) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.001308] (-) TimerEvent: {}
+[1.001544] (vox_nav_planning) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.100071] (vox_nav_planning) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.101400] (-) TimerEvent: {}
+[1.101657] (vox_nav_planning) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.161632] (vox_nav_planning) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[1.196656] (vox_nav_planning) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.201500] (-) TimerEvent: {}
+[1.248752] (vox_nav_planning) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.266243] (vox_nav_planning) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.301630] (-) TimerEvent: {}
+[1.353721] (vox_nav_planning) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: serialization filesystem system \n'}
+[1.356821] (vox_nav_planning) StdoutLine: {'line': b'-- Found ompl: /opt/ros/humble/include/ompl-1.7;/usr/include;/usr/include/eigen3  \n'}
+[1.360337] (vox_nav_planning) StdoutLine: {'line': b'-- Found octomap_msgs: 2.0.1 (/opt/ros/humble/share/octomap_msgs/cmake)\n'}
+[1.376113] (vox_nav_planning) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[1.379892] (vox_nav_planning) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.13 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.388646] (vox_nav_planning) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.389790] (vox_nav_planning) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.389920] (vox_nav_planning) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.394254] (vox_nav_planning) StdoutLine: {'line': b'-- Found trajectory_msgs: 4.8.0 (/opt/ros/humble/share/trajectory_msgs/cmake)\n'}
+[1.401755] (-) TimerEvent: {}
+[1.413785] (vox_nav_planning) StdoutLine: {'line': b'-- Found vox_nav_msgs: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_msgs/share/vox_nav_msgs/cmake)\n'}
+[1.457181] (vox_nav_planning) StdoutLine: {'line': b'-- Found vox_nav_utilities: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_utilities/share/vox_nav_utilities/cmake)\n'}
+[1.501857] (-) TimerEvent: {}
+[1.518250] (vox_nav_planning) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.527272] (vox_nav_planning) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.550749] (vox_nav_planning) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.550888] (vox_nav_planning) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.574888] (vox_nav_planning) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.584454] (vox_nav_planning) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.601964] (-) TimerEvent: {}
+[1.614100] (vox_nav_planning) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.614313] (vox_nav_planning) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.702154] (-) TimerEvent: {}
+[1.802372] (-) TimerEvent: {}
+[1.902599] (-) TimerEvent: {}
+[2.002857] (-) TimerEvent: {}
+[2.103122] (-) TimerEvent: {}
+[2.203480] (-) TimerEvent: {}
+[2.303947] (-) TimerEvent: {}
+[2.404266] (-) TimerEvent: {}
+[2.504743] (-) TimerEvent: {}
+[2.604993] (-) TimerEvent: {}
+[2.605208] (vox_nav_planning) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.615127] (vox_nav_planning) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.641440] (vox_nav_planning) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.642370] (vox_nav_planning) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.684294] (vox_nav_planning) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.705096] (-) TimerEvent: {}
+[2.805301] (-) TimerEvent: {}
+[2.822571] (vox_nav_planning) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.827557] (vox_nav_planning) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.832516] (vox_nav_planning) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.905390] (-) TimerEvent: {}
+[2.964489] (vox_nav_planning) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.005494] (-) TimerEvent: {}
+[3.100508] (vox_nav_planning) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.105597] (-) TimerEvent: {}
+[3.205816] (-) TimerEvent: {}
+[3.233059] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.233947] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.234809] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.235658] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.236546] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.237411] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.237791] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.238143] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.238971] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.239941] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.240899] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.241813] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.242838] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.243880] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.244942] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.245959] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.247031] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.248038] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.249031] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.250039] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.250794] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.251127] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.251499] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.252414] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.253368] (vox_nav_planning) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.272720] (vox_nav_planning) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[3.305917] (-) TimerEvent: {}
+[3.406130] (-) TimerEvent: {}
+[3.506370] (-) TimerEvent: {}
+[3.606609] (-) TimerEvent: {}
+[3.653144] (vox_nav_planning) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.706730] (-) TimerEvent: {}
+[3.734498] (vox_nav_planning) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.737757] (vox_nav_planning) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.740635] (vox_nav_planning) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include\n'}
+[3.740726] (vox_nav_planning) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.742727] (vox_nav_planning) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.742823] (vox_nav_planning) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.743485] (vox_nav_planning) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.744396] (vox_nav_planning) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.745089] (vox_nav_planning) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.747271] (vox_nav_planning) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.747376] (vox_nav_planning) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.748021] (vox_nav_planning) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.750394] (vox_nav_planning) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.806845] (-) TimerEvent: {}
+[3.907103] (-) TimerEvent: {}
+[4.007309] (-) TimerEvent: {}
+[4.078397] (vox_nav_planning) StdoutLine: {'line': b'-- Generating done\n'}
+[4.107383] (-) TimerEvent: {}
+[4.143606] (vox_nav_planning) StdoutLine: {'line': b'-- Build files have been written to: /home/manish/eiratech_ws/build/vox_nav_planning\n'}
+[4.162775] (vox_nav_planning) CommandEnded: {'returncode': 0}
+[4.164561] (vox_nav_planning) JobProgress: {'identifier': 'vox_nav_planning', 'progress': 'build'}
+[4.164886] (vox_nav_planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/manish/eiratech_ws/build/vox_nav_planning', '--', '-j12', '-l12'], 'cwd': '/home/manish/eiratech_ws/build/vox_nav_planning', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('LANGUAGE', 'en_IE:en'), ('USER', 'manish'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manish'), ('OLDPWD', '/home/manish/eiratech_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1191'), ('SYSTEMD_EXEC_PID', '1719'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2470'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manish/eiratech_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manish'), ('JOURNAL_STREAM', '8:15782'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'manish'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/manish/eiratech_ws/install/robot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/manish-Precision-7750:@/tmp/.ICE-unix/1690,unix/manish-Precision-7750:/tmp/.ICE-unix/1690'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/manish/.ros/DEFAULT_FASTRTPS_PROFILES.xml'), ('INVOCATION_ID', '16586a4b5ae8461aa3185be6e8c58e84'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BDPIA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:35c9b79d-f539-4158-ac41-c541a4381cd8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/manish/eiratech_ws/build/vox_nav_planning'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/path/to/your_ws/install/gazebo_ros2_control/lib:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/manish/eiratech_ws/install/vox_nav_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble')]), 'shell': False}
+[4.207502] (-) TimerEvent: {}
+[4.212366] (vox_nav_planning) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/vox_nav_ompl_planners.dir/src/native_planners/InformedSGCP.cpp.o\x1b[0m\n'}
+[4.212597] (vox_nav_planning) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/polytunnel_planner.dir/src/plugins/polytunnel_planner.cpp.o\x1b[0m\n'}
+[4.212720] (vox_nav_planning) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/vox_nav_ompl_planners.dir/src/native_planners/RRTStarF.cpp.o\x1b[0m\n'}
+[4.214352] (vox_nav_planning) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/se3_planner.dir/src/plugins/se3_planner.cpp.o\x1b[0m\n'}
+[4.214539] (vox_nav_planning) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/planner_server.dir/src/planner_server.cpp.o\x1b[0m\n'}
+[4.214654] (vox_nav_planning) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/se2_planner.dir/src/plugins/se2_planner.cpp.o\x1b[0m\n'}
+[4.214761] (vox_nav_planning) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/vox_nav_ompl_planners.dir/src/native_planners/LQRPlanner.cpp.o\x1b[0m\n'}
+[4.214865] (vox_nav_planning) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/vox_nav_ompl_planners.dir/src/native_planners/LQRRRTStar.cpp.o\x1b[0m\n'}
+[4.215054] (vox_nav_planning) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/elevation_planner.dir/src/plugins/elevation_planner.cpp.o\x1b[0m\n'}
+[4.307598] (-) TimerEvent: {}
+[4.407892] (-) TimerEvent: {}
+[4.508218] (-) TimerEvent: {}
+[4.560000] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23\x1b[m\x1b[K,\n'}
+[4.560243] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:18\x1b[m\x1b[K,\n'}
+[4.560364] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:15\x1b[m\x1b[K:\n'}
+[4.560465] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.560577] (vox_nav_planning) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[4.560678] (vox_nav_planning) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.564672] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23\x1b[m\x1b[K,\n'}
+[4.564821] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/RRTStarF.hpp:18\x1b[m\x1b[K,\n'}
+[4.564930] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/native_planners/RRTStarF.cpp:15\x1b[m\x1b[K:\n'}
+[4.565039] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.565154] (vox_nav_planning) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[4.565253] (vox_nav_planning) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.608317] (-) TimerEvent: {}
+[4.708619] (-) TimerEvent: {}
+[4.757818] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23\x1b[m\x1b[K,\n'}
+[4.758062] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se2_planner.hpp:22\x1b[m\x1b[K,\n'}
+[4.758198] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:15\x1b[m\x1b[K:\n'}
+[4.758297] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.758397] (vox_nav_planning) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[4.758491] (vox_nav_planning) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.760602] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23\x1b[m\x1b[K,\n'}
+[4.760737] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/elevation_planner.hpp:22\x1b[m\x1b[K,\n'}
+[4.760841] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:15\x1b[m\x1b[K:\n'}
+[4.760939] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.761042] (vox_nav_planning) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[4.761144] (vox_nav_planning) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.761236] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23\x1b[m\x1b[K,\n'}
+[4.761326] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se3_planner.hpp:22\x1b[m\x1b[K,\n'}
+[4.761416] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:15\x1b[m\x1b[K:\n'}
+[4.761505] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.761616] (vox_nav_planning) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[4.761718] (vox_nav_planning) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.773183] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23\x1b[m\x1b[K,\n'}
+[4.773390] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/LQRRRTStar.hpp:18\x1b[m\x1b[K,\n'}
+[4.773496] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/native_planners/LQRRRTStar.cpp:15\x1b[m\x1b[K:\n'}
+[4.773613] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.773723] (vox_nav_planning) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[4.773825] (vox_nav_planning) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.777863] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23\x1b[m\x1b[K,\n'}
+[4.778037] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/LQRPlanner.hpp:18\x1b[m\x1b[K,\n'}
+[4.778151] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/native_planners/LQRPlanner.cpp:15\x1b[m\x1b[K:\n'}
+[4.778249] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.778348] (vox_nav_planning) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[4.778441] (vox_nav_planning) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.808723] (-) TimerEvent: {}
+[4.814586] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_server.hpp:27\x1b[m\x1b[K,\n'}
+[4.814827] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/planner_server.cpp:17\x1b[m\x1b[K:\n'}
+[4.814943] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.815053] (vox_nav_planning) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[4.815156] (vox_nav_planning) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.908852] (-) TimerEvent: {}
+[5.009212] (-) TimerEvent: {}
+[5.109530] (-) TimerEvent: {}
+[5.209858] (-) TimerEvent: {}
+[5.310183] (-) TimerEvent: {}
+[5.410498] (-) TimerEvent: {}
+[5.510836] (-) TimerEvent: {}
+[5.611206] (-) TimerEvent: {}
+[5.711534] (-) TimerEvent: {}
+[5.811846] (-) TimerEvent: {}
+[5.912207] (-) TimerEvent: {}
+[6.012527] (-) TimerEvent: {}
+[6.112832] (-) TimerEvent: {}
+[6.213229] (-) TimerEvent: {}
+[6.313535] (-) TimerEvent: {}
+[6.413868] (-) TimerEvent: {}
+[6.514221] (-) TimerEvent: {}
+[6.614534] (-) TimerEvent: {}
+[6.631265] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/install/vox_nav_utilities/include/vox_nav_utilities/elevation_state_space.hpp:22\x1b[m\x1b[K,\n'}
+[6.631511] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/InformedSGCP.hpp:43\x1b[m\x1b[K,\n'}
+[6.631632] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/native_planners/InformedSGCP.cpp:15\x1b[m\x1b[K:\n'}
+[6.631737] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.631847] (vox_nav_planning) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[6.631949] (vox_nav_planning) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.714637] (-) TimerEvent: {}
+[6.814938] (-) TimerEvent: {}
+[6.915235] (-) TimerEvent: {}
+[7.015558] (-) TimerEvent: {}
+[7.115889] (-) TimerEvent: {}
+[7.216220] (-) TimerEvent: {}
+[7.316554] (-) TimerEvent: {}
+[7.416891] (-) TimerEvent: {}
+[7.517219] (-) TimerEvent: {}
+[7.617540] (-) TimerEvent: {}
+[7.717859] (-) TimerEvent: {}
+[7.818186] (-) TimerEvent: {}
+[7.918529] (-) TimerEvent: {}
+[8.018862] (-) TimerEvent: {}
+[8.119240] (-) TimerEvent: {}
+[8.219593] (-) TimerEvent: {}
+[8.319950] (-) TimerEvent: {}
+[8.420340] (-) TimerEvent: {}
+[8.520692] (-) TimerEvent: {}
+[8.621055] (-) TimerEvent: {}
+[8.721440] (-) TimerEvent: {}
+[8.821795] (-) TimerEvent: {}
+[8.922148] (-) TimerEvent: {}
+[9.022494] (-) TimerEvent: {}
+[9.122822] (-) TimerEvent: {}
+[9.223156] (-) TimerEvent: {}
+[9.323495] (-) TimerEvent: {}
+[9.423830] (-) TimerEvent: {}
+[9.524171] (-) TimerEvent: {}
+[9.624503] (-) TimerEvent: {}
+[9.724851] (-) TimerEvent: {}
+[9.825208] (-) TimerEvent: {}
+[9.925586] (-) TimerEvent: {}
+[10.025934] (-) TimerEvent: {}
+[10.126293] (-) TimerEvent: {}
+[10.226626] (-) TimerEvent: {}
+[10.326975] (-) TimerEvent: {}
+[10.427332] (-) TimerEvent: {}
+[10.527687] (-) TimerEvent: {}
+[10.628031] (-) TimerEvent: {}
+[10.728366] (-) TimerEvent: {}
+[10.828726] (-) TimerEvent: {}
+[10.929100] (-) TimerEvent: {}
+[11.029462] (-) TimerEvent: {}
+[11.129815] (-) TimerEvent: {}
+[11.230183] (-) TimerEvent: {}
+[11.330528] (-) TimerEvent: {}
+[11.430879] (-) TimerEvent: {}
+[11.531231] (-) TimerEvent: {}
+[11.631573] (-) TimerEvent: {}
+[11.731925] (-) TimerEvent: {}
+[11.832309] (-) TimerEvent: {}
+[11.932671] (-) TimerEvent: {}
+[12.033036] (-) TimerEvent: {}
+[12.133385] (-) TimerEvent: {}
+[12.233736] (-) TimerEvent: {}
+[12.334101] (-) TimerEvent: {}
+[12.434577] (-) TimerEvent: {}
+[12.534933] (-) TimerEvent: {}
+[12.635311] (-) TimerEvent: {}
+[12.735665] (-) TimerEvent: {}
+[12.836029] (-) TimerEvent: {}
+[12.936407] (-) TimerEvent: {}
+[13.036797] (-) TimerEvent: {}
+[13.137175] (-) TimerEvent: {}
+[13.237532] (-) TimerEvent: {}
+[13.337883] (-) TimerEvent: {}
+[13.438248] (-) TimerEvent: {}
+[13.538601] (-) TimerEvent: {}
+[13.638937] (-) TimerEvent: {}
+[13.739458] (-) TimerEvent: {}
+[13.839805] (-) TimerEvent: {}
+[13.940200] (-) TimerEvent: {}
+[14.040652] (-) TimerEvent: {}
+[14.141048] (-) TimerEvent: {}
+[14.241412] (-) TimerEvent: {}
+[14.341778] (-) TimerEvent: {}
+[14.442152] (-) TimerEvent: {}
+[14.542540] (-) TimerEvent: {}
+[14.642934] (-) TimerEvent: {}
+[14.743337] (-) TimerEvent: {}
+[14.843699] (-) TimerEvent: {}
+[14.944060] (-) TimerEvent: {}
+[15.044410] (-) TimerEvent: {}
+[15.144764] (-) TimerEvent: {}
+[15.245112] (-) TimerEvent: {}
+[15.345471] (-) TimerEvent: {}
+[15.445820] (-) TimerEvent: {}
+[15.546188] (-) TimerEvent: {}
+[15.646548] (-) TimerEvent: {}
+[15.746915] (-) TimerEvent: {}
+[15.847292] (-) TimerEvent: {}
+[15.947647] (-) TimerEvent: {}
+[16.048011] (-) TimerEvent: {}
+[16.148368] (-) TimerEvent: {}
+[16.248773] (-) TimerEvent: {}
+[16.349091] (-) TimerEvent: {}
+[16.449435] (-) TimerEvent: {}
+[16.549780] (-) TimerEvent: {}
+[16.650287] (-) TimerEvent: {}
+[16.750650] (-) TimerEvent: {}
+[16.851038] (-) TimerEvent: {}
+[16.951395] (-) TimerEvent: {}
+[17.051770] (-) TimerEvent: {}
+[17.152181] (-) TimerEvent: {}
+[17.252584] (-) TimerEvent: {}
+[17.352980] (-) TimerEvent: {}
+[17.453394] (-) TimerEvent: {}
+[17.553783] (-) TimerEvent: {}
+[17.654186] (-) TimerEvent: {}
+[17.754569] (-) TimerEvent: {}
+[17.854948] (-) TimerEvent: {}
+[17.955339] (-) TimerEvent: {}
+[18.055738] (-) TimerEvent: {}
+[18.156096] (-) TimerEvent: {}
+[18.256453] (-) TimerEvent: {}
+[18.356805] (-) TimerEvent: {}
+[18.457155] (-) TimerEvent: {}
+[18.557504] (-) TimerEvent: {}
+[18.657849] (-) TimerEvent: {}
+[18.741794] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:15\x1b[m\x1b[K:\n'}
+[18.742094] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual bool vox_nav_planning::PolyTunnelPlanner::isStateValid(const ompl::base::State*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.742252] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:116:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.742378] (vox_nav_planning) StderrLine: {'line': b'  116 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[18.742484] (vox_nav_planning) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[18.757980] (-) TimerEvent: {}
+[18.858369] (-) TimerEvent: {}
+[18.891277] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[18.891525] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[18.891650] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[18.891760] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[18.891870] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[18.891978] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[18.892101] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[18.892213] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[18.892319] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[18.892434] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[18.892542] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[18.892646] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20\x1b[m\x1b[K,\n'}
+[18.892752] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:18\x1b[m\x1b[K,\n'}
+[18.892869] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:15\x1b[m\x1b[K:\n'}
+[18.892967] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::PolyTunnelPlanner::createPlan(const PoseStamped&, const PoseStamped&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.893092] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:108:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.893189] (vox_nav_planning) StderrLine: {'line': b'  108 |     RCLCPP_INFO(logger_, \x1b[01;35m\x1b[K"Creating a plan with %d points"\x1b[m\x1b[K, \x1b[32m\x1b[Kcloud->points.size()\x1b[m\x1b[K);\n'}
+[18.893270] (vox_nav_planning) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.893349] (vox_nav_planning) StderrLine: {'line': b'      |                                                                              \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[18.893431] (vox_nav_planning) StderrLine: {'line': b'      |                                                                              \x1b[32m\x1b[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[18.893638] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:108:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[18.893759] (vox_nav_planning) StderrLine: {'line': b'  108 |     RCLCPP_INFO(logger_, "Creating a plan with \x1b[01;36m\x1b[K%d\x1b[m\x1b[K points", cloud->points.size());\n'}
+[18.893867] (vox_nav_planning) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[18.893992] (vox_nav_planning) StderrLine: {'line': b'      |                                                 \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[18.894124] (vox_nav_planning) StderrLine: {'line': b'      |                                                 \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[18.894234] (vox_nav_planning) StderrLine: {'line': b'      |                                                \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[18.896010] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[18.896337] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[18.896498] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[18.896614] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[18.896741] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[18.896853] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[18.896967] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[18.897096] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[18.897224] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[18.897329] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[18.897433] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[18.897532] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20\x1b[m\x1b[K,\n'}
+[18.897637] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:18\x1b[m\x1b[K,\n'}
+[18.897743] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:15\x1b[m\x1b[K:\n'}
+[18.897845] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:155:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.897963] (vox_nav_planning) StderrLine: {'line': b'  155 |     RCLCPP_INFO(logger_, \x1b[01;35m\x1b[K"Created a plan with %d pose"\x1b[m\x1b[K, \x1b[32m\x1b[Kplan_poses.size()\x1b[m\x1b[K);\n'}
+[18.898094] (vox_nav_planning) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.898233] (vox_nav_planning) StderrLine: {'line': b'      |                                                                        \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[18.898336] (vox_nav_planning) StderrLine: {'line': b'      |                                                                        \x1b[32m\x1b[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[18.898442] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:155:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[18.898549] (vox_nav_planning) StderrLine: {'line': b'  155 |     RCLCPP_INFO(logger_, "Created a plan with \x1b[01;36m\x1b[K%d\x1b[m\x1b[K pose", plan_poses.size());\n'}
+[18.898655] (vox_nav_planning) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[18.898758] (vox_nav_planning) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[18.899125] (vox_nav_planning) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[18.899253] (vox_nav_planning) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[18.958493] (-) TimerEvent: {}
+[19.058843] (-) TimerEvent: {}
+[19.159204] (-) TimerEvent: {}
+[19.259581] (-) TimerEvent: {}
+[19.359962] (-) TimerEvent: {}
+[19.460344] (-) TimerEvent: {}
+[19.560737] (-) TimerEvent: {}
+[19.661086] (-) TimerEvent: {}
+[19.761438] (-) TimerEvent: {}
+[19.861802] (-) TimerEvent: {}
+[19.962176] (-) TimerEvent: {}
+[20.062525] (-) TimerEvent: {}
+[20.162871] (-) TimerEvent: {}
+[20.263249] (-) TimerEvent: {}
+[20.363636] (-) TimerEvent: {}
+[20.465130] (-) TimerEvent: {}
+[20.565525] (-) TimerEvent: {}
+[20.665938] (-) TimerEvent: {}
+[20.718903] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[20.719383] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[20.719564] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[20.719720] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.719875] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[20.720035] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.720215] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.720363] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[20.720509] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[20.720660] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.720808] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[20.720964] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20\x1b[m\x1b[K,\n'}
+[20.721138] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se3_planner.hpp:22\x1b[m\x1b[K,\n'}
+[20.721301] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:15\x1b[m\x1b[K:\n'}
+[20.721447] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::SE3Planner::createPlan(const PoseStamped&, const PoseStamped&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.721596] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:148:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%i\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.721760] (vox_nav_planning) StderrLine: {'line': b'  148 |     RCLCPP_INFO(logger_, \x1b[01;35m\x1b[K"Found A plan with %i poses"\x1b[m\x1b[K, \x1b[32m\x1b[Kplan_poses.size()\x1b[m\x1b[K);\n'}
+[20.721897] (vox_nav_planning) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.722043] (vox_nav_planning) StderrLine: {'line': b'      |                                                                       \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[20.722194] (vox_nav_planning) StderrLine: {'line': b'      |                                                                       \x1b[32m\x1b[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[20.722338] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:148:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[20.722474] (vox_nav_planning) StderrLine: {'line': b'  148 |     RCLCPP_INFO(logger_, "Found A plan with \x1b[01;36m\x1b[K%i\x1b[m\x1b[K poses", plan_poses.size());\n'}
+[20.722606] (vox_nav_planning) StderrLine: {'line': b'      |                                             \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[20.722737] (vox_nav_planning) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[20.722873] (vox_nav_planning) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[20.723009] (vox_nav_planning) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[K%li\x1b[m\x1b[K\n'}
+[20.738614] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[20.738915] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[20.739091] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[20.739238] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.739371] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[20.739499] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.739628] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.739758] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[20.739902] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[20.740079] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.740238] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[20.740357] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20\x1b[m\x1b[K,\n'}
+[20.740486] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se2_planner.hpp:22\x1b[m\x1b[K,\n'}
+[20.740608] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:15\x1b[m\x1b[K:\n'}
+[20.740713] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::SE2Planner::createPlan(const PoseStamped&, const PoseStamped&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.740832] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:194:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%i\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.740940] (vox_nav_planning) StderrLine: {'line': b'  194 |         logger_, \x1b[01;35m\x1b[K"Found A plan with %i poses"\x1b[m\x1b[K, \x1b[32m\x1b[Kplan_poses.size()\x1b[m\x1b[K);\n'}
+[20.741059] (vox_nav_planning) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.741201] (vox_nav_planning) StderrLine: {'line': b'      |                                                               \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[20.741335] (vox_nav_planning) StderrLine: {'line': b'      |                                                               \x1b[32m\x1b[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[20.741473] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:194:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[20.741608] (vox_nav_planning) StderrLine: {'line': b'  194 |         logger_, "Found A plan with \x1b[01;36m\x1b[K%i\x1b[m\x1b[K poses", plan_poses.size());\n'}
+[20.741739] (vox_nav_planning) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[20.741867] (vox_nav_planning) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[20.742002] (vox_nav_planning) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[20.742186] (vox_nav_planning) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K%li\x1b[m\x1b[K\n'}
+[20.760338] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[20.760630] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[20.760792] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[20.760937] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.761085] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[20.761227] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.761366] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.761495] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[20.761624] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[20.761754] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.761886] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[20.762020] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20\x1b[m\x1b[K,\n'}
+[20.762180] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se3_planner.hpp:22\x1b[m\x1b[K,\n'}
+[20.762313] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:15\x1b[m\x1b[K:\n'}
+[20.762449] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void vox_nav_planning::SE3Planner::setupMap()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.762581] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:221:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.762718] (vox_nav_planning) StderrLine: {'line': b'  221 |                 \x1b[01;35m\x1b[K"Recieved a valid Octomap with %d nodes, A FCL collision tree will be created from this "\x1b[m\x1b[K\n'}
+[20.762852] (vox_nav_planning) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.762992] (vox_nav_planning) StderrLine: {'line': b'  222 | \x1b[01;35m\x1b[K                "octomap for state validity (aka collision check)"\x1b[m\x1b[K,\n'}
+[20.763140] (vox_nav_planning) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.763286] (vox_nav_planning) StderrLine: {'line': b'  223 |                 \x1b[32m\x1b[Koriginal_octomap_octree_->size()\x1b[m\x1b[K);\n'}
+[20.763418] (vox_nav_planning) StderrLine: {'line': b'      |                 \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.763555] (vox_nav_planning) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[20.763684] (vox_nav_planning) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[20.763802] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:221:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[20.763929] (vox_nav_planning) StderrLine: {'line': b'  221 |                 "Recieved a valid Octomap with \x1b[01;36m\x1b[K%d\x1b[m\x1b[K nodes, A FCL collision tree will be created from this "\n'}
+[20.764065] (vox_nav_planning) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[20.764203] (vox_nav_planning) StderrLine: {'line': b'      |                                                 \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[20.764333] (vox_nav_planning) StderrLine: {'line': b'      |                                                 \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[20.764459] (vox_nav_planning) StderrLine: {'line': b'      |                                                \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[20.765159] (vox_nav_planning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[20.765335] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[20.765467] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[20.765597] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.765722] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[20.765849] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.765966] (-) TimerEvent: {}
+[20.766136] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.766289] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[20.766413] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[20.766539] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.766662] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[20.766787] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20\x1b[m\x1b[K,\n'}
+[20.766911] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se2_planner.hpp:22\x1b[m\x1b[K,\n'}
+[20.767039] (vox_nav_planning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:15\x1b[m\x1b[K:\n'}
+[20.767179] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void vox_nav_planning::SE2Planner::setupMap()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.767331] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:273:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.767468] (vox_nav_planning) StderrLine: {'line': b'  273 |         \x1b[01;35m\x1b[K"Recieved a valid Octomap with %d nodes, A FCL collision tree will be created from this "\x1b[m\x1b[K\n'}
+[20.767596] (vox_nav_planning) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.767721] (vox_nav_planning) StderrLine: {'line': b'  274 | \x1b[01;35m\x1b[K        "octomap for state validity (aka collision check)"\x1b[m\x1b[K, \x1b[32m\x1b[Koriginal_octomap_octree_->size()\x1b[m\x1b[K);\n'}
+[20.767845] (vox_nav_planning) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.767972] (vox_nav_planning) StderrLine: {'line': b'      |                                                                                           \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[20.768112] (vox_nav_planning) StderrLine: {'line': b'      |                                                                                           \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[20.768285] (vox_nav_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:273:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[20.768423] (vox_nav_planning) StderrLine: {'line': b'  273 |         "Recieved a valid Octomap with \x1b[01;36m\x1b[K%d\x1b[m\x1b[K nodes, A FCL collision tree will be created from this "\n'}
+[20.768548] (vox_nav_planning) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[20.768675] (vox_nav_planning) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[20.768796] (vox_nav_planning) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[20.768917] (vox_nav_planning) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[20.866094] (-) TimerEvent: {}
+[20.966439] (-) TimerEvent: {}
+[21.066791] (-) TimerEvent: {}
+[21.167159] (-) TimerEvent: {}
+[21.267520] (-) TimerEvent: {}
+[21.367870] (-) TimerEvent: {}
+[21.468229] (-) TimerEvent: {}
+[21.568591] (-) TimerEvent: {}
+[21.668949] (-) TimerEvent: {}
+[21.769358] (-) TimerEvent: {}
+[21.869725] (-) TimerEvent: {}
+[21.970083] (-) TimerEvent: {}
+[22.071286] (-) TimerEvent: {}
+[22.171770] (-) TimerEvent: {}
+[22.272387] (-) TimerEvent: {}
+[22.372971] (-) TimerEvent: {}
+[22.485618] (-) TimerEvent: {}
+[22.593215] (-) TimerEvent: {}
+[22.709029] (-) TimerEvent: {}
+[22.938937] (-) TimerEvent: {}
+[23.325738] (-) TimerEvent: {}
+[23.740810] (-) TimerEvent: {}
+[24.380898] (-) TimerEvent: {}
+[24.969806] (-) TimerEvent: {}
+[25.753827] (-) TimerEvent: {}
+[26.616963] (-) TimerEvent: {}
+[27.760599] (-) TimerEvent: {}
+[29.032131] (-) TimerEvent: {}
+[29.944353] (-) TimerEvent: {}
+[31.633619] (-) TimerEvent: {}
+[32.857274] (-) TimerEvent: {}
+[34.310612] (-) TimerEvent: {}
+[36.099246] (-) TimerEvent: {}
+[38.609802] (-) TimerEvent: {}
+[41.988836] (-) TimerEvent: {}
+[44.413505] (-) TimerEvent: {}
+[45.930790] (-) TimerEvent: {}
+[47.222840] (-) TimerEvent: {}
+[48.512342] (-) TimerEvent: {}
+[50.460050] (-) TimerEvent: {}
+[52.212405] (-) TimerEvent: {}
+[54.684460] (-) TimerEvent: {}
+[57.430132] (-) TimerEvent: {}
+[60.168999] (-) TimerEvent: {}
+[68.028376] (-) TimerEvent: {}
+[75.702901] (-) TimerEvent: {}
+[76.678437] (-) TimerEvent: {}
+[77.639295] (-) TimerEvent: {}
+[78.875718] (-) TimerEvent: {}
+[80.111174] (-) TimerEvent: {}
+[81.537851] (-) TimerEvent: {}
+[82.950859] (-) TimerEvent: {}
+[84.550468] (-) TimerEvent: {}
+[86.132789] (-) TimerEvent: {}
+[88.210162] (-) TimerEvent: {}
+[89.627115] (-) TimerEvent: {}
+[90.932697] (-) TimerEvent: {}
+[92.342931] (-) TimerEvent: {}
+[93.827597] (-) TimerEvent: {}
+[95.164469] (-) TimerEvent: {}
+[96.571260] (-) TimerEvent: {}
+[97.926903] (-) TimerEvent: {}
+[99.214554] (-) TimerEvent: {}
+[100.710996] (-) TimerEvent: {}
+[103.720304] (-) TimerEvent: {}
+[105.177370] (-) TimerEvent: {}
+[107.066330] (-) TimerEvent: {}
+[108.688188] (-) TimerEvent: {}
+[110.394633] (-) TimerEvent: {}
+[112.393339] (-) TimerEvent: {}
+[114.164592] (-) TimerEvent: {}
+[116.011752] (-) TimerEvent: {}
+[117.663218] (-) TimerEvent: {}
+[118.958187] (-) TimerEvent: {}
+[120.161255] (-) TimerEvent: {}
+[121.493915] (-) TimerEvent: {}
+[122.724996] (-) TimerEvent: {}
+[124.715632] (-) TimerEvent: {}
+[126.587028] (-) TimerEvent: {}
+[128.481357] (-) TimerEvent: {}
+[129.942995] (-) TimerEvent: {}
+[131.729921] (-) TimerEvent: {}
+[133.514217] (-) TimerEvent: {}
+[139.218277] (-) TimerEvent: {}
+[141.984849] (-) TimerEvent: {}
+[145.677380] (-) TimerEvent: {}
+[149.300612] (-) TimerEvent: {}
+[152.973049] (-) TimerEvent: {}
+[156.374738] (-) TimerEvent: {}
+[159.974554] (-) TimerEvent: {}
+[163.265754] (-) TimerEvent: {}
+[165.831643] (-) TimerEvent: {}
+[168.631181] (-) TimerEvent: {}
+[180.898147] (-) TimerEvent: {}
+[185.694718] (-) TimerEvent: {}
+[189.657303] (-) TimerEvent: {}
+[193.054993] (-) TimerEvent: {}
+[196.926963] (-) TimerEvent: {}
+[200.935888] (-) TimerEvent: {}
+[203.738856] (-) TimerEvent: {}
+[206.672358] (-) TimerEvent: {}
+[213.031607] (-) TimerEvent: {}
+[218.337593] (-) TimerEvent: {}
+[221.230253] (-) TimerEvent: {}
+[224.722286] (-) TimerEvent: {}
+[228.361643] (-) TimerEvent: {}
+[232.671985] (-) TimerEvent: {}
+[238.564253] (-) TimerEvent: {}
+[242.846918] (-) TimerEvent: {}
+[247.568740] (-) TimerEvent: {}
+[256.471038] (-) TimerEvent: {}
+[259.041255] (-) TimerEvent: {}
+[259.547994] (-) TimerEvent: {}
+[260.040353] (-) TimerEvent: {}
+[260.641705] (-) TimerEvent: {}
+[261.280572] (-) TimerEvent: {}
+[261.866670] (-) TimerEvent: {}
+[262.424890] (-) TimerEvent: {}
+[263.065565] (-) TimerEvent: {}
+[263.613914] (-) TimerEvent: {}
+[264.446311] (-) TimerEvent: {}
+[264.966750] (-) TimerEvent: {}
+[265.468359] (-) TimerEvent: {}
+[266.144893] (-) TimerEvent: {}
+[266.725682] (-) TimerEvent: {}
+[267.426325] (-) TimerEvent: {}
+[267.886114] (-) TimerEvent: {}
+[268.451223] (-) TimerEvent: {}
+[268.951535] (-) TimerEvent: {}
+[269.551279] (-) TimerEvent: {}
+[270.161097] (-) TimerEvent: {}
+[270.651931] (-) TimerEvent: {}
+[271.243209] (-) TimerEvent: {}
+[271.784621] (-) TimerEvent: {}
+[272.473896] (-) TimerEvent: {}
+[272.929734] (-) TimerEvent: {}
+[273.472288] (-) TimerEvent: {}
+[274.247128] (-) TimerEvent: {}
+[274.808724] (-) TimerEvent: {}
+[275.499753] (-) TimerEvent: {}
+[276.096233] (-) TimerEvent: {}
+[276.878296] (-) TimerEvent: {}
+[277.579558] (-) TimerEvent: {}
+[278.201074] (-) TimerEvent: {}
+[279.091544] (-) TimerEvent: {}
+[279.716957] (-) TimerEvent: {}
+[280.539923] (-) TimerEvent: {}
+[281.240737] (-) TimerEvent: {}
+[282.002740] (-) TimerEvent: {}
+[282.641364] (-) TimerEvent: {}
+[283.818993] (-) TimerEvent: {}
+[284.518211] (-) TimerEvent: {}
+[285.171472] (-) TimerEvent: {}
+[286.058384] (-) TimerEvent: {}
+[286.988896] (-) TimerEvent: {}
+[288.172676] (-) TimerEvent: {}
+[288.996497] (-) TimerEvent: {}
+[289.952585] (-) TimerEvent: {}
+[291.033556] (-) TimerEvent: {}
+[292.274689] (-) TimerEvent: {}
+[293.259299] (-) TimerEvent: {}
+[294.437007] (-) TimerEvent: {}
+[295.375390] (-) TimerEvent: {}
+[296.488352] (-) TimerEvent: {}
+[297.729987] (-) TimerEvent: {}
+[298.556422] (-) TimerEvent: {}
+[299.705803] (-) TimerEvent: {}
+[300.668720] (-) TimerEvent: {}
+[301.843213] (-) TimerEvent: {}
+[302.777118] (-) TimerEvent: {}
+[303.779955] (-) TimerEvent: {}
+[304.635382] (-) TimerEvent: {}
+[305.636378] (-) TimerEvent: {}
+[306.571827] (-) TimerEvent: {}
+[307.663949] (-) TimerEvent: {}
+[309.219321] (-) TimerEvent: {}
+[310.171078] (-) TimerEvent: {}
+[311.176379] (-) TimerEvent: {}
+[312.079474] (-) TimerEvent: {}
+[313.060052] (-) TimerEvent: {}
+[314.895534] (-) TimerEvent: {}
+[316.446054] (-) TimerEvent: {}
+[318.056549] (-) TimerEvent: {}
+[319.850976] (-) TimerEvent: {}
+[321.776066] (-) TimerEvent: {}
+[323.730815] (-) TimerEvent: {}
+[325.410157] (-) TimerEvent: {}
+[326.839382] (-) TimerEvent: {}
+[328.326637] (-) TimerEvent: {}
+[329.870879] (-) TimerEvent: {}
+[331.400609] (-) TimerEvent: {}
+[331.790047] (-) TimerEvent: {}
+[332.221416] (-) TimerEvent: {}
+[332.653985] (-) TimerEvent: {}
+[333.130576] (-) TimerEvent: {}
+[333.633886] (-) TimerEvent: {}
+[334.119400] (-) TimerEvent: {}
+[334.708367] (-) TimerEvent: {}
+[335.215978] (-) TimerEvent: {}
+[335.719127] (-) TimerEvent: {}
+[336.344174] (-) TimerEvent: {}
+[336.810069] (-) TimerEvent: {}
+[337.198718] (-) TimerEvent: {}
+[337.789590] (-) TimerEvent: {}
+[338.214307] (-) TimerEvent: {}
+[338.907522] (-) TimerEvent: {}
+[339.457585] (-) TimerEvent: {}
+[340.099746] (-) TimerEvent: {}
+[340.705744] (-) TimerEvent: {}
+[341.218787] (-) TimerEvent: {}
+[341.750759] (-) TimerEvent: {}
+[342.255889] (-) TimerEvent: {}
+[342.747476] (-) TimerEvent: {}
+[343.476508] (-) TimerEvent: {}
+[344.181081] (-) TimerEvent: {}
+[345.039226] (-) TimerEvent: {}
+[346.367967] (-) TimerEvent: {}
+[347.476079] (-) TimerEvent: {}
+[348.985552] (-) TimerEvent: {}
+[350.099164] (-) TimerEvent: {}
+[351.611363] (-) TimerEvent: {}
+[352.754230] (-) TimerEvent: {}

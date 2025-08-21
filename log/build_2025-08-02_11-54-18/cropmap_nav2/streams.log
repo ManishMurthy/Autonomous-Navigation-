@@ -1,0 +1,72 @@
+[0.019s] Invoking command in '/home/manish/eiratech_ws/build/cropmap_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/manish/eiratech_ws/build/cropmap_nav2 -- -j12 -l12
+[0.050s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.467s] -- Configuring done
+[0.472s] -- Generating done
+[0.474s] -- Build files have been written to: /home/manish/eiratech_ws/build/cropmap_nav2
+[0.505s] Invoked command in '/home/manish/eiratech_ws/build/cropmap_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/manish/eiratech_ws/build/cropmap_nav2 -- -j12 -l12
+[0.526s] Invoking command in '/home/manish/eiratech_ws/build/cropmap_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/manish/eiratech_ws/build/cropmap_nav2
+[0.540s] -- Install configuration: ""
+[0.540s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/launch
+[0.540s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/launch/cropmap_navigation_backup.launch.py
+[0.540s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/launch/cropmap_navigation.launch.py
+[0.540s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/launch/~
+[0.540s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/launch/.intergarted_nav2_voxnav.launch.py.swp
+[0.540s] -- Installing: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/launch/cropmap_navigation_slam.launch.py
+[0.540s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/launch/.cropmap_vox_nav.launch.py.swo
+[0.540s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/launch/keepout_fliter.launch.py
+[0.540s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/launch/.cropmap_navigation_voxnav.launch.py.swo
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/nav_t_params.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/nav2_params.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/.mapper_params_online_async.yaml.swp
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/nav2_slam_params.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/nav2_params_backup.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/keepout_fliter_params.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/nav2_params_2D.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/mapper_params_online_async.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/flat_terrain_voxnav_params.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/config/voxnav_params.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/Walls.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/cropmap_map_wth_keepout.png
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/Nav2Testing.png
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/single_layer_map.yaml
+[0.541s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/Block_map.yaml
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/uneven_world.pcd
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/my_field_map.png
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/Nav2Testing.yaml
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/cropmap_map.yaml
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/cropmap_map.png
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/single_layer_map.png
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/Block_map.png
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/my_field_map.yaml
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/Walls.png
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/cropmap_map_wth_keepout.yaml
+[0.542s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/rviz2
+[0.543s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/rviz2/carter_navigation.rviz
+[0.543s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/rviz2/voxnav_navigation.rviz
+[0.544s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/rviz2/.carter_navigation.rviz.swp
+[0.544s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/rviz2/carter_navigation_namespaced.rviz
+[0.545s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/ament_index/resource_index/package_run_dependencies/cropmap_nav2
+[0.546s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/ament_index/resource_index/parent_prefix_path/cropmap_nav2
+[0.546s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/environment/ament_prefix_path.sh
+[0.547s] -- Installing: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/environment/ament_prefix_path.dsv
+[0.547s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/environment/path.sh
+[0.547s] -- Installing: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/environment/path.dsv
+[0.547s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/local_setup.bash
+[0.547s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/local_setup.sh
+[0.547s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/local_setup.zsh
+[0.547s] -- Installing: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/local_setup.dsv
+[0.547s] -- Installing: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/package.dsv
+[0.547s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/ament_index/resource_index/packages/cropmap_nav2
+[0.547s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/cmake/cropmap_nav2Config.cmake
+[0.547s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/cmake/cropmap_nav2Config-version.cmake
+[0.548s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/package.xml
+[0.548s] -- Up-to-date: /home/manish/eiratech_ws/install/cropmap_nav2/lib/cropmap_nav2/safety_monitor.py
+[0.548s] [31mCMake Error at cmake_install.cmake:114 (file):
+[0.548s]   file INSTALL cannot find
+[0.548s]   "/home/manish/eiratech_ws/src/cropmap_nav2/scripts/safety_monitor": No such
+[0.548s]   file or directory.
+[0.548s] 
+[0.548s] [0m
+[0.548s] Invoked command in '/home/manish/eiratech_ws/build/cropmap_nav2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/manish/eiratech_ws/build/cropmap_nav2

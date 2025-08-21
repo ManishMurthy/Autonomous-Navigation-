@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000219] (-) JobUnselected: {'identifier': 'cropmap_nav2'}
-[0.000238] (-) JobUnselected: {'identifier': 'robot_bringup'}
-[0.000250] (-) JobUnselected: {'identifier': 'robot_control'}
-[0.000261] (-) JobUnselected: {'identifier': 'robot_description'}
-[0.000271] (-) EventReactorShutdown: {}

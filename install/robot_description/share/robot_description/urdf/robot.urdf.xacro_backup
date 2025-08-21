@@ -1,1 +1,547 @@
-/home/manish/eiratech_ws/src/robot_description/urdf/robot.urdf.xacro_backup
+<?xml version="1.0" ?>
+<robot name="cropMap_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+  <!-- Base Link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.018582 -0.00058815 -0.099852" rpy="0 0 0" />
+      <mass value="32.31" />
+      <inertia ixx="0.92" ixy="0" ixz="0" iyy="3.12" iyz="0" izz="2.87" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+	      <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Base Footprint -->
+  <link name="base_footprint"/>
+  <joint name="base_footprint_ref_joint" type="fixed">
+    <origin xyz="0 0 .25" rpy="0 0 0" />
+    <parent link="base_footprint" />
+    <child link="base_link" />  <!-- Fixed typo: was "childggg" -->
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <!-- Front Right Wheel -->
+  <link name="wheel_front_right">
+    <inertial>
+      <origin xyz="-3.8916E-11 0.012822 1.02E-07" rpy="0 0 0" />
+      <mass value="2.5" />  <!-- Increased mass for better physics -->
+      <inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.04" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_right.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="wheel_front_right_joint" type="continuous">
+    <origin xyz="0.37976 0.2802 -0.078259" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="wheel_front_right" />
+    <axis xyz="0 1 0" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+
+  <!-- Back Right Wheel -->
+  <link name="wheel_back_right">
+    <inertial>
+      <origin xyz="-3.8916E-11 0.012822 1.02E-07" rpy="0 0 0" />
+      <mass value="2.5" />
+      <inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.04" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_right.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+	      <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="wheel_back_right_joint" type="continuous">
+    <origin xyz="-0.38026 0.2802 -0.078259" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="wheel_back_right" />
+    <axis xyz="0 1 0" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+
+  <!-- Back Left Wheel -->
+  <link name="wheel_back_left">
+    <inertial>
+      <origin xyz="-1.02E-07 -0.012822 3.8916E-11" rpy="0 0 0" />
+      <mass value="2.5" />
+      <inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.04" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_left.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="wheel_back_left_joint" type="continuous">
+    <origin xyz="-0.38026 -0.2802 -0.078259" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="wheel_back_left" />
+    <axis xyz="0 1 0" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+
+  <!-- Front Left Wheel -->
+  <link name="wheel_front_left">
+    <inertial>
+      <origin xyz="3.8916E-11 -0.012822 1.02E-07" rpy="0 0 0" />
+      <mass value="2.5" />
+      <inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.04" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_left.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="wheel_front_left_joint" type="continuous">
+    <origin xyz="0.37976 -0.2802 -0.078259" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="wheel_front_left" />
+    <axis xyz="0 1 0" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+
+  <!-- Back Camera -->
+  <link name="back_camera">
+    <inertial>
+      <origin xyz="-0.032487 0.0089676 -0.0027971" rpy="0 0 0" />
+      <mass value="0.2" />  <!-- Added mass for physics -->
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/back_camera.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="back_camera_joint" type="fixed">
+    <origin xyz="-0.40479 -0.0089685 0.073466" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="back_camera" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <!-- Front Camera -->
+  <link name="front_camera">
+    <inertial>
+      <origin xyz="0.012395 -0.012586 0.0091516" rpy="0 0 0" />
+      <mass value="0.2" />  <!-- Added mass for physics -->
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/front_camera.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="front_camera_joint" type="fixed">
+    <origin xyz="0.42423 0.0126 0.060602" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="front_camera" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <!-- TC_V0 Component -->
+  <link name="TC_V0">
+    <inertial>
+      <origin xyz="-7.5077E-05 -2.3538E-06 -0.015092" rpy="0 0 0" />
+      <mass value="14.01" />
+      <inertia ixx="0.66" ixy="0.0" ixz="0.0" iyy="1.01" iyz="0.0" izz="1.66" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/TC_V0.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/TC_V0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="TC_V0_joint" type="fixed">
+    <origin xyz="0 0 0.16825" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="TC_V0" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <!-- Camera Dummy Links (keep existing) -->
+  <link name="front_camera_dummy"/>
+  <joint name="front_camera_dummy_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708" />
+    <parent link="front_camera" />
+    <child link="front_camera_dummy" />
+    <axis xyz="1 0 0" />
+  </joint>
+
+  <link name="back_camera_dummy"/>
+  <joint name="back_camera_dummy_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5708 0 1.5708" />
+    <parent link="back_camera" />
+    <child link="back_camera_dummy" />
+    <axis xyz="1 0 0" />
+  </joint>
+
+  <!-- ========================================= -->
+  <!-- ADDED SENSORS -->
+  <!-- ========================================= -->
+
+  <!-- Lidar Sensor -->
+  <link name="lidar_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.8" />
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.08" />
+      </geometry>
+      <material name="lidar_black">
+        <color rgba="0.1 0.1 0.1 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.08" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lidar_joint" type="fixed">
+    <origin xyz="0 0 0.4" rpy="0 0 0" />  <!-- Mounted on top of robot -->
+    <parent link="TC_V0" />
+    <child link="lidar_link" />
+  </joint>
+
+  <!-- IMU Sensor -->
+    <!-- IMU Sensor -->
+  <link name="imu_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.05 0.02" />
+      </geometry>
+      <material name="imu_green">
+        <color rgba="0.2 0.8 0.2 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.05 0.02" />
+      </geometry>
+    </collision>
+  </link>
+    <joint name="imu_joint" type="fixed">
+    <origin xyz="0 0 0.1" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="imu_link" />
+  </joint>
+
+
+  <!-- GPS Antenna -->
+  <link name="gps_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.05" />
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.02" length="0.1" />
+      </geometry>
+      <material name="gps_yellow">
+        <color rgba="0.8 0.8 0.2 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.02" length="0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gps_joint" type="fixed">
+    <origin xyz="-0.2 0 0.5" rpy="0 0 0" />  <!-- Behind lidar -->
+    <parent link="base_link" />
+    <child link="gps_link" />
+  </joint>
+
+  <gazebo>
+  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+       <!-- Robot parameters -->
+    <wheel_separation>0.5604</wheel_separation>
+    <wheel_diameter>0.2</wheel_diameter>
+    
+    <!-- Topics -->
+    <command_topic>cmd_vel</command_topic>
+    <odometry_topic>odom</odometry_topic>
+    <odometry_frame>odom</odometry_frame>
+    <robot_base_frame>base_footprint</robot_base_frame> <!-- base_link-->
+    
+    <!-- Publishing -->
+    <publish_wheel_tf>true</publish_wheel_tf>
+    <publish_odom>true</publish_odom>
+    <publish_odom_tf>true</publish_odom_tf>
+    <update_rate>50</update_rate>
+  </plugin>
+</gazebo>
+
+  <gazebo>
+   <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+    <update_rate>50</update_rate>
+    <joint_name>wheel_front_left_joint</joint_name>
+    <joint_name>wheel_front_right_joint</joint_name>
+    <joint_name>wheel_back_left_joint</joint_name>
+    <joint_name>wheel_back_right_joint</joint_name>
+  </plugin>
+</gazebo>    
+  
+  <!-- Lidar -->
+  <gazebo reference="lidar_link">
+  <sensor type="ray" name="lidar_sensor">
+    <pose>0 0 0 0 0 0</pose>
+    <visualize>false</visualize>
+    <update_rate>20</update_rate>
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>720</samples>
+          <resolution>1</resolution>
+          <min_angle>-3.14159</min_angle>
+          <max_angle>3.14159</max_angle>
+        </horizontal>
+      </scan>
+      <range>
+        <min>0.1</min>
+        <max>15.0</max>
+        <resolution>0.01</resolution>
+      </range>
+      <noise>
+        <type>gaussian</type>
+        <mean>0.0</mean>
+        <stddev>0.02</stddev>
+      </noise>
+    </ray>
+    <plugin name="gazebo_ros_ray_sensor" filename="libgazebo_ros_ray_sensor.so">
+  <ros>
+    <namespace>/</namespace>
+    <remapping>~/out:=scan</remapping>
+   </ros>
+    <output_type>sensor_msgs/LaserScan</output_type>
+    <frame_name>lidar_link</frame_name>
+  </plugin>
+  </sensor>
+</gazebo>
+
+   <!-- Front camera -->
+  <gazebo reference="front_camera_dummy">
+  <sensor type="depth" name="front_camera_sensor">
+    <update_rate>30</update_rate>
+    <camera name="front_camera">
+      <horizontal_fov>1.047</horizontal_fov>
+      <image>
+        <width>640</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </camera>
+    <plugin name="front_camera_controller" filename="libgazebo_ros_camera.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>30.0</updateRate>
+      <cameraName>front_camera_sensor</cameraName>
+      <imageTopicName>front_camera_sensor/image_raw</imageTopicName>
+      <depthImageTopicName>front_camera_sensor/depth/image_raw</depthImageTopicName>
+      <pointCloudTopicName>front_camera_sensor/points</pointCloudTopicName>
+      <cameraInfoTopicName>front_camera_sensor/camera_info</cameraInfoTopicName>
+      <depthImageCameraInfoTopicName>front_camera_sensor/depth/camera_info</depthImageCameraInfoTopicName>
+      <frameName>base_link</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+
+  <!-- Back Camera -->
+  <gazebo reference="back_camera_dummy">
+  <sensor type="camera" name="back_camera_sensor">
+    <update_rate>30</update_rate>
+    <camera name="back_camera">
+      <horizontal_fov>1.047</horizontal_fov>
+      <image>
+        <width>1920</width>
+        <height>1080</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </camera>
+    <plugin name="back_camera_controller" filename="libgazebo_ros_camera.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>30.0</updateRate>
+      <cameraName>back_camera_sensor</cameraName>
+      <imageTopicName>back_camera_sensor/image_raw</imageTopicName>
+      <depthImageTopicName>back_camera_sensor/depth/image_raw</depthImageTopicName>
+      <pointCloudTopicName>back_camera_sensor/points</pointCloudTopicName>
+      <cameraInfoTopicName>back_camera_sensor/camera_info</cameraInfoTopicName>
+      <depthImageCameraInfoTopicName>back_camera_sensor/depth/camera_info</depthImageCameraInfoTopicName>
+      <frameName>base_link</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+
+  <!-- IMU sensor -->
+  <gazebo reference="imu_link">
+  <sensor name="imu_sensor" type="imu">
+    <update_rate>100</update_rate>
+    <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+      <topicName>imu</topicName>
+      <bodyName>imu_link</bodyName>
+      <updateRateHZ>100.0</updateRateHZ>
+      <gaussianNoise>0.0</gaussianNoise>
+      <xyzOffset>0 0 0</xyzOffset>
+      <rpyOffset>0 0 0</rpyOffset>
+      <frameName>imu_link</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+
+  <!-- GPS sensor -->
+  <gazebo reference="gps_link">
+  <sensor name="gps_sensor" type="gps">
+    <update_rate>5</update_rate>
+    <plugin name="gazebo_ros_gps" filename="libgazebo_ros_gps_sensor.so">
+      <topicName>gps/fix</topicName>
+      <frameName>gps_link</frameName>
+      <updateRate>5.0</updateRate>
+      <gaussianNoise>0.0001</gaussianNoise>
+    </plugin>
+  </sensor>
+</gazebo>
+
+  <!-- Wheel Physics Properties -->
+  <gazebo reference="wheel_front_left">
+    <material>Gazebo/DarkGrey</material>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <fdir1>1 0 0</fdir1>
+    <slip1>0.1</slip1>
+    <slip2>0.1</slip2>
+  </gazebo>
+
+  <gazebo reference="wheel_front_right">
+    <material>Gazebo/DarkGrey</material>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <fdir1>1 0 0</fdir1>
+    <slip1>0.1</slip1>
+    <slip2>0.1</slip2>
+  </gazebo>
+
+  <gazebo reference="wheel_back_left">
+    <material>Gazebo/DarkGrey</material>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <fdir1>1 0 0</fdir1>
+    <slip1>0.1</slip1>
+    <slip2>0.1</slip2>
+  </gazebo>
+
+  <gazebo reference="wheel_back_right">
+    <material>Gazebo/DarkGrey</material>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <fdir1>1 0 0</fdir1>
+    <slip1>0.1</slip1>
+    <slip2>0.1</slip2>
+  </gazebo>
+
+  <!-- Base Link Material -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+</robot>

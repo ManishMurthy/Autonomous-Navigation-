@@ -1,1 +1,1 @@
-/home/manish/eiratech_ws/build/robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_description
+robot_state_publisher;joint_state_publisher;xacro;ros_ign_gazebo;ros_ign_bridge;ament_lint_auto;ament_lint_common

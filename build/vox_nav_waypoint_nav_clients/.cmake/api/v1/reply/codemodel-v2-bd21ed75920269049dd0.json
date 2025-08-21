@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d93a5e72bdd3f170d990.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vox_nav_waypoint_nav_clients",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "navigate_through_gps_poses_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigate_through_gps_poses_client-b3c4a12bcba21187d4c7.json",
+					"name" : "navigate_through_gps_poses_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigate_through_poses_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigate_through_poses_client-69279db444b09814dcfa.json",
+					"name" : "navigate_through_poses_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-dad76b099b1a9de01bb2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vox_nav_waypoint_nav_clients_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vox_nav_waypoint_nav_clients_uninstall-f9b026cb36603927d6e7.json",
+					"name" : "vox_nav_waypoint_nav_clients_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/manish/eiratech_ws/build/vox_nav_waypoint_nav_clients",
+		"source" : "/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

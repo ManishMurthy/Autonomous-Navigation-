@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from vox_nav_msgs/action/ComputePathToPose.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "geometry_msgs/msg/PoseStamped.idl"
+#include "nav_msgs/msg/Path.idl"
+
+module vox_nav_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct ComputePathToPose_Goal {
+      geometry_msgs::msg::PoseStamped pose;
+
+      string planner_id;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct ComputePathToPose_Result {
+      nav_msgs::msg::Path path;
+
+      builtin_interfaces::msg::Duration planning_time;
+    };
+    @verbatim (language="comment", text=
+      "feedback")
+    struct ComputePathToPose_Feedback {
+      builtin_interfaces::msg::Duration elapsed_time;
+    };
+  };
+};

@@ -1,0 +1,687 @@
+[0.000000] (-) TimerEvent: {}
+[0.000672] (-) JobUnselected: {'identifier': 'cropmap_nav2'}
+[0.001004] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.001029] (-) JobUnselected: {'identifier': 'robot_control'}
+[0.001043] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.001058] (-) JobUnselected: {'identifier': 'vox_nav_bringup'}
+[0.001072] (-) JobUnselected: {'identifier': 'vox_nav_control'}
+[0.001086] (-) JobUnselected: {'identifier': 'vox_nav_map_server'}
+[0.001099] (-) JobUnselected: {'identifier': 'vox_nav_msgs'}
+[0.001112] (-) JobUnselected: {'identifier': 'vox_nav_planning'}
+[0.001126] (-) JobUnselected: {'identifier': 'vox_nav_utilities'}
+[0.001149] (-) JobUnselected: {'identifier': 'vox_nav_waypoint_nav_clients'}
+[0.001167] (vox_nav_navigators) JobQueued: {'identifier': 'vox_nav_navigators', 'dependencies': OrderedDict([('vox_nav_msgs', '/home/manish/eiratech_ws/install/vox_nav_msgs'), ('vox_nav_utilities', '/home/manish/eiratech_ws/install/vox_nav_utilities')])}
+[0.001195] (vox_nav_navigators) JobStarted: {'identifier': 'vox_nav_navigators'}
+[0.020306] (vox_nav_navigators) JobProgress: {'identifier': 'vox_nav_navigators', 'progress': 'cmake'}
+[0.020860] (vox_nav_navigators) Command: {'cmd': ['/usr/bin/cmake', '/home/manish/eiratech_ws/src/vox_nav/vox_nav_navigators', '-DCMAKE_INSTALL_PREFIX=/home/manish/eiratech_ws/install/vox_nav_navigators'], 'cwd': '/home/manish/eiratech_ws/build/vox_nav_navigators', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('LANGUAGE', 'en_IE:en'), ('USER', 'manish'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manish'), ('OLDPWD', '/home/manish/eiratech_ws/src/vox_nav'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1207'), ('SYSTEMD_EXEC_PID', '1713'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3765'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manish/eiratech_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manish'), ('JOURNAL_STREAM', '8:2972'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'manish'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/manish/eiratech_ws/install/robot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/manish-Precision-7750:@/tmp/.ICE-unix/1685,unix/manish-Precision-7750:/tmp/.ICE-unix/1685'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/manish/.ros/DEFAULT_FASTRTPS_PROFILES.xml'), ('INVOCATION_ID', '795d2e625fc04ef2800b9961de8a6580'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W9UDA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d51ae0c8-9522-448b-8d8d-f749c25ddf08'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/manish/eiratech_ws/build/vox_nav_navigators'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/path/to/your_ws/install/gazebo_ros2_control/lib:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/manish/eiratech_ws/install/vox_nav_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble')]), 'shell': False}
+[0.099095] (-) TimerEvent: {}
+[0.135546] (vox_nav_navigators) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199226] (-) TimerEvent: {}
+[0.239188] (vox_nav_navigators) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.248989] (vox_nav_navigators) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299368] (-) TimerEvent: {}
+[0.373949] (vox_nav_navigators) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.382958] (vox_nav_navigators) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.383190] (vox_nav_navigators) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.383444] (vox_nav_navigators) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.390413] (vox_nav_navigators) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399507] (-) TimerEvent: {}
+[0.499853] (-) TimerEvent: {}
+[0.544410] (vox_nav_navigators) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.564739] (vox_nav_navigators) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.565199] (vox_nav_navigators) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.565891] (vox_nav_navigators) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.573157] (vox_nav_navigators) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.599925] (-) TimerEvent: {}
+[0.700375] (-) TimerEvent: {}
+[0.801125] (-) TimerEvent: {}
+[0.884096] (vox_nav_navigators) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.901681] (-) TimerEvent: {}
+[1.003172] (-) TimerEvent: {}
+[1.093159] (vox_nav_navigators) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.103515] (-) TimerEvent: {}
+[1.176821] (vox_nav_navigators) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.186442] (vox_nav_navigators) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.201729] (vox_nav_navigators) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.203738] (-) TimerEvent: {}
+[1.224480] (vox_nav_navigators) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.258075] (vox_nav_navigators) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.303921] (-) TimerEvent: {}
+[1.342797] (vox_nav_navigators) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.349259] (vox_nav_navigators) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.404079] (-) TimerEvent: {}
+[1.504472] (-) TimerEvent: {}
+[1.532072] (vox_nav_navigators) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.583847] (vox_nav_navigators) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.604678] (-) TimerEvent: {}
+[1.661353] (vox_nav_navigators) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.676911] (vox_nav_navigators) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.705010] (-) TimerEvent: {}
+[1.805527] (vox_nav_navigators) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.806251] (-) TimerEvent: {}
+[1.807185] (vox_nav_navigators) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.906399] (-) TimerEvent: {}
+[1.942810] (vox_nav_navigators) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.944213] (vox_nav_navigators) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.006594] (-) TimerEvent: {}
+[2.044245] (vox_nav_navigators) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[2.106900] (-) TimerEvent: {}
+[2.120280] (vox_nav_navigators) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.166418] (vox_nav_navigators) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.188675] (vox_nav_navigators) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.207453] (-) TimerEvent: {}
+[2.220886] (vox_nav_navigators) StdoutLine: {'line': b'-- Found vox_nav_msgs: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_msgs/share/vox_nav_msgs/cmake)\n'}
+[2.307562] (-) TimerEvent: {}
+[2.361671] (vox_nav_navigators) StdoutLine: {'line': b'-- Found vox_nav_utilities: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_utilities/share/vox_nav_utilities/cmake)\n'}
+[2.407955] (-) TimerEvent: {}
+[2.508492] (-) TimerEvent: {}
+[2.569329] (vox_nav_navigators) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.571218] (vox_nav_navigators) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.571507] (vox_nav_navigators) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.608643] (-) TimerEvent: {}
+[2.644804] (vox_nav_navigators) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[2.677667] (vox_nav_navigators) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[2.708753] (-) TimerEvent: {}
+[2.747802] (vox_nav_navigators) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[2.748008] (vox_nav_navigators) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.809096] (-) TimerEvent: {}
+[2.819608] (vox_nav_navigators) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[2.844872] (vox_nav_navigators) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.909289] (-) TimerEvent: {}
+[2.948765] (vox_nav_navigators) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[2.949047] (vox_nav_navigators) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[3.009469] (-) TimerEvent: {}
+[3.110485] (-) TimerEvent: {}
+[3.212185] (-) TimerEvent: {}
+[3.312541] (-) TimerEvent: {}
+[3.413216] (-) TimerEvent: {}
+[3.514300] (-) TimerEvent: {}
+[3.614921] (-) TimerEvent: {}
+[3.715354] (-) TimerEvent: {}
+[3.815983] (-) TimerEvent: {}
+[3.916448] (-) TimerEvent: {}
+[4.016953] (-) TimerEvent: {}
+[4.117637] (-) TimerEvent: {}
+[4.218078] (-) TimerEvent: {}
+[4.319484] (-) TimerEvent: {}
+[4.420214] (-) TimerEvent: {}
+[4.520565] (-) TimerEvent: {}
+[4.621031] (-) TimerEvent: {}
+[4.722440] (-) TimerEvent: {}
+[4.822873] (-) TimerEvent: {}
+[4.867763] (vox_nav_navigators) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[4.906304] (vox_nav_navigators) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[4.922992] (-) TimerEvent: {}
+[4.987791] (vox_nav_navigators) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[4.990199] (vox_nav_navigators) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.023424] (-) TimerEvent: {}
+[5.118596] (vox_nav_navigators) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[5.123520] (-) TimerEvent: {}
+[5.223895] (-) TimerEvent: {}
+[5.324521] (-) TimerEvent: {}
+[5.425009] (-) TimerEvent: {}
+[5.439406] (vox_nav_navigators) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[5.449827] (vox_nav_navigators) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.462642] (vox_nav_navigators) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[5.525344] (-) TimerEvent: {}
+[5.626307] (-) TimerEvent: {}
+[5.727466] (-) TimerEvent: {}
+[5.767647] (vox_nav_navigators) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[5.827846] (-) TimerEvent: {}
+[5.928598] (-) TimerEvent: {}
+[6.029389] (-) TimerEvent: {}
+[6.086484] (vox_nav_navigators) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[6.129508] (-) TimerEvent: {}
+[6.230172] (-) TimerEvent: {}
+[6.331353] (-) TimerEvent: {}
+[6.395939] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[6.397520] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[6.406599] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[6.411398] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[6.413788] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[6.418618] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[6.419680] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[6.420313] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[6.422501] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[6.427418] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[6.429056] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[6.432073] (-) TimerEvent: {}
+[6.435891] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[6.438134] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[6.443277] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[6.445560] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[6.450083] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[6.453777] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[6.456037] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[6.459349] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[6.464253] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[6.465398] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[6.465901] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[6.466471] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[6.467918] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[6.470362] (vox_nav_navigators) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[6.532258] (-) TimerEvent: {}
+[6.565108] (vox_nav_navigators) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[6.588619] (vox_nav_navigators) StdoutLine: {'line': b'-- Found robot_localization: 3.5.3 (/opt/ros/humble/share/robot_localization/cmake)\n'}
+[6.632454] (-) TimerEvent: {}
+[6.732955] (-) TimerEvent: {}
+[6.833472] (-) TimerEvent: {}
+[6.934227] (-) TimerEvent: {}
+[7.035823] (-) TimerEvent: {}
+[7.136497] (-) TimerEvent: {}
+[7.159640] (vox_nav_navigators) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.236665] (-) TimerEvent: {}
+[7.337037] (-) TimerEvent: {}
+[7.359700] (vox_nav_navigators) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.372698] (vox_nav_navigators) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.376112] (vox_nav_navigators) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/manish/eiratech_ws/src/vox_nav/vox_nav_navigators/include\n'}
+[7.376596] (vox_nav_navigators) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.378610] (vox_nav_navigators) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.378909] (vox_nav_navigators) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.380966] (vox_nav_navigators) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.384603] (vox_nav_navigators) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.384782] (vox_nav_navigators) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.385409] (vox_nav_navigators) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.392409] (vox_nav_navigators) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.437245] (-) TimerEvent: {}
+[7.538099] (-) TimerEvent: {}
+[7.639109] (-) TimerEvent: {}
+[7.739516] (-) TimerEvent: {}
+[7.840648] (-) TimerEvent: {}
+[7.941803] (-) TimerEvent: {}
+[8.042519] (-) TimerEvent: {}
+[8.143329] (-) TimerEvent: {}
+[8.244985] (-) TimerEvent: {}
+[8.264556] (vox_nav_navigators) StdoutLine: {'line': b'-- Generating done\n'}
+[8.345102] (-) TimerEvent: {}
+[8.437817] (vox_nav_navigators) StdoutLine: {'line': b'-- Build files have been written to: /home/manish/eiratech_ws/build/vox_nav_navigators\n'}
+[8.445376] (-) TimerEvent: {}
+[8.505254] (vox_nav_navigators) CommandEnded: {'returncode': 0}
+[8.507838] (vox_nav_navigators) JobProgress: {'identifier': 'vox_nav_navigators', 'progress': 'build'}
+[8.510461] (vox_nav_navigators) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/manish/eiratech_ws/build/vox_nav_navigators', '--', '-j12', '-l12'], 'cwd': '/home/manish/eiratech_ws/build/vox_nav_navigators', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('LANGUAGE', 'en_IE:en'), ('USER', 'manish'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manish'), ('OLDPWD', '/home/manish/eiratech_ws/src/vox_nav'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1207'), ('SYSTEMD_EXEC_PID', '1713'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3765'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manish/eiratech_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manish'), ('JOURNAL_STREAM', '8:2972'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'manish'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/manish/eiratech_ws/install/robot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/manish-Precision-7750:@/tmp/.ICE-unix/1685,unix/manish-Precision-7750:/tmp/.ICE-unix/1685'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/manish/.ros/DEFAULT_FASTRTPS_PROFILES.xml'), ('INVOCATION_ID', '795d2e625fc04ef2800b9961de8a6580'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W9UDA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d51ae0c8-9522-448b-8d8d-f749c25ddf08'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/manish/eiratech_ws/build/vox_nav_navigators'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/path/to/your_ws/install/gazebo_ros2_control/lib:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/manish/eiratech_ws/install/vox_nav_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble')]), 'shell': False}
+[8.545447] (-) TimerEvent: {}
+[8.606384] (vox_nav_navigators) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/follow_path_action_bt_node.dir/src/plugins/actions/follow_path.cpp.o\x1b[0m\n'}
+[8.606809] (vox_nav_navigators) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/navigate_to_pose_action_bt_node.dir/src/plugins/actions/navigate_to_pose.cpp.o\x1b[0m\n'}
+[8.606960] (vox_nav_navigators) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/navigate_through_poses_action_bt_node.dir/src/plugins/actions/navigate_through_poses.cpp.o\x1b[0m\n'}
+[8.607059] (vox_nav_navigators) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/behavior_tree_lib.dir/src/behavior_tree.cpp.o\x1b[0m\n'}
+[8.607149] (vox_nav_navigators) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/compute_path_to_pose_action_bt_node.dir/src/plugins/actions/compute_path_to_pose.cpp.o\x1b[0m\n'}
+[8.613245] (vox_nav_navigators) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/navigate_through_gps_poses_action_bt_node.dir/src/plugins/actions/navigate_through_gps_poses.cpp.o\x1b[0m\n'}
+[8.645637] (-) TimerEvent: {}
+[8.746693] (-) TimerEvent: {}
+[8.848681] (-) TimerEvent: {}
+[8.949060] (-) TimerEvent: {}
+[9.049533] (-) TimerEvent: {}
+[9.150181] (-) TimerEvent: {}
+[9.251355] (-) TimerEvent: {}
+[9.352129] (-) TimerEvent: {}
+[9.452893] (-) TimerEvent: {}
+[9.553972] (-) TimerEvent: {}
+[9.654936] (-) TimerEvent: {}
+[9.755989] (-) TimerEvent: {}
+[9.858669] (-) TimerEvent: {}
+[9.959542] (-) TimerEvent: {}
+[10.060629] (-) TimerEvent: {}
+[10.161873] (-) TimerEvent: {}
+[10.263921] (-) TimerEvent: {}
+[10.364421] (-) TimerEvent: {}
+[10.465040] (-) TimerEvent: {}
+[10.565945] (-) TimerEvent: {}
+[10.667175] (-) TimerEvent: {}
+[10.768411] (-) TimerEvent: {}
+[10.869381] (-) TimerEvent: {}
+[10.970689] (-) TimerEvent: {}
+[11.072522] (-) TimerEvent: {}
+[11.173179] (-) TimerEvent: {}
+[11.274005] (-) TimerEvent: {}
+[11.375141] (-) TimerEvent: {}
+[11.476488] (-) TimerEvent: {}
+[11.577127] (-) TimerEvent: {}
+[11.678316] (-) TimerEvent: {}
+[11.780078] (-) TimerEvent: {}
+[11.880751] (-) TimerEvent: {}
+[11.981534] (-) TimerEvent: {}
+[12.082784] (-) TimerEvent: {}
+[12.184748] (-) TimerEvent: {}
+[12.286439] (-) TimerEvent: {}
+[12.388599] (-) TimerEvent: {}
+[12.489501] (-) TimerEvent: {}
+[12.591323] (-) TimerEvent: {}
+[12.693195] (-) TimerEvent: {}
+[12.793941] (-) TimerEvent: {}
+[12.895096] (-) TimerEvent: {}
+[12.996463] (-) TimerEvent: {}
+[13.097237] (-) TimerEvent: {}
+[13.198198] (-) TimerEvent: {}
+[13.300788] (-) TimerEvent: {}
+[13.402878] (-) TimerEvent: {}
+[13.503753] (-) TimerEvent: {}
+[13.604278] (-) TimerEvent: {}
+[13.705116] (-) TimerEvent: {}
+[13.807533] (-) TimerEvent: {}
+[13.909113] (-) TimerEvent: {}
+[14.010094] (-) TimerEvent: {}
+[14.110926] (-) TimerEvent: {}
+[14.211552] (-) TimerEvent: {}
+[14.312762] (-) TimerEvent: {}
+[14.413324] (-) TimerEvent: {}
+[14.514027] (-) TimerEvent: {}
+[14.615269] (-) TimerEvent: {}
+[14.718107] (-) TimerEvent: {}
+[14.819168] (-) TimerEvent: {}
+[14.920862] (-) TimerEvent: {}
+[15.021659] (-) TimerEvent: {}
+[15.123087] (-) TimerEvent: {}
+[15.224361] (-) TimerEvent: {}
+[15.325315] (-) TimerEvent: {}
+[15.427155] (-) TimerEvent: {}
+[15.529007] (-) TimerEvent: {}
+[15.631000] (-) TimerEvent: {}
+[15.731995] (-) TimerEvent: {}
+[15.833168] (-) TimerEvent: {}
+[15.934441] (-) TimerEvent: {}
+[16.035975] (-) TimerEvent: {}
+[16.137003] (-) TimerEvent: {}
+[16.238098] (-) TimerEvent: {}
+[16.338874] (-) TimerEvent: {}
+[16.440057] (-) TimerEvent: {}
+[16.541149] (-) TimerEvent: {}
+[16.642236] (-) TimerEvent: {}
+[16.744240] (-) TimerEvent: {}
+[16.845186] (-) TimerEvent: {}
+[16.948889] (-) TimerEvent: {}
+[17.051238] (-) TimerEvent: {}
+[17.151816] (-) TimerEvent: {}
+[17.252811] (-) TimerEvent: {}
+[17.354677] (-) TimerEvent: {}
+[17.455346] (-) TimerEvent: {}
+[17.556461] (-) TimerEvent: {}
+[17.659078] (-) TimerEvent: {}
+[17.760678] (-) TimerEvent: {}
+[17.861181] (-) TimerEvent: {}
+[17.962190] (-) TimerEvent: {}
+[18.064200] (-) TimerEvent: {}
+[18.164910] (-) TimerEvent: {}
+[18.267162] (-) TimerEvent: {}
+[18.368961] (-) TimerEvent: {}
+[18.469955] (-) TimerEvent: {}
+[18.571850] (-) TimerEvent: {}
+[18.672796] (-) TimerEvent: {}
+[18.774155] (-) TimerEvent: {}
+[18.875177] (-) TimerEvent: {}
+[18.976015] (-) TimerEvent: {}
+[19.077037] (-) TimerEvent: {}
+[19.178145] (-) TimerEvent: {}
+[19.279457] (-) TimerEvent: {}
+[19.380365] (-) TimerEvent: {}
+[19.481829] (-) TimerEvent: {}
+[19.582906] (-) TimerEvent: {}
+[19.683514] (-) TimerEvent: {}
+[19.719938] (vox_nav_navigators) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libbehavior_tree_lib.so\x1b[0m\n'}
+[19.784111] (-) TimerEvent: {}
+[19.886295] (-) TimerEvent: {}
+[19.986906] (-) TimerEvent: {}
+[20.088150] (-) TimerEvent: {}
+[20.188828] (-) TimerEvent: {}
+[20.289507] (-) TimerEvent: {}
+[20.390364] (-) TimerEvent: {}
+[20.491506] (-) TimerEvent: {}
+[20.593528] (-) TimerEvent: {}
+[20.694564] (-) TimerEvent: {}
+[20.797801] (-) TimerEvent: {}
+[20.898875] (-) TimerEvent: {}
+[21.000039] (-) TimerEvent: {}
+[21.102185] (-) TimerEvent: {}
+[21.203385] (-) TimerEvent: {}
+[21.305120] (-) TimerEvent: {}
+[21.406118] (-) TimerEvent: {}
+[21.508289] (-) TimerEvent: {}
+[21.609122] (-) TimerEvent: {}
+[21.682880] (vox_nav_navigators) StdoutLine: {'line': b'[ 38%] Built target behavior_tree_lib\n'}
+[21.709511] (-) TimerEvent: {}
+[21.811280] (-) TimerEvent: {}
+[21.913054] (-) TimerEvent: {}
+[22.015278] (-) TimerEvent: {}
+[22.117159] (-) TimerEvent: {}
+[22.217866] (-) TimerEvent: {}
+[22.318876] (-) TimerEvent: {}
+[22.420788] (-) TimerEvent: {}
+[22.521700] (-) TimerEvent: {}
+[22.622172] (-) TimerEvent: {}
+[22.722782] (-) TimerEvent: {}
+[22.823706] (-) TimerEvent: {}
+[22.925147] (-) TimerEvent: {}
+[23.027253] (-) TimerEvent: {}
+[23.129010] (-) TimerEvent: {}
+[23.229433] (-) TimerEvent: {}
+[23.329966] (-) TimerEvent: {}
+[23.430810] (-) TimerEvent: {}
+[23.532644] (-) TimerEvent: {}
+[23.634139] (-) TimerEvent: {}
+[23.735024] (-) TimerEvent: {}
+[23.836094] (-) TimerEvent: {}
+[23.937068] (-) TimerEvent: {}
+[24.037956] (-) TimerEvent: {}
+[24.140455] (-) TimerEvent: {}
+[24.163522] (vox_nav_navigators) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libcompute_path_to_pose_action_bt_node.so\x1b[0m\n'}
+[24.240541] (-) TimerEvent: {}
+[24.341209] (-) TimerEvent: {}
+[24.359429] (vox_nav_navigators) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libnavigate_to_pose_action_bt_node.so\x1b[0m\n'}
+[24.441854] (-) TimerEvent: {}
+[24.543834] (-) TimerEvent: {}
+[24.613236] (vox_nav_navigators) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libnavigate_through_gps_poses_action_bt_node.so\x1b[0m\n'}
+[24.644257] (-) TimerEvent: {}
+[24.646485] (vox_nav_navigators) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libnavigate_through_poses_action_bt_node.so\x1b[0m\n'}
+[24.744862] (-) TimerEvent: {}
+[24.846544] (-) TimerEvent: {}
+[24.938813] (vox_nav_navigators) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libfollow_path_action_bt_node.so\x1b[0m\n'}
+[24.947071] (-) TimerEvent: {}
+[25.049304] (-) TimerEvent: {}
+[25.150420] (-) TimerEvent: {}
+[25.251895] (-) TimerEvent: {}
+[25.352801] (-) TimerEvent: {}
+[25.454033] (-) TimerEvent: {}
+[25.555777] (-) TimerEvent: {}
+[25.657710] (-) TimerEvent: {}
+[25.758807] (-) TimerEvent: {}
+[25.860038] (-) TimerEvent: {}
+[25.961380] (-) TimerEvent: {}
+[26.063950] (-) TimerEvent: {}
+[26.165425] (-) TimerEvent: {}
+[26.267143] (-) TimerEvent: {}
+[26.368471] (-) TimerEvent: {}
+[26.470118] (-) TimerEvent: {}
+[26.571673] (-) TimerEvent: {}
+[26.672526] (-) TimerEvent: {}
+[26.773310] (-) TimerEvent: {}
+[26.874469] (-) TimerEvent: {}
+[26.975864] (-) TimerEvent: {}
+[27.076687] (-) TimerEvent: {}
+[27.177783] (-) TimerEvent: {}
+[27.278647] (-) TimerEvent: {}
+[27.379535] (-) TimerEvent: {}
+[27.480558] (-) TimerEvent: {}
+[27.582223] (-) TimerEvent: {}
+[27.683138] (-) TimerEvent: {}
+[27.785202] (-) TimerEvent: {}
+[27.886004] (-) TimerEvent: {}
+[27.986947] (-) TimerEvent: {}
+[28.088326] (-) TimerEvent: {}
+[28.128078] (vox_nav_navigators) StdoutLine: {'line': b'[ 66%] Built target compute_path_to_pose_action_bt_node\n'}
+[28.140347] (vox_nav_navigators) StdoutLine: {'line': b'[ 66%] Built target navigate_to_pose_action_bt_node\n'}
+[28.188456] (-) TimerEvent: {}
+[28.289121] (-) TimerEvent: {}
+[28.389846] (-) TimerEvent: {}
+[28.424196] (vox_nav_navigators) StdoutLine: {'line': b'[ 66%] Built target navigate_through_poses_action_bt_node\n'}
+[28.489978] (-) TimerEvent: {}
+[28.590600] (-) TimerEvent: {}
+[28.609808] (vox_nav_navigators) StdoutLine: {'line': b'[ 66%] Built target navigate_through_gps_poses_action_bt_node\n'}
+[28.690713] (-) TimerEvent: {}
+[28.771171] (vox_nav_navigators) StdoutLine: {'line': b'[ 66%] Built target follow_path_action_bt_node\n'}
+[28.790902] (-) TimerEvent: {}
+[28.809175] (vox_nav_navigators) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/navigate_through_gps_poses_server_node.dir/src/navigate_through_gps_poses_action_server_node.cpp.o\x1b[0m\n'}
+[28.809507] (vox_nav_navigators) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/navigate_to_pose_server_node.dir/src/navigate_to_pose_action_server_node.cpp.o\x1b[0m\n'}
+[28.813253] (vox_nav_navigators) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/navigate_through_poses_server_node.dir/src/navigate_through_poses_action_server_node.cpp.o\x1b[0m\n'}
+[28.891301] (-) TimerEvent: {}
+[28.992078] (-) TimerEvent: {}
+[29.092429] (-) TimerEvent: {}
+[29.192759] (-) TimerEvent: {}
+[29.293600] (-) TimerEvent: {}
+[29.394131] (-) TimerEvent: {}
+[29.494912] (-) TimerEvent: {}
+[29.595473] (-) TimerEvent: {}
+[29.696449] (-) TimerEvent: {}
+[29.797368] (-) TimerEvent: {}
+[29.898449] (-) TimerEvent: {}
+[30.000514] (-) TimerEvent: {}
+[30.101071] (-) TimerEvent: {}
+[30.201827] (-) TimerEvent: {}
+[30.302403] (-) TimerEvent: {}
+[30.402905] (-) TimerEvent: {}
+[30.503721] (-) TimerEvent: {}
+[30.604345] (-) TimerEvent: {}
+[30.704912] (-) TimerEvent: {}
+[30.805774] (-) TimerEvent: {}
+[30.906680] (-) TimerEvent: {}
+[31.007293] (-) TimerEvent: {}
+[31.107725] (-) TimerEvent: {}
+[31.208319] (-) TimerEvent: {}
+[31.308757] (-) TimerEvent: {}
+[31.409109] (-) TimerEvent: {}
+[31.509505] (-) TimerEvent: {}
+[31.610247] (-) TimerEvent: {}
+[31.711755] (-) TimerEvent: {}
+[31.812920] (-) TimerEvent: {}
+[31.913925] (-) TimerEvent: {}
+[32.015484] (-) TimerEvent: {}
+[32.116668] (-) TimerEvent: {}
+[32.216987] (-) TimerEvent: {}
+[32.317640] (-) TimerEvent: {}
+[32.418065] (-) TimerEvent: {}
+[32.518834] (-) TimerEvent: {}
+[32.619381] (-) TimerEvent: {}
+[32.720145] (-) TimerEvent: {}
+[32.821563] (-) TimerEvent: {}
+[32.922080] (-) TimerEvent: {}
+[33.022977] (-) TimerEvent: {}
+[33.124221] (-) TimerEvent: {}
+[33.224671] (-) TimerEvent: {}
+[33.325203] (-) TimerEvent: {}
+[33.427150] (-) TimerEvent: {}
+[33.527828] (-) TimerEvent: {}
+[33.628372] (-) TimerEvent: {}
+[33.729198] (-) TimerEvent: {}
+[33.830350] (-) TimerEvent: {}
+[33.930910] (-) TimerEvent: {}
+[34.032505] (-) TimerEvent: {}
+[34.133128] (-) TimerEvent: {}
+[34.234097] (-) TimerEvent: {}
+[34.335586] (-) TimerEvent: {}
+[34.436104] (-) TimerEvent: {}
+[34.536826] (-) TimerEvent: {}
+[34.637678] (-) TimerEvent: {}
+[34.738406] (-) TimerEvent: {}
+[34.838893] (-) TimerEvent: {}
+[34.939511] (-) TimerEvent: {}
+[35.040359] (-) TimerEvent: {}
+[35.141074] (-) TimerEvent: {}
+[35.241788] (-) TimerEvent: {}
+[35.342731] (-) TimerEvent: {}
+[35.444209] (-) TimerEvent: {}
+[35.545050] (-) TimerEvent: {}
+[35.646138] (-) TimerEvent: {}
+[35.746647] (-) TimerEvent: {}
+[35.847496] (-) TimerEvent: {}
+[35.948990] (-) TimerEvent: {}
+[36.049361] (-) TimerEvent: {}
+[36.150051] (-) TimerEvent: {}
+[36.251324] (-) TimerEvent: {}
+[36.351801] (-) TimerEvent: {}
+[36.452439] (-) TimerEvent: {}
+[36.553003] (-) TimerEvent: {}
+[36.654213] (-) TimerEvent: {}
+[36.756415] (-) TimerEvent: {}
+[36.857093] (-) TimerEvent: {}
+[36.957907] (-) TimerEvent: {}
+[37.058317] (-) TimerEvent: {}
+[37.158923] (-) TimerEvent: {}
+[37.259539] (-) TimerEvent: {}
+[37.360111] (-) TimerEvent: {}
+[37.462352] (-) TimerEvent: {}
+[37.563716] (-) TimerEvent: {}
+[37.664480] (-) TimerEvent: {}
+[37.765543] (-) TimerEvent: {}
+[37.866258] (-) TimerEvent: {}
+[37.967078] (-) TimerEvent: {}
+[38.067818] (-) TimerEvent: {}
+[38.168114] (-) TimerEvent: {}
+[38.268678] (-) TimerEvent: {}
+[38.369649] (-) TimerEvent: {}
+[38.470851] (-) TimerEvent: {}
+[38.571997] (-) TimerEvent: {}
+[38.673283] (-) TimerEvent: {}
+[38.773916] (-) TimerEvent: {}
+[38.874876] (-) TimerEvent: {}
+[38.975628] (-) TimerEvent: {}
+[39.076164] (-) TimerEvent: {}
+[39.176740] (-) TimerEvent: {}
+[39.277900] (-) TimerEvent: {}
+[39.307617] (vox_nav_navigators) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable navigate_to_pose_server_node\x1b[0m\n'}
+[39.377996] (-) TimerEvent: {}
+[39.478688] (-) TimerEvent: {}
+[39.552811] (vox_nav_navigators) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable navigate_through_poses_server_node\x1b[0m\n'}
+[39.579050] (-) TimerEvent: {}
+[39.679981] (-) TimerEvent: {}
+[39.781008] (-) TimerEvent: {}
+[39.882527] (-) TimerEvent: {}
+[39.983084] (-) TimerEvent: {}
+[40.084500] (-) TimerEvent: {}
+[40.185094] (-) TimerEvent: {}
+[40.285924] (-) TimerEvent: {}
+[40.386774] (-) TimerEvent: {}
+[40.487267] (-) TimerEvent: {}
+[40.587868] (-) TimerEvent: {}
+[40.688962] (-) TimerEvent: {}
+[40.789994] (-) TimerEvent: {}
+[40.891369] (-) TimerEvent: {}
+[40.991836] (-) TimerEvent: {}
+[41.092945] (-) TimerEvent: {}
+[41.194179] (-) TimerEvent: {}
+[41.295724] (-) TimerEvent: {}
+[41.396345] (-) TimerEvent: {}
+[41.497090] (-) TimerEvent: {}
+[41.599116] (-) TimerEvent: {}
+[41.700173] (-) TimerEvent: {}
+[41.801203] (-) TimerEvent: {}
+[41.902665] (-) TimerEvent: {}
+[42.003671] (-) TimerEvent: {}
+[42.105022] (-) TimerEvent: {}
+[42.206796] (-) TimerEvent: {}
+[42.307764] (-) TimerEvent: {}
+[42.404074] (vox_nav_navigators) StdoutLine: {'line': b'[ 94%] Built target navigate_to_pose_server_node\n'}
+[42.408053] (-) TimerEvent: {}
+[42.510101] (-) TimerEvent: {}
+[42.571382] (vox_nav_navigators) StdoutLine: {'line': b'[ 94%] Built target navigate_through_poses_server_node\n'}
+[42.610108] (-) TimerEvent: {}
+[42.710830] (-) TimerEvent: {}
+[42.811527] (-) TimerEvent: {}
+[42.912352] (-) TimerEvent: {}
+[43.013722] (-) TimerEvent: {}
+[43.114424] (-) TimerEvent: {}
+[43.215330] (-) TimerEvent: {}
+[43.316176] (-) TimerEvent: {}
+[43.416891] (-) TimerEvent: {}
+[43.517528] (-) TimerEvent: {}
+[43.618759] (-) TimerEvent: {}
+[43.719450] (-) TimerEvent: {}
+[43.810536] (vox_nav_navigators) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable navigate_through_gps_poses_server_node\x1b[0m\n'}
+[43.819992] (-) TimerEvent: {}
+[43.920658] (-) TimerEvent: {}
+[44.021546] (-) TimerEvent: {}
+[44.122858] (-) TimerEvent: {}
+[44.223203] (-) TimerEvent: {}
+[44.324911] (-) TimerEvent: {}
+[44.426167] (-) TimerEvent: {}
+[44.526611] (-) TimerEvent: {}
+[44.627412] (-) TimerEvent: {}
+[44.728721] (-) TimerEvent: {}
+[44.829310] (-) TimerEvent: {}
+[44.930417] (-) TimerEvent: {}
+[45.031716] (-) TimerEvent: {}
+[45.132732] (-) TimerEvent: {}
+[45.233701] (-) TimerEvent: {}
+[45.335176] (-) TimerEvent: {}
+[45.436395] (-) TimerEvent: {}
+[45.538325] (-) TimerEvent: {}
+[45.639606] (-) TimerEvent: {}
+[45.740309] (-) TimerEvent: {}
+[45.840689] (-) TimerEvent: {}
+[45.941090] (-) TimerEvent: {}
+[46.041854] (-) TimerEvent: {}
+[46.143108] (-) TimerEvent: {}
+[46.244302] (-) TimerEvent: {}
+[46.345315] (-) TimerEvent: {}
+[46.446222] (-) TimerEvent: {}
+[46.546775] (-) TimerEvent: {}
+[46.647198] (-) TimerEvent: {}
+[46.747620] (-) TimerEvent: {}
+[46.848218] (-) TimerEvent: {}
+[46.948775] (-) TimerEvent: {}
+[47.049392] (-) TimerEvent: {}
+[47.150119] (-) TimerEvent: {}
+[47.250974] (-) TimerEvent: {}
+[47.351906] (-) TimerEvent: {}
+[47.452896] (-) TimerEvent: {}
+[47.553300] (-) TimerEvent: {}
+[47.653806] (-) TimerEvent: {}
+[47.754138] (-) TimerEvent: {}
+[47.854910] (-) TimerEvent: {}
+[47.955445] (-) TimerEvent: {}
+[48.055782] (-) TimerEvent: {}
+[48.156354] (-) TimerEvent: {}
+[48.257890] (-) TimerEvent: {}
+[48.358276] (-) TimerEvent: {}
+[48.459090] (-) TimerEvent: {}
+[48.560947] (-) TimerEvent: {}
+[48.611728] (vox_nav_navigators) StdoutLine: {'line': b'[100%] Built target navigate_through_gps_poses_server_node\n'}
+[48.630102] (vox_nav_navigators) CommandEnded: {'returncode': 0}
+[48.631435] (vox_nav_navigators) JobProgress: {'identifier': 'vox_nav_navigators', 'progress': 'install'}
+[48.654147] (vox_nav_navigators) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/manish/eiratech_ws/build/vox_nav_navigators'], 'cwd': '/home/manish/eiratech_ws/build/vox_nav_navigators', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('LANGUAGE', 'en_IE:en'), ('USER', 'manish'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manish'), ('OLDPWD', '/home/manish/eiratech_ws/src/vox_nav'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1207'), ('SYSTEMD_EXEC_PID', '1713'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3765'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manish/eiratech_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manish'), ('JOURNAL_STREAM', '8:2972'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'manish'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/manish/eiratech_ws/install/robot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/manish-Precision-7750:@/tmp/.ICE-unix/1685,unix/manish-Precision-7750:/tmp/.ICE-unix/1685'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/manish/.ros/DEFAULT_FASTRTPS_PROFILES.xml'), ('INVOCATION_ID', '795d2e625fc04ef2800b9961de8a6580'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W9UDA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d51ae0c8-9522-448b-8d8d-f749c25ddf08'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/manish/eiratech_ws/install/robot_description/share/robot_description:/home/manish/.gz/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/manish/eiratech_ws/build/vox_nav_navigators'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/path/to/your_ws/install/gazebo_ros2_control/lib:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/manish/eiratech_ws/install/vox_nav_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble')]), 'shell': False}
+[48.661115] (-) TimerEvent: {}
+[48.669775] (vox_nav_navigators) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[48.670197] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/lib/libbehavior_tree_lib.so\n'}
+[48.670505] (vox_nav_navigators) StdoutLine: {'line': b'-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_navigators/lib/libbehavior_tree_lib.so" to ""\n'}
+[48.670612] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/lib/libcompute_path_to_pose_action_bt_node.so\n'}
+[48.672878] (vox_nav_navigators) StdoutLine: {'line': b'-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_navigators/lib/libcompute_path_to_pose_action_bt_node.so" to ""\n'}
+[48.673116] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/lib/libfollow_path_action_bt_node.so\n'}
+[48.677556] (vox_nav_navigators) StdoutLine: {'line': b'-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_navigators/lib/libfollow_path_action_bt_node.so" to ""\n'}
+[48.677832] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/lib/libnavigate_to_pose_action_bt_node.so\n'}
+[48.679190] (vox_nav_navigators) StdoutLine: {'line': b'-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_navigators/lib/libnavigate_to_pose_action_bt_node.so" to ""\n'}
+[48.679409] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/lib/libnavigate_through_poses_action_bt_node.so\n'}
+[48.684525] (vox_nav_navigators) StdoutLine: {'line': b'-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_navigators/lib/libnavigate_through_poses_action_bt_node.so" to ""\n'}
+[48.685238] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/lib/libnavigate_through_gps_poses_action_bt_node.so\n'}
+[48.687698] (vox_nav_navigators) StdoutLine: {'line': b'-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_navigators/lib/libnavigate_through_gps_poses_action_bt_node.so" to ""\n'}
+[48.688108] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/lib/vox_nav_navigators/navigate_to_pose_server_node\n'}
+[48.688752] (vox_nav_navigators) StdoutLine: {'line': b'-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_navigators/lib/vox_nav_navigators/navigate_to_pose_server_node" to ""\n'}
+[48.688973] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/lib/vox_nav_navigators/navigate_through_poses_server_node\n'}
+[48.690767] (vox_nav_navigators) StdoutLine: {'line': b'-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_navigators/lib/vox_nav_navigators/navigate_through_poses_server_node" to ""\n'}
+[48.692301] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/lib/vox_nav_navigators/navigate_through_gps_poses_server_node\n'}
+[48.694995] (vox_nav_navigators) StdoutLine: {'line': b'-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_navigators/lib/vox_nav_navigators/navigate_through_gps_poses_server_node" to ""\n'}
+[48.695181] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include/\n'}
+[48.695296] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators\n'}
+[48.695362] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/plugins\n'}
+[48.695459] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/plugins/actions\n'}
+[48.695522] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/plugins/actions/follow_path.hpp\n'}
+[48.695619] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/plugins/actions/navigate_through_gps_poses.hpp\n'}
+[48.695706] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/plugins/actions/navigate_through_poses.hpp\n'}
+[48.695765] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/plugins/actions/navigate_to_pose.hpp\n'}
+[48.695823] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/plugins/actions/compute_path_to_pose.hpp\n'}
+[48.695882] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/plugins/actions/base_action_client_node.hpp\n'}
+[48.695984] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/navigate_to_pose_action_server_node.hpp\n'}
+[48.696037] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/navigate_through_poses_action_server_node.hpp\n'}
+[48.696112] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/bt_conversions.hpp\n'}
+[48.696165] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/behavior_tree.hpp\n'}
+[48.696214] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/include//vox_nav_navigators/navigate_through_gps_poses_action_server_node.hpp\n'}
+[48.696266] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/vox_nav_tree_nodes.xml\n'}
+[48.696352] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/environment/library_path.sh\n'}
+[48.696430] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/environment/library_path.dsv\n'}
+[48.696554] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/ament_index/resource_index/package_run_dependencies/vox_nav_navigators\n'}
+[48.696697] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/ament_index/resource_index/parent_prefix_path/vox_nav_navigators\n'}
+[48.696794] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/environment/ament_prefix_path.sh\n'}
+[48.696892] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/environment/ament_prefix_path.dsv\n'}
+[48.696993] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/environment/path.sh\n'}
+[48.697143] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/environment/path.dsv\n'}
+[48.697241] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/local_setup.bash\n'}
+[48.697337] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/local_setup.sh\n'}
+[48.697423] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/local_setup.zsh\n'}
+[48.697493] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/local_setup.dsv\n'}
+[48.697585] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/package.dsv\n'}
+[48.697733] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/ament_index/resource_index/packages/vox_nav_navigators\n'}
+[48.697884] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[48.697975] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[48.698067] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[48.698232] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/cmake/vox_nav_navigatorsConfig.cmake\n'}
+[48.698341] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/cmake/vox_nav_navigatorsConfig-version.cmake\n'}
+[48.698421] (vox_nav_navigators) StdoutLine: {'line': b'-- Installing: /home/manish/eiratech_ws/install/vox_nav_navigators/share/vox_nav_navigators/package.xml\n'}
+[48.701990] (vox_nav_navigators) CommandEnded: {'returncode': 0}
+[48.736589] (vox_nav_navigators) JobEnded: {'identifier': 'vox_nav_navigators', 'rc': 0}
+[48.737392] (-) EventReactorShutdown: {}

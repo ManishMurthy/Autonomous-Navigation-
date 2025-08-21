@@ -6,7 +6,7 @@
     <inertial>
       <origin xyz="0.018582 -0.00058815 -0.099852" rpy="0 0 0" />
       <mass value="32.31" />
-      <inertia ixx="0.92" ixy="0" ixz="0" iyy="3.12" iyz="0" izz="2.87" />
+      <inertia ixx="0.92" ixy="0" ixz="0" iyy="3.12" iyz="0" izz="1.2" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -24,16 +24,6 @@
       </geometry>
     </collision>
   </link>
-
-  <!-- Base Footprint -->
-  <link name="base_footprint"/>
-  <joint name="base_footprint_ref_joint" type="fixed">
-    <origin xyz="0 0 .25" rpy="0 0 0" />
-    <parent link="base_footprint" />
-    <child link="base_link" />  <!-- Fixed typo: was "childggg" -->
-    <axis xyz="0 1 0" />
-  </joint>
-
   <!-- Front Right Wheel -->
   <link name="wheel_front_right">
     <inertial>
@@ -62,7 +52,7 @@
     <parent link="base_link" />
     <child link="wheel_front_right" />
     <axis xyz="0 1 0" />
-    <dynamics damping="0.1" friction="0.1" />
+    <dynamics damping="0.1" friction="0.05" />
   </joint>
 
   <!-- Back Right Wheel -->
@@ -93,7 +83,7 @@
     <parent link="base_link" />
     <child link="wheel_back_right" />
     <axis xyz="0 1 0" />
-    <dynamics damping="0.1" friction="0.1" />
+    <dynamics damping="0.1" friction="0.05" />
   </joint>
 
   <!-- Back Left Wheel -->
@@ -124,7 +114,7 @@
     <parent link="base_link" />
     <child link="wheel_back_left" />
     <axis xyz="0 1 0" />
-    <dynamics damping="0.1" friction="0.1" />
+    <dynamics damping="0.1" friction="0.05" />
   </joint>
 
   <!-- Front Left Wheel -->
@@ -155,7 +145,7 @@
     <parent link="base_link" />
     <child link="wheel_front_left" />
     <axis xyz="0 1 0" />
-    <dynamics damping="0.1" friction="0.1" />
+    <dynamics damping="0.1" friction="0.05" />
   </joint>
 
   <!-- Back Camera -->
@@ -239,7 +229,7 @@
   <!-- Camera Dummy Links (keep existing) -->
   <link name="front_camera_dummy"/>
   <joint name="front_camera_dummy_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708" />
+    <origin xyz="0 0 0" rpy="-1.570796 0 -1.570796"/>
     <parent link="front_camera" />
     <child link="front_camera_dummy" />
     <axis xyz="1 0 0" />
@@ -281,7 +271,7 @@
     </collision>
   </link>
   <joint name="lidar_joint" type="fixed">
-    <origin xyz="0 0 0.4" rpy="0 0 0" />  <!-- Mounted on top of robot -->
+    <origin xyz="0 0 0.2" rpy="0 0 0" />  <!-- Mounted on top of robot -->
     <parent link="TC_V0" />
     <child link="lidar_link" />
   </joint>
@@ -342,19 +332,27 @@
   </link>
   <joint name="gps_joint" type="fixed">
     <origin xyz="-0.2 0 0.5" rpy="0 0 0" />  <!-- Behind lidar -->
-    <parent link="TC_V0" />
+    <parent link="base_link" />
     <child link="gps_link" />
   </joint>
 
   <gazebo>
-  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+  <plugin name="skid_steering_drive_controller" filename="libgazebo_ros_diff_drive.so">
+  
+    <updateRate>100</updateRate>  <!-- Higher update rate -->
+    <robotNamespace>/</robotNamespace>
+    
     <!-- Wheel joints -->
+    <num_wheel_pairs>2</num_wheel_pairs>
     <left_joint>wheel_front_left_joint</left_joint>
+    <left_joint>wheel_back_left_joint</left_joint>
     <right_joint>wheel_front_right_joint</right_joint>
+    <right_joint>wheel_back_right_joint</right_joint>
 
     <!-- Robot parameters -->
     <wheel_separation>0.5604</wheel_separation>
-    <wheel_diameter>0.2</wheel_diameter>
+    <wheel_diameter>0.156</wheel_diameter>
+    <torque>50</torque>
     
     <!-- Topics -->
     <command_topic>cmd_vel</command_topic>
@@ -366,7 +364,10 @@
     <publish_wheel_tf>true</publish_wheel_tf>
     <publish_odom>true</publish_odom>
     <publish_odom_tf>true</publish_odom_tf>
-    <update_rate>50</update_rate>
+    
+    <covariance_x>0.0001</covariance_x>
+    <covariance_y>0.0001</covariance_y>
+    <covariance_yaw>0.01</covariance_yaw>
   </plugin>
 </gazebo>
 
@@ -417,11 +418,11 @@
   </sensor>
 </gazebo>
 
-   <!-- Front camera -->
-  <gazebo reference="front_camera_dummy">
-  <sensor type="depth" name="front_camera_sensor">
-    <update_rate>30</update_rate>
-    <camera name="front_camera">
+<!-- Front camera -->
+<gazebo reference="back_camera">
+  <sensor type="depth" name="back_camera">
+    <update_rate>20</update_rate>
+    <camera>
       <horizontal_fov>1.047</horizontal_fov>
       <image>
         <width>640</width>
@@ -430,52 +431,59 @@
       </image>
       <clip>
         <near>0.1</near>
-        <far>10.0</far>
-      </clip>
-    </camera>
-    <plugin name="front_camera_controller" filename="libgazebo_ros_camera.so">
-      <alwaysOn>true</alwaysOn>
-      <updateRate>30.0</updateRate>
-      <cameraName>front_camera</cameraName>
-      <imageTopicName>front_camera/image_raw</imageTopicName>
-      <depthImageTopicName>front_camera/depth/image_raw</depthImageTopicName>
-      <pointCloudTopicName>front_camera/points</pointCloudTopicName>
-      <cameraInfoTopicName>front_camera/camera_info</cameraInfoTopicName>
-      <depthImageCameraInfoTopicName>front_camera/depth/camera_info</depthImageCameraInfoTopicName>
-      <frameName>front_camera_dummy</frameName>
-    </plugin>
-  </sensor>
-</gazebo>
-
-  <!-- Back Camera -->
-  <gazebo reference="back_camera_dummy">
-  <sensor type="camera" name="back_camera_sensor">
-    <update_rate>30</update_rate>
-    <camera name="back_camera">
-      <horizontal_fov>1.047</horizontal_fov>
-      <image>
-        <width>1920</width>
-        <height>1080</height>
-        <format>R8G8B8</format>
-      </image>
-      <clip>
-        <near>0.1</near>
-        <far>10.0</far>
+        <far>10</far>
       </clip>
     </camera>
     <plugin name="back_camera_controller" filename="libgazebo_ros_camera.so">
+      <baseline>0.2</baseline>
       <alwaysOn>true</alwaysOn>
-      <updateRate>30.0</updateRate>
+      <updateRate>0.0</updateRate>
       <cameraName>back_camera</cameraName>
       <imageTopicName>back_camera/image_raw</imageTopicName>
       <depthImageTopicName>back_camera/depth/image_raw</depthImageTopicName>
       <pointCloudTopicName>back_camera/points</pointCloudTopicName>
       <cameraInfoTopicName>back_camera/camera_info</cameraInfoTopicName>
-      <depthImageCameraInfoTopicName>back_camera/depth/camera_info</depthImageCameraInfoTopicName>
-      <frameName>back_camera_dummy</frameName>
+      <frame_name>back_camera</frame_name>
     </plugin>
   </sensor>
 </gazebo>
+
+  <!-- Back Camera -->
+  <gazebo reference="front_camera">
+        <sensor type="depth" name="front_camera">
+          <update_rate>100</update_rate>
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <format>R8G8B8</format>
+              <width>640</width>
+              <height>480</height>
+            </image>
+            <clip>
+              <near>0.5</near>
+              <far>20</far>
+            </clip>
+          </camera>
+          <plugin name="front_camera_controller" filename="libgazebo_ros_camera.so">
+            <alwaysOn>true</alwaysOn>
+            <updateRate>20</updateRate>
+            <cameraName>front_camera</cameraName>
+            <imageTopicName>rgb/image_raw</imageTopicName>
+            <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>depth/image_raw</depthImageTopicName>
+            <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+            <pointCloudTopicName>depth/points</pointCloudTopicName>
+            <frame_name>front_camera_dummy</frame_name>
+            <distortion_k1>0.0</distortion_k1>
+            <distortion_k2>0.0</distortion_k2>
+            <distortion_k3>0.0</distortion_k3>
+            <distortion_t1>0.0</distortion_t1>
+            <distortion_t2>0.0</distortion_t2>
+            <pointCloudCutoff>0.8</pointCloudCutoff>
+            <pointCloudCutoffMax>3.5</pointCloudCutoffMax>     
+          </plugin>
+        </sensor>
+      </gazebo>
 
   <!-- IMU sensor -->
   <gazebo reference="imu_link">
@@ -508,40 +516,96 @@
 
   <!-- Wheel Physics Properties -->
   <gazebo reference="wheel_front_left">
-    <material>Gazebo/DarkGrey</material>
-    <mu1>0.8</mu1>
-    <mu2>0.8</mu2>
-    <fdir1>1 0 0</fdir1>
-    <slip1>0.1</slip1>
-    <slip2>0.1</slip2>
-  </gazebo>
+    <material>Gazebo/Black</material>
+    <surface>
+    <friction>
+      <ode>
+        <mu>0.4</mu>        <!-- ✅ Reduced longitudinal friction for easier turning -->
+        <mu2>1.0</mu2>      <!-- ✅ Higher lateral friction for forward traction -->
+        <fdir1>0 1 0</fdir1> <!-- ✅ Friction direction (wheel axis) -->
+        <slip1>0.1</slip1>   <!-- ✅ Allow some lateral slip for skid-steering -->
+        <slip2>0.0</slip2>   <!-- ✅ No longitudinal slip -->
+      </ode>
+    </friction>
+    <contact>
+      <ode>
+        <soft_cfm>0.0</soft_cfm>
+        <soft_erp>0.2</soft_erp>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+      </ode>
+    </contact>
+  </surface>
+ </gazebo>
 
   <gazebo reference="wheel_front_right">
-    <material>Gazebo/DarkGrey</material>
-    <mu1>0.8</mu1>
-    <mu2>0.8</mu2>
-    <fdir1>1 0 0</fdir1>
-    <slip1>0.1</slip1>
-    <slip2>0.1</slip2>
-  </gazebo>
+    <material>Gazebo/Black</material>
+    <surface>
+    <friction>
+      <ode>
+        <mu>0.4</mu>        <!-- ✅ Reduced longitudinal friction for easier turning -->
+        <mu2>1.0</mu2>      <!-- ✅ Higher lateral friction for forward traction -->
+        <fdir1>0 1 0</fdir1> <!-- ✅ Friction direction (wheel axis) -->
+        <slip1>0.1</slip1>   <!-- ✅ Allow some lateral slip for skid-steering -->
+        <slip2>0.0</slip2>   <!-- ✅ No longitudinal slip -->
+      </ode>
+    </friction>
+    <contact>
+      <ode>
+        <soft_cfm>0.0</soft_cfm>
+        <soft_erp>0.2</soft_erp>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+      </ode>
+    </contact>
+  </surface>
+ </gazebo>
 
   <gazebo reference="wheel_back_left">
-    <material>Gazebo/DarkGrey</material>
-    <mu1>0.8</mu1>
-    <mu2>0.8</mu2>
-    <fdir1>1 0 0</fdir1>
-    <slip1>0.1</slip1>
-    <slip2>0.1</slip2>
-  </gazebo>
+    <material>Gazebo/Black</material>
+    <surface>
+    <friction>
+      <ode>
+        <mu>0.4</mu>        <!-- ✅ Reduced longitudinal friction for easier turning -->
+        <mu2>1.0</mu2>      <!-- ✅ Higher lateral friction for forward traction -->
+        <fdir1>0 1 0</fdir1> <!-- ✅ Friction direction (wheel axis) -->
+        <slip1>0.1</slip1>   <!-- ✅ Allow some lateral slip for skid-steering -->
+        <slip2>0.0</slip2>   <!-- ✅ No longitudinal slip -->
+      </ode>
+    </friction>
+    <contact>
+      <ode>
+        <soft_cfm>0.0</soft_cfm>
+        <soft_erp>0.2</soft_erp>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+      </ode>
+    </contact>
+  </surface>
+ </gazebo>
 
   <gazebo reference="wheel_back_right">
-    <material>Gazebo/DarkGrey</material>
-    <mu1>0.8</mu1>
-    <mu2>0.8</mu2>
-    <fdir1>1 0 0</fdir1>
-    <slip1>0.1</slip1>
-    <slip2>0.1</slip2>
-  </gazebo>
+    <material>Gazebo/Black</material>
+    <surface>
+    <friction>
+      <ode>
+        <mu>0.4</mu>        <!-- ✅ Reduced longitudinal friction for easier turning -->
+        <mu2>1.0</mu2>      <!-- ✅ Higher lateral friction for forward traction -->
+        <fdir1>0 1 0</fdir1> <!-- ✅ Friction direction (wheel axis) -->
+        <slip1>0.1</slip1>   <!-- ✅ Allow some lateral slip for skid-steering -->
+        <slip2>0.0</slip2>   <!-- ✅ No longitudinal slip -->
+      </ode>
+    </friction>
+    <contact>
+      <ode>
+        <soft_cfm>0.0</soft_cfm>
+        <soft_erp>0.2</soft_erp>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+      </ode>
+    </contact>
+  </surface>
+ </gazebo>
 
   <!-- Base Link Material -->
   <gazebo reference="base_link">

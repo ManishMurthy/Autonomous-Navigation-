@@ -1,0 +1,490 @@
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/LQRPlanner.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/native_planners/LQRPlanner.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se3_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/RRTStarF.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/native_planners/RRTStarF.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se2_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/LQRRRTStar.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/native_planners/LQRRRTStar.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_server.hpp:27[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/planner_server.cpp:17[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/install/vox_nav_utilities/include/vox_nav_utilities/elevation_state_space.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/InformedSGCP.hpp:43[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/native_planners/InformedSGCP.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se2_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::SE2Planner::createPlan(const PoseStamped&, const PoseStamped&)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:194:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  194 |         logger_, [01;35m[K"Found A plan with %i poses"[m[K, [32m[Kplan_poses.size()[m[K);
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                                               [32m[K|[m[K
+      |                                                               [32m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:194:38:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  194 |         logger_, "Found A plan with [01;36m[K%i[m[K poses", plan_poses.size());
+      |                                     [01;36m[K~^[m[K
+      |                                      [01;36m[K|[m[K
+      |                                      [01;36m[Kint[m[K
+      |                                     [32m[K%li[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se2_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:[m[K In member function ‘[01m[Kvirtual void vox_nav_planning::SE2Planner::setupMap()[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:273:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  273 |         [01;35m[K"Recieved a valid Octomap with %d nodes, A FCL collision tree will be created from this "[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  274 | [01;35m[K        "octomap for state validity (aka collision check)"[m[K, [32m[Koriginal_octomap_octree_->size()[m[K);
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                           [32m[K|[m[K
+      |                                                                                           [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se2_planner.cpp:273:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  273 |         "Recieved a valid Octomap with [01;36m[K%d[m[K nodes, A FCL collision tree will be created from this "
+      |                                        [01;36m[K~^[m[K
+      |                                         [01;36m[K|[m[K
+      |                                         [01;36m[Kint[m[K
+      |                                        [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se3_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::SE3Planner::createPlan(const PoseStamped&, const PoseStamped&)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:148:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  148 |     RCLCPP_INFO(logger_, [01;35m[K"Found A plan with %i poses"[m[K, [32m[Kplan_poses.size()[m[K);
+      |                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                                                       [32m[K|[m[K
+      |                                                                       [32m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:148:46:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  148 |     RCLCPP_INFO(logger_, "Found A plan with [01;36m[K%i[m[K poses", plan_poses.size());
+      |                                             [01;36m[K~^[m[K
+      |                                              [01;36m[K|[m[K
+      |                                              [01;36m[Kint[m[K
+      |                                             [32m[K%li[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/se3_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:[m[K In member function ‘[01m[Kvirtual void vox_nav_planning::SE3Planner::setupMap()[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:221:17:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  221 |                 [01;35m[K"Recieved a valid Octomap with %d nodes, A FCL collision tree will be created from this "[m[K
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  222 | [01;35m[K                "octomap for state validity (aka collision check)"[m[K,
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  223 |                 [32m[Koriginal_octomap_octree_->size()[m[K);
+      |                 [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                               [32m[K|[m[K
+      |                                               [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/se3_planner.cpp:221:49:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  221 |                 "Recieved a valid Octomap with [01;36m[K%d[m[K nodes, A FCL collision tree will be created from this "
+      |                                                [01;36m[K~^[m[K
+      |                                                 [01;36m[K|[m[K
+      |                                                 [01;36m[Kint[m[K
+      |                                                [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::ElevationPlanner::createPlan(const PoseStamped&, const PoseStamped&)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:241:28:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  241 |       RCLCPP_INFO(logger_, [01;35m[K"Found A plan with %i poses"[m[K, [32m[Kplan_poses.size()[m[K);
+      |                            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                                                         [32m[K|[m[K
+      |                                                                         [32m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:241:48:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  241 |       RCLCPP_INFO(logger_, "Found A plan with [01;36m[K%i[m[K poses", plan_poses.size());
+      |                                               [01;36m[K~^[m[K
+      |                                                [01;36m[K|[m[K
+      |                                                [01;36m[Kint[m[K
+      |                                               [32m[K%li[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:[m[K In member function ‘[01m[Kvirtual void vox_nav_planning::ElevationPlanner::setupMap()[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:376:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  376 |         [01;35m[K"Recieved a valid Octomap with %d nodes, A FCL collision tree "[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  377 | [01;35m[K        "will be created from this "[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  378 | [01;35m[K        "octomap for state validity (aka collision check)"[m[K,
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  379 |         [32m[Koriginal_octomap_octree_->size()[m[K);
+      |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                       [32m[K|[m[K
+      |                                       [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:376:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  376 |         "Recieved a valid Octomap with [01;36m[K%d[m[K nodes, A FCL collision tree "
+      |                                        [01;36m[K~^[m[K
+      |                                         [01;36m[K|[m[K
+      |                                         [01;36m[Kint[m[K
+      |                                        [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/elevation_planner.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:383:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  383 |         [01;35m[K"Recieved a valid Octomap which represents Elevated surfels "[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  384 | [01;35m[K        "with %d nodes,"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~[m[K
+  385 | [01;35m[K        " A FCL collision tree will be created from this "[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  386 | [01;35m[K        "octomap for state validity (aka collision check)"[m[K,
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  387 |         [32m[Kelevated_surfel_octomap_octree_->size()[m[K);
+      |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                              [32m[K|[m[K
+      |                                              [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_planner.cpp:384:16:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  384 |         "with [01;36m[K%d[m[K nodes,"
+      |               [01;36m[K~^[m[K
+      |                [01;36m[K|[m[K
+      |                [01;36m[Kint[m[K
+      |               [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:33[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_server.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/planner_server.cpp:17[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/planner_server.cpp:[m[K In member function ‘[01m[Kvoid vox_nav_planning::PlannerServer::computePlan(std::shared_ptr<rclcpp_action::ServerGoalHandle<vox_nav_msgs::action::ComputePathToPose> >)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/planner_server.cpp:180:7:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%u[m[K’ expects argument of type ‘[01m[Kunsigned int[m[K’, but argument 5 has type ‘[01m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  180 |       [01;35m[K"Found valid path of size %u to (%.2f, %.2f)"[m[K,
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  181 |       [32m[Kresult->path.poses.size()[m[K, goal_pose.pose.position.x,
+      |       [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                              [32m[K|[m[K
+      |                              [32m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/planner_server.cpp:180:34:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  180 |       "Found valid path of size [01;36m[K%u[m[K to (%.2f, %.2f)",
+      |                                 [01;36m[K~^[m[K
+      |                                  [01;36m[K|[m[K
+      |                                  [01;36m[Kunsigned int[m[K
+      |                                 [32m[K%lu[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:[m[K In member function ‘[01m[Kvirtual bool vox_nav_planning::PolyTunnelPlanner::isStateValid(const ompl::base::State*)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:116:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  116 |     [01;35m[K}[m[K
+      |     [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::PolyTunnelPlanner::createPlan(const PoseStamped&, const PoseStamped&)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:108:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  108 |     RCLCPP_INFO(logger_, [01;35m[K"Creating a plan with %d points"[m[K, [32m[Kcloud->points.size()[m[K);
+      |                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                              [32m[K|[m[K
+      |                                                                              [32m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:108:49:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  108 |     RCLCPP_INFO(logger_, "Creating a plan with [01;36m[K%d[m[K points", cloud->points.size());
+      |                                                [01;36m[K~^[m[K
+      |                                                 [01;36m[K|[m[K
+      |                                                 [01;36m[Kint[m[K
+      |                                                [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/polytunnel_planner.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:155:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  155 |     RCLCPP_INFO(logger_, [01;35m[K"Created a plan with %d pose"[m[K, [32m[Kplan_poses.size()[m[K);
+      |                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                                                        [32m[K|[m[K
+      |                                                                        [32m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/polytunnel_planner.cpp:155:48:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  155 |     RCLCPP_INFO(logger_, "Created a plan with [01;36m[K%d[m[K pose", plan_poses.size());
+      |                                               [01;36m[K~^[m[K
+      |                                                [01;36m[K|[m[K
+      |                                                [01;36m[Kint[m[K
+      |                                               [32m[K%ld[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/RRTStarF.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/osm_elevation_planner.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/osm_elevation_planner.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:23[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/RRTStarF.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/elevation_control_planner.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/RRTStarF.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/osm_elevation_planner.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/osm_elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/osm_elevation_planner.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::OSMElevationPlanner::createPlan(const PoseStamped&, const PoseStamped&)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/osm_elevation_planner.cpp:266:28:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  266 |       RCLCPP_INFO(logger_, [01;35m[K"Found A plan with %i poses"[m[K, [32m[Kplan_poses.size()[m[K);
+      |                            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                                                         [32m[K|[m[K
+      |                                                                         [32m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/osm_elevation_planner.cpp:266:48:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  266 |       RCLCPP_INFO(logger_, "Found A plan with [01;36m[K%i[m[K poses", plan_poses.size());
+      |                                               [01;36m[K~^[m[K
+      |                                                [01;36m[K|[m[K
+      |                                                [01;36m[Kint[m[K
+      |                                               [32m[K%li[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/RRTStarF.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/osm_elevation_planner.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/osm_elevation_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/osm_elevation_planner.cpp:[m[K In member function ‘[01m[Kvirtual void vox_nav_planning::OSMElevationPlanner::setupMap()[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/osm_elevation_planner.cpp:328:20:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<pcl::PointXYZRGB, Eigen::aligned_allocator<pcl::PointXYZRGB> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  328 |           logger_, [01;35m[K"Received a valid map with %i points"[m[K,
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  329 |           [32m[Kosm_road_topology_pcd_->points.size()[m[K);
+      |           [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                              [32m[K|[m[K
+      |                                              [32m[Kstd::vector<pcl::PointXYZRGB, Eigen::aligned_allocator<pcl::PointXYZRGB> >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/osm_elevation_planner.cpp:328:48:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  328 |           logger_, "Received a valid map with [01;36m[K%i[m[K points",
+      |                                               [01;36m[K~^[m[K
+      |                                                [01;36m[K|[m[K
+      |                                                [01;36m[Kint[m[K
+      |                                               [32m[K%li[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/RRTStarF.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/elevation_control_planner.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > > vox_nav_planning::ElevationControlPlanner::createPlan(const PoseStamped&, const PoseStamped&)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:317:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  317 |         logger_, [01;35m[K"Found A plan with %i poses"[m[K, [32m[Kplan_poses.size()[m[K);
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                                               [32m[K|[m[K
+      |                                                               [32m[Kstd::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:317:38:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  317 |         logger_, "Found A plan with [01;36m[K%i[m[K poses", plan_poses.size());
+      |                                     [01;36m[K~^[m[K
+      |                                      [01;36m[K|[m[K
+      |                                      [01;36m[Kint[m[K
+      |                                     [32m[K%li[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/RRTStarF.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/elevation_control_planner.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:[m[K In member function ‘[01m[Kvirtual void vox_nav_planning::ElevationControlPlanner::setupMap()[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:448:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  448 |         [01;35m[K"Recieved a valid Octomap with %d nodes, A FCL collision tree will be created from this "[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  449 | [01;35m[K        "octomap for state validity (aka collision check)"[m[K, [32m[Koriginal_octomap_octree_->size()[m[K);
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                           [32m[K|[m[K
+      |                                                                                           [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:448:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  448 |         "Recieved a valid Octomap with [01;36m[K%d[m[K nodes, A FCL collision tree will be created from this "
+      |                                        [01;36m[K~^[m[K
+      |                                         [01;36m[K|[m[K
+      |                                         [01;36m[Kint[m[K
+      |                                        [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/planner_core.hpp:20[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/native_planners/RRTStarF.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include/vox_nav_planning/plugins/elevation_control_planner.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:453:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  453 |         [01;35m[K"Recieved a valid Octomap which represents Elevated surfels with %d nodes,"[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  454 | [01;35m[K        " A FCL collision tree will be created from this "[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  455 | [01;35m[K        "octomap for state validity (aka collision check)"[m[K,
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  456 |         [32m[Kelevated_surfel_octomap_octree_->size()[m[K);
+      |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                              [32m[K|[m[K
+      |                                              [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/src/plugins/elevation_control_planner.cpp:453:75:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  453 | ieved a valid Octomap which represents Elevated surfels with [01;36m[K%d[m[K nodes,"
+      |                                                              [01;36m[K~^[m[K
+      |                                                               [01;36m[K|[m[K
+      |                                                               [01;36m[Kint[m[K
+      |                                                              [32m[K%ld[m[K

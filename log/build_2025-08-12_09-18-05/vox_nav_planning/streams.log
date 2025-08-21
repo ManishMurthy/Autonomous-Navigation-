@@ -1,0 +1,194 @@
+[0.012s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_planning': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/manish/eiratech_ws/src/vox_nav/vox_nav_planning -DCMAKE_INSTALL_PREFIX=/home/manish/eiratech_ws/install/vox_nav_planning
+[0.047s] -- The C compiler identification is GNU 11.4.0
+[0.084s] -- The CXX compiler identification is GNU 11.4.0
+[0.088s] -- Detecting C compiler ABI info
+[0.132s] -- Detecting C compiler ABI info - done
+[0.138s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.138s] -- Detecting C compile features
+[0.139s] -- Detecting C compile features - done
+[0.141s] -- Detecting CXX compiler ABI info
+[0.196s] -- Detecting CXX compiler ABI info - done
+[0.202s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.202s] -- Detecting CXX compile features
+[0.202s] -- Detecting CXX compile features - done
+[0.206s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.206s] -- Checking for module 'fcl>=0.7.0'
+[0.214s] --   Found fcl, version 0.7.0
+[0.246s] -- Found OpenCV version 4.5.4
+[0.248s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.355s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.424s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.456s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.460s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.467s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.477s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.491s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.531s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.533s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.594s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.615s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.649s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.657s] -- Looking for pthread.h
+[0.712s] -- Looking for pthread.h - found
+[0.712s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.810s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.811s] -- Found Threads: TRUE  
+[0.878s] -- Found rclcpp_action: 16.0.14 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.905s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.946s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.960s] -- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.032s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: serialization filesystem system 
+[1.034s] -- Found ompl: /opt/ros/humble/include/ompl-1.7;/usr/include;/usr/include/eigen3  
+[1.037s] -- Found octomap_msgs: 2.0.1 (/opt/ros/humble/share/octomap_msgs/cmake)
+[1.050s] -- Found tf2_eigen: 0.25.15 (/opt/ros/humble/share/tf2_eigen/cmake)
+[1.053s] -- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.061s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.062s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.062s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.065s] -- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[1.077s] -- Found vox_nav_msgs: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_msgs/share/vox_nav_msgs/cmake)
+[1.112s] -- Found vox_nav_utilities: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_utilities/share/vox_nav_utilities/cmake)
+[1.163s] -- Checking for module 'eigen3'
+[1.171s] --   Found eigen3, version 3.4.0
+[1.189s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.189s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.210s] -- Checking for module 'flann'
+[1.217s] --   Found flann, version 1.9.1
+[1.240s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.241s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.948s] -- Checking for module 'libusb-1.0'
+[1.957s] --   Found libusb-1.0, version 1.0.25
+[1.979s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.979s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.012s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.122s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.126s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.130s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.237s] -- Found Qhull version 8.0.2
+[2.345s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.451s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.451s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.452s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.453s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.453s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.454s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.454s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.455s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.455s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.456s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.457s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.458s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.458s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.459s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.460s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.461s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.462s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.462s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.463s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.464s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.464s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.465s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.465s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.466s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.466s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.482s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[2.834s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.897s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.899s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.901s] -- Configured cppcheck include dirs: /home/manish/eiratech_ws/src/vox_nav/vox_nav_planning/include
+[2.901s] -- Configured cppcheck exclude dirs and/or files: 
+[2.903s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.903s] -- Configured cpplint exclude dirs and/or files: 
+[2.903s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.904s] -- Added test 'lint_cmake' to check CMake code style
+[2.904s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.906s] -- Added test 'uncrustify' to check C / C++ code style
+[2.906s] -- Configured uncrustify additional arguments: 
+[2.907s] -- Added test 'xmllint' to check XML markup files
+[2.908s] -- Configuring done
+[3.195s] -- Generating done
+[3.254s] -- Build files have been written to: /home/manish/eiratech_ws/build/vox_nav_planning
+[3.270s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_planning' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/manish/eiratech_ws/src/vox_nav/vox_nav_planning -DCMAKE_INSTALL_PREFIX=/home/manish/eiratech_ws/install/vox_nav_planning
+[3.272s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_planning': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_planning -- -j12 -l12
+[3.303s] [35m[1mConsolidate compiler generated dependencies of target se2_planner[0m
+[3.304s] [35m[1mConsolidate compiler generated dependencies of target se3_planner[0m
+[3.304s] [35m[1mConsolidate compiler generated dependencies of target planner_server[0m
+[3.304s] [35m[1mConsolidate compiler generated dependencies of target elevation_planner[0m
+[3.304s] [35m[1mConsolidate compiler generated dependencies of target polytunnel_planner[0m
+[3.308s] [35m[1mConsolidate compiler generated dependencies of target optimal_elevation_planner[0m
+[3.318s] [35m[1mConsolidate compiler generated dependencies of target vox_nav_ompl_planners[0m
+[3.328s] [ 19%] Built target se2_planner
+[3.328s] [ 19%] Built target planner_server
+[3.329s] [ 28%] Built target se3_planner
+[3.334s] [ 38%] Built target elevation_planner
+[3.335s] [ 47%] Built target polytunnel_planner
+[3.345s] [ 52%] [32m[1mLinking CXX shared library liboptimal_elevation_planner.so[0m
+[3.366s] [ 76%] Built target vox_nav_ompl_planners
+[3.377s] [35m[1mConsolidate compiler generated dependencies of target osm_elevation_planner[0m
+[3.377s] [35m[1mConsolidate compiler generated dependencies of target elevation_control_planner[0m
+[3.405s] [ 95%] Built target osm_elevation_planner
+[3.405s] [ 95%] Built target elevation_control_planner
+[6.695s] [100%] Built target optimal_elevation_planner
+[6.705s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_planning' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_planning -- -j12 -l12
+[6.712s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_planning': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_planning
+[6.717s] -- Install configuration: ""
+[6.717s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/lib/liboptimal_elevation_planner.so
+[6.725s] -- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_planning/lib/liboptimal_elevation_planner.so" to ""
+[6.726s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libosm_elevation_planner.so
+[6.726s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_planner.so
+[6.726s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_control_planner.so
+[6.726s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libpolytunnel_planner.so
+[6.726s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libse2_planner.so
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libse3_planner.so
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libvox_nav_ompl_planners.so
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/vox_nav_planning/planner_server
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include/
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/se2_planner.hpp
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/elevation_planner.hpp
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/osm_elevation_planner.hpp
+[6.727s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/elevation_control_planner.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/polytunnel_planner.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/se3_planner.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/optimal_elevation_planner.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/InformedSGCP.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/KinoPlanner.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/CostTrustKinoPlanner.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/LQRPlanner.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/RRTStarF.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/LQRRRTStar.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/planner_server.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/planner_core.hpp
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/base_simplified.stl
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/car_control_planner_benchmarking.yaml
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/drone.stl
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/quadrotor_control_planner_benchmarking.yaml
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch/car_control_planner_benchmarking.launch.py
+[6.728s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch/quadrotor_control_planner_benchmarking.launch.py
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/library_path.sh
+[6.729s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/library_path.dsv
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/plugins.xml
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/package_run_dependencies/vox_nav_planning
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/parent_prefix_path/vox_nav_planning
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/ament_prefix_path.sh
+[6.729s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/ament_prefix_path.dsv
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/path.sh
+[6.729s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/path.dsv
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.bash
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.sh
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.zsh
+[6.729s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.dsv
+[6.729s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/package.dsv
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/packages/vox_nav_planning
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/vox_nav_planning__pluginlib__plugin/vox_nav_planning
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/ament_cmake_export_libraries-extras.cmake
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/vox_nav_planningConfig.cmake
+[6.729s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/vox_nav_planningConfig-version.cmake
+[6.730s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/package.xml
+[6.730s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_planning' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_planning

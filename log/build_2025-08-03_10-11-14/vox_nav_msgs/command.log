@@ -1,0 +1,6 @@
+Invoking command in '/home/manish/eiratech_ws/build/vox_nav_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs -DCMAKE_INSTALL_PREFIX=/home/manish/eiratech_ws/install/vox_nav_msgs
+Invoked command in '/home/manish/eiratech_ws/build/vox_nav_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs -DCMAKE_INSTALL_PREFIX=/home/manish/eiratech_ws/install/vox_nav_msgs
+Invoking command in '/home/manish/eiratech_ws/build/vox_nav_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_msgs -- -j12 -l12
+Invoked command in '/home/manish/eiratech_ws/build/vox_nav_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_msgs -- -j12 -l12
+Invoking command in '/home/manish/eiratech_ws/build/vox_nav_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_msgs
+Invoked command in '/home/manish/eiratech_ws/build/vox_nav_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_msgs

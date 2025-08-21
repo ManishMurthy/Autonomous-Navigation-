@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vox_nav_msgs/srv/GetOSMRoadTopologyMap.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/PointCloud2.idl"
+
+module vox_nav_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "request")
+    struct GetOSMRoadTopologyMap_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "result" "\n"
+      " The osm road map pcd map")
+    struct GetOSMRoadTopologyMap_Response {
+      sensor_msgs::msg::PointCloud2 osm_road_topology;
+
+      boolean is_valid;
+    };
+  };
+};

@@ -27,7 +27,7 @@ def generate_launch_description():
         
     declare_params_file_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value=PathJoinSubstitution([cropmap_nav2_dir, 'config', 'cropmap_navigation_slam_params.yaml']),
+        default_value=PathJoinSubstitution([cropmap_nav2_dir, 'config', 'nav2_slam_params.yaml']),
         description='Full path to nav2 + slam parameters file')
         
     declare_autostart_cmd = DeclareLaunchArgument(
@@ -128,7 +128,7 @@ def generate_launch_description():
     # Safety Monitor
     safety_monitor = Node(
         package='cropmap_nav2',
-        executable='safety_monitor',
+        executable='safety_monitor.py',
         name='safety_monitor',
         output='screen',
         parameters=[{
@@ -140,7 +140,7 @@ def generate_launch_description():
     )
 
     # RViz
-    rviz_config_file = PathJoinSubstitution([cropmap_nav2_dir, 'rviz', 'carter_navigation.rviz'])
+    rviz_config_file = PathJoinSubstitution([cropmap_nav2_dir, 'rviz', 'voxnav_navigation.rviz'])
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',

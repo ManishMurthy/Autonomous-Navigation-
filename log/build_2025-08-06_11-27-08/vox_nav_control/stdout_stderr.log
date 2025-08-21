@@ -1,0 +1,308 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_action: 16.0.14 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+-- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.4.0
+-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- Checking for module 'flann'
+--   Found flann, version 1.9.1
+-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.25
+-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+-- Found PCL_2D: /usr/include/pcl-1.12  
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+-- Found PCL_MODELER: /usr/include/pcl-1.12  
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: serialization filesystem system 
+-- Found ompl: /opt/ros/humble/include/ompl-1.7;/usr/include;/usr/include/eigen3  
+-- Found vox_nav_utilities: 0.0.0 (/home/manish/eiratech_ws/install/vox_nav_utilities/share/vox_nav_utilities/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/manish/eiratech_ws/build/vox_nav_control
+[ 55%] [32mBuilding CXX object CMakeFiles/traversability_based_plan_refiner.dir/src/plan_refiner_plugins/traversability_based_plan_refiner.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/mpc_controller_casadi.dir/src/mpc_controller_casadi/mpc_controller_casadi_ros.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/mpc_controller_casadi.dir/src/mpc_controller_casadi/mpc_controller_casadi_core.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/lyapunov_controller.dir/src/lyapunov_controller/lyapunov_controller_ros.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/vox_nav_controller_server.dir/src/controller_server.cpp.o[0m
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/plan_refiner_plugins/traversability_based_plan_refiner.hpp:31[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/plan_refiner_plugins/traversability_based_plan_refiner.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/mpc_controller_casadi/mpc_controller_casadi_ros.hpp:21[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/mpc_controller_casadi/mpc_controller_casadi_ros.cpp:16[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/lyapunov_controller/lyapunov_controller_ros.hpp:21[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/lyapunov_controller/lyapunov_controller_ros.cpp:16[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/lyapunov_controller/lyapunov_controller_ros.hpp:15[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/lyapunov_controller/lyapunov_controller_ros.cpp:16[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:[m[K In function ‘[01m[Kvoid vox_nav_control::common::readjustGlobalPlanLocally(const PoseStamped&, pcl::PointCloud<pcl::PointXYZ>::Ptr, rclcpp::Publisher<visualization_msgs::msg::MarkerArray_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::SharedPtr, const rclcpp::Node*, nav_msgs::msg::Path&, double, double, int)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:29:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<vox_nav_control::common::States>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  525 |         node->get_logger(), [01;35m[K"publishTrajStates should publish %d states"[m[K, [32m[Kreadjusted_states.size()[m[K);
+      |                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [32m[K|[m[K
+      |                                                                                                 [32m[Kstd::vector<vox_nav_control::common::States>::size_type {aka long unsigned int}[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/lyapunov_controller/lyapunov_controller_ros.hpp:17[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/lyapunov_controller/lyapunov_controller_ros.cpp:16[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  525 |         node->get_logger(), "publishTrajStates should publish [01;36m[K%d[m[K states", readjusted_states.size());
+      |                                                               [01;36m[K~^[m[K
+      |                                                                [01;36m[K|[m[K
+      |                                                                [01;36m[Kint[m[K
+      |                                                               [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/mpc_controller_casadi/mpc_controller_casadi_ros.hpp:15[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/mpc_controller_casadi/mpc_controller_casadi_ros.cpp:16[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:[m[K In function ‘[01m[Kvoid vox_nav_control::common::readjustGlobalPlanLocally(const PoseStamped&, pcl::PointCloud<pcl::PointXYZ>::Ptr, rclcpp::Publisher<visualization_msgs::msg::MarkerArray_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::SharedPtr, const rclcpp::Node*, nav_msgs::msg::Path&, double, double, int)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:29:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<vox_nav_control::common::States>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  525 |         node->get_logger(), [01;35m[K"publishTrajStates should publish %d states"[m[K, [32m[Kreadjusted_states.size()[m[K);
+      |                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [32m[K|[m[K
+      |                                                                                                 [32m[Kstd::vector<vox_nav_control::common::States>::size_type {aka long unsigned int}[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/mpc_controller_casadi/mpc_controller_casadi_core.hpp:29[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/mpc_controller_casadi/mpc_controller_casadi_ros.hpp:17[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/mpc_controller_casadi/mpc_controller_casadi_ros.cpp:16[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  525 |         node->get_logger(), "publishTrajStates should publish [01;36m[K%d[m[K states", readjusted_states.size());
+      |                                                               [01;36m[K~^[m[K
+      |                                                                [01;36m[K|[m[K
+      |                                                                [01;36m[Kint[m[K
+      |                                                               [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:33[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/controller_server.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/controller_server.cpp:18[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:[m[K In function ‘[01m[Kvoid vox_nav_control::common::readjustGlobalPlanLocally(const PoseStamped&, pcl::PointCloud<pcl::PointXYZ>::Ptr, rclcpp::Publisher<visualization_msgs::msg::MarkerArray_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::SharedPtr, const rclcpp::Node*, nav_msgs::msg::Path&, double, double, int)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:29:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<vox_nav_control::common::States>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  525 |         node->get_logger(), [01;35m[K"publishTrajStates should publish %d states"[m[K, [32m[Kreadjusted_states.size()[m[K);
+      |                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [32m[K|[m[K
+      |                                                                                                 [32m[Kstd::vector<vox_nav_control::common::States>::size_type {aka long unsigned int}[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/controller_server.hpp:36[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/controller_server.cpp:18[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  525 |         node->get_logger(), "publishTrajStates should publish [01;36m[K%d[m[K states", readjusted_states.size());
+      |                                                               [01;36m[K~^[m[K
+      |                                                                [01;36m[K|[m[K
+      |                                                                [01;36m[Kint[m[K
+      |                                                               [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/mpc_controller_casadi/mpc_controller_casadi_core.hpp:29[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/mpc_controller_casadi/mpc_controller_casadi_core.cpp:19[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:[m[K In function ‘[01m[Kvoid vox_nav_control::common::readjustGlobalPlanLocally(const PoseStamped&, pcl::PointCloud<pcl::PointXYZ>::Ptr, rclcpp::Publisher<visualization_msgs::msg::MarkerArray_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::SharedPtr, const rclcpp::Node*, nav_msgs::msg::Path&, double, double, int)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:29:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<vox_nav_control::common::States>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  525 |         node->get_logger(), [01;35m[K"publishTrajStates should publish %d states"[m[K, [32m[Kreadjusted_states.size()[m[K);
+      |                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [32m[K|[m[K
+      |                                                                                                 [32m[Kstd::vector<vox_nav_control::common::States>::size_type {aka long unsigned int}[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/mpc_controller_casadi/mpc_controller_casadi_core.hpp:29[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/mpc_controller_casadi/mpc_controller_casadi_core.cpp:19[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  525 |         node->get_logger(), "publishTrajStates should publish [01;36m[K%d[m[K states", readjusted_states.size());
+      |                                                               [01;36m[K~^[m[K
+      |                                                                [01;36m[K|[m[K
+      |                                                                [01;36m[Kint[m[K
+      |                                                               [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:45[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/plan_refiner_plugins/traversability_based_plan_refiner.hpp:30[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/plan_refiner_plugins/traversability_based_plan_refiner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:[m[K In function ‘[01m[Kvoid vox_nav_control::common::readjustGlobalPlanLocally(const PoseStamped&, pcl::PointCloud<pcl::PointXYZ>::Ptr, rclcpp::Publisher<visualization_msgs::msg::MarkerArray_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::SharedPtr, const rclcpp::Node*, nav_msgs::msg::Path&, double, double, int)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:29:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<vox_nav_control::common::States>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  525 |         node->get_logger(), [01;35m[K"publishTrajStates should publish %d states"[m[K, [32m[Kreadjusted_states.size()[m[K);
+      |                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [32m[K|[m[K
+      |                                                                                                 [32m[Kstd::vector<vox_nav_control::common::States>::size_type {aka long unsigned int}[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/plan_refiner_plugins/traversability_based_plan_refiner.hpp:40[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/plan_refiner_plugins/traversability_based_plan_refiner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/common.hpp:525:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  525 |         node->get_logger(), "publishTrajStates should publish [01;36m[K%d[m[K states", readjusted_states.size());
+      |                                                               [01;36m[K~^[m[K
+      |                                                                [01;36m[K|[m[K
+      |                                                                [01;36m[Kint[m[K
+      |                                                               [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:45[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/include/vox_nav_control/plan_refiner_plugins/traversability_based_plan_refiner.hpp:30[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/plan_refiner_plugins/traversability_based_plan_refiner.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/plan_refiner_plugins/traversability_based_plan_refiner.cpp:[m[K In member function ‘[01m[Kvoid vox_nav_control::TraversabilityBasedPlanRefiner::traversabilityMapCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/plan_refiner_plugins/traversability_based_plan_refiner.cpp:343:36:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::map<unsigned int, std::shared_ptr<pcl::Supervoxel<pcl::PointXYZRGBA> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  343 |   RCLCPP_INFO(node_->get_logger(), [01;35m[K"Found %d supervoxels"[m[K, [32m[Ksupervoxel_clusters_.size()[m[K);
+      |                                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                     [32m[K|[m[K
+      |                                                                                     [32m[Kstd::map<unsigned int, std::shared_ptr<pcl::Supervoxel<pcl::PointXYZRGBA> > >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_control/src/plan_refiner_plugins/traversability_based_plan_refiner.cpp:343:44:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  343 |   RCLCPP_INFO(node_->get_logger(), "Found [01;36m[K%d[m[K supervoxels", supervoxel_clusters_.size());
+      |                                           [01;36m[K~^[m[K
+      |                                            [01;36m[K|[m[K
+      |                                            [01;36m[Kint[m[K
+      |                                           [32m[K%ld[m[K
+[ 66%] [32m[1mLinking CXX shared library liblyapunov_controller.so[0m
+[ 77%] [32m[1mLinking CXX shared library libmpc_controller_casadi.so[0m
+[ 88%] [32m[1mLinking CXX executable vox_nav_controller_server[0m
+[ 88%] Built target lyapunov_controller
+[ 88%] Built target mpc_controller_casadi
+[ 88%] Built target vox_nav_controller_server
+[100%] [32m[1mLinking CXX shared library libtraversability_based_plan_refiner.so[0m
+[100%] Built target traversability_based_plan_refiner
+-- Install configuration: ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/lib/vox_nav_control/vox_nav_controller_server
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_control/lib/vox_nav_control/vox_nav_controller_server" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/lib/libmpc_controller_casadi.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_control/lib/libmpc_controller_casadi.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/lib/liblyapunov_controller.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_control/lib/liblyapunov_controller.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/lib/libtraversability_based_plan_refiner.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_control/lib/libtraversability_based_plan_refiner.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/plugins.xml
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/launch
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/launch/acado_code_generation.launch.py
+-- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/plugins.xml
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/ament_index/resource_index/package_run_dependencies/vox_nav_control
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/ament_index/resource_index/parent_prefix_path/vox_nav_control
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/environment/ament_prefix_path.sh
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/environment/ament_prefix_path.dsv
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/environment/path.sh
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/environment/path.dsv
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/local_setup.bash
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/local_setup.sh
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/local_setup.zsh
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/local_setup.dsv
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/package.dsv
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/ament_index/resource_index/packages/vox_nav_control
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/ament_index/resource_index/vox_nav_control__pluginlib__plugin/vox_nav_control
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/cmake/vox_nav_controlConfig.cmake
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/cmake/vox_nav_controlConfig-version.cmake
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/package.xml

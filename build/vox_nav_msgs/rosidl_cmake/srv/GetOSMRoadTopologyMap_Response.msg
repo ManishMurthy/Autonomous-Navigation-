@@ -1,0 +1,6 @@
+
+#result
+# The osm road map pcd map
+sensor_msgs/PointCloud2 osm_road_topology
+#
+bool is_valid

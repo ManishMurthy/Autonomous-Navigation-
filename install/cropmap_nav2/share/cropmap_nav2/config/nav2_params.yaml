@@ -1,3 +1,4 @@
+# configuration for CropMap V0 with VoxNav
 amcl:
   ros__parameters:
     use_sim_time: True
@@ -93,17 +94,19 @@ bt_navigator:
     - nav2_back_up_cancel_bt_node
     - nav2_drive_on_heading_cancel_bt_node
 
+#VoxNav Controller Configuration
 controller_server:
   ros__parameters:
     use_sim_time: True
-    controller_frequency: 20.0
+    controller_frequency: 10.0  
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.5
     min_theta_velocity_threshold: 0.001
     failure_tolerance: 0.3
-    progress_checker_plugin: "progress_checker"
+    progress_checker_plugins: ["progress_checker"]
     goal_checker_plugins: ["general_goal_checker"]
     controller_plugins: ["FollowPath"]
+    cmd_vel_topic: "/cmd_vel_raw"  
 
     progress_checker:
       plugin: "nav2_controller::SimpleProgressChecker"
@@ -117,45 +120,20 @@ controller_server:
       yaw_goal_tolerance: 0.25
 
     FollowPath:
-      plugin: "dwb_core::DWBLocalPlanner"
-      debug_trajectory_details: True
-      min_vel_x: 0.0
-      min_vel_y: 0.0
-      max_vel_x: 2.0  # Acceptance criteria max speed
-      max_vel_y: 0.0
-      max_vel_theta: 1.0
-      min_speed_xy: 0.0
-      max_speed_xy: 2.0  # Acceptance criteria max speed
-      min_speed_theta: 0.0
-      acc_lim_x: 2.5
-      acc_lim_y: 0.0
-      acc_lim_theta: 3.2
-      decel_lim_x: -2.5
-      decel_lim_y: 0.0
-      decel_lim_theta: -3.2
-      vx_samples: 20
-      vy_samples: 5
-      vtheta_samples: 20
-      sim_time: 1.7
-      linear_granularity: 0.05
-      angular_granularity: 0.025
-      transform_tolerance: 0.2
-      xy_goal_tolerance: 0.25
-      trans_stopped_velocity: 0.25
-      short_circuit_trajectory_evaluation: True
-      stateful: True
-      critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      BaseObstacle.scale: 10.0
-      PathAlign.scale: 32.0
-      PathAlign.forward_point_distance: 0.1
-      GoalAlign.scale: 24.0
-      GoalAlign.forward_point_distance: 0.1
-      PathDist.scale: 32.0
-      GoalDist.scale: 24.0
-      RotateToGoal.scale: 32.0
-      RotateToGoal.slowing_factor: 5.0
-      RotateToGoal.lookahead_time: -1.0
+      plugin: "nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController"
+      desired_linear_vel: 0.5
+      lookahead_dist: 2.0
+      min_lookahead_dist: 1.0
+      max_angular_vel: 1.0
+      transform_tolerance: 0.1
+      use_velocity_scaled_lookahead_dist: false
+      regulate_to_radius: true
+      use_cost_regulated_linear_velocity_scaling: true
+      cost_scaling_dist: 0.3
+      cost_scaling_gain: 1.0
+      inflation_cost_scaling_factor: 3.0
 
+#Proper Local Costmap Size and Inflation
 local_costmap:
   local_costmap:
     ros__parameters:
@@ -165,15 +143,15 @@ local_costmap:
       robot_base_frame: base_link
       use_sim_time: True
       rolling_window: true
-      width: 3
-      height: 3
+      width: 10          
+      height: 10         
       resolution: 0.05
       footprint: "[[-0.4, -0.3], [0.4, -0.3], [0.4, 0.3], [-0.4, 0.3]]"
       plugins: ["voxel_layer", "inflation_layer"]
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 10.0
-        inflation_radius: 1.0  
+        cost_scaling_factor: 3.0
+        inflation_radius: 0.35  
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
@@ -204,7 +182,6 @@ global_costmap:
       global_frame: map
       robot_base_frame: base_link
       use_sim_time: True
-      # Robot footprint based on your URDF dimensions  
       footprint: "[[-0.4, -0.3], [0.4, -0.3], [0.4, 0.3], [-0.4, 0.3]]"
       resolution: 0.05
       track_unknown_space: true
@@ -229,7 +206,7 @@ global_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 3.0
-        inflation_radius: 0.55
+        inflation_radius: 0.4  
       always_send_full_costmap: True
 
 map_server:
@@ -245,16 +222,20 @@ map_saver:
     occupied_thresh_default: 0.65
     map_subscribe_transient_local: True
 
-planner_server:
+
+# VoxNav Planner Configuration (add this section)
+vox_nav_planner_server:
   ros__parameters:
-    expected_planner_frequency: 20.0
     use_sim_time: True
-    planner_plugins: ["GridBased"]
-    GridBased:
-      plugin: "nav2_navfn_planner/NavfnPlanner"
+    planner_plugins: ["SE2Planner"]
+    SE2Planner:
+      plugin: "vox_nav_planning::SE2Planner"  # Perfect for terrain navigation
       tolerance: 0.5
-      use_astar: false
-      allow_unknown: true
+      # SE2 planner is ideal for ground robots on uneven terrain
+
+# Alternative excellent planners for your terrain tests:
+# "vox_nav_planning::ElevationPlanner"        # Best for slope/elevation awareness
+# "vox_nav_planning::OptimalElevationPlanner" # Optimal elevation-aware paths
 
 smoother_server:
   ros__parameters:
@@ -318,3 +299,4 @@ velocity_smoother:
     odom_duration: 0.1
     deadband_velocity: [0.0, 0.0, 0.0]
     velocity_timeout: 1.0
+

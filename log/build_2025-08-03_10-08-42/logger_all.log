@@ -1,0 +1,273 @@
+[0.278s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'vox_nav_bringup']
+[0.278s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['vox_nav_bringup'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ec38b2221d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ec38b2fb190>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ec38b2fb190>>, mixin_verb=('build',))
+[0.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.712s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.712s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.712s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.713s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/manish/eiratech_ws'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/cropmap_nav2) by extensions ['ignore', 'ignore_ament_install']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/cropmap_nav2) by extension 'ignore'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/cropmap_nav2) by extension 'ignore_ament_install'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/cropmap_nav2) by extensions ['colcon_pkg']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/cropmap_nav2) by extension 'colcon_pkg'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/cropmap_nav2) by extensions ['colcon_meta']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/cropmap_nav2) by extension 'colcon_meta'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/cropmap_nav2) by extensions ['ros']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/cropmap_nav2) by extension 'ros'
+[0.761s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cropmap_nav2' with type 'ros.ament_cmake' and name 'cropmap_nav2'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.768s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ignore'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ignore_ament_install'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['colcon_pkg']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'colcon_pkg'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['colcon_meta']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'colcon_meta'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['ros']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ros'
+[0.771s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_control' with type 'ros.ament_cmake' and name 'robot_control'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.778s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_cmake' and name 'robot_description'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extension 'ignore'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extension 'ignore_ament_install'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extensions ['colcon_pkg']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extension 'colcon_pkg'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extensions ['colcon_meta']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extension 'colcon_meta'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extensions ['ros']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extension 'ros'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extensions ['cmake', 'python']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extension 'cmake'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extension 'python'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extensions ['python_setup_py']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav) by extension 'python_setup_py'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extension 'ignore'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extension 'ignore_ament_install'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extensions ['colcon_pkg']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extension 'colcon_pkg'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extensions ['colcon_meta']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extension 'colcon_meta'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extensions ['ros']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extension 'ros'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extensions ['cmake', 'python']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extension 'cmake'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extension 'python'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extensions ['python_setup_py']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/scripts) by extension 'python_setup_py'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_bringup) by extension 'ignore'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_bringup) by extension 'ignore_ament_install'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_bringup) by extensions ['colcon_pkg']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_bringup) by extension 'colcon_pkg'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_bringup) by extensions ['colcon_meta']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_bringup) by extension 'colcon_meta'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_bringup) by extensions ['ros']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_bringup) by extension 'ros'
+[0.785s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vox_nav/vox_nav_bringup' with type 'ros.ament_cmake' and name 'vox_nav_bringup'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_control) by extensions ['ignore', 'ignore_ament_install']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_control) by extension 'ignore'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_control) by extension 'ignore_ament_install'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_control) by extensions ['colcon_pkg']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_control) by extension 'colcon_pkg'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_control) by extensions ['colcon_meta']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_control) by extension 'colcon_meta'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_control) by extensions ['ros']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_control) by extension 'ros'
+[0.793s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vox_nav/vox_nav_control' with type 'ros.ament_cmake' and name 'vox_nav_control'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_map_server) by extensions ['ignore', 'ignore_ament_install']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_map_server) by extension 'ignore'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_map_server) by extension 'ignore_ament_install'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_map_server) by extensions ['colcon_pkg']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_map_server) by extension 'colcon_pkg'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_map_server) by extensions ['colcon_meta']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_map_server) by extension 'colcon_meta'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_map_server) by extensions ['ros']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_map_server) by extension 'ros'
+[0.797s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vox_nav/vox_nav_map_server' with type 'ros.ament_cmake' and name 'vox_nav_map_server'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_msgs) by extension 'ignore'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_msgs) by extension 'ignore_ament_install'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_msgs) by extensions ['colcon_pkg']
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_msgs) by extension 'colcon_pkg'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_msgs) by extensions ['colcon_meta']
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_msgs) by extension 'colcon_meta'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_msgs) by extensions ['ros']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_msgs) by extension 'ros'
+[0.832s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vox_nav/vox_nav_msgs' with type 'ros.ament_cmake' and name 'vox_nav_msgs'
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_navigators) by extensions ['ignore', 'ignore_ament_install']
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_navigators) by extension 'ignore'
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_navigators) by extension 'ignore_ament_install'
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_navigators) by extensions ['colcon_pkg']
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_navigators) by extension 'colcon_pkg'
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_navigators) by extensions ['colcon_meta']
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_navigators) by extension 'colcon_meta'
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_navigators) by extensions ['ros']
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_navigators) by extension 'ros'
+[0.839s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vox_nav/vox_nav_navigators' with type 'ros.ament_cmake' and name 'vox_nav_navigators'
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_planning) by extensions ['ignore', 'ignore_ament_install']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_planning) by extension 'ignore'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_planning) by extension 'ignore_ament_install'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_planning) by extensions ['colcon_pkg']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_planning) by extension 'colcon_pkg'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_planning) by extensions ['colcon_meta']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_planning) by extension 'colcon_meta'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_planning) by extensions ['ros']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_planning) by extension 'ros'
+[0.844s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vox_nav/vox_nav_planning' with type 'ros.ament_cmake' and name 'vox_nav_planning'
+[0.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_utilities) by extensions ['ignore', 'ignore_ament_install']
+[0.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_utilities) by extension 'ignore'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_utilities) by extension 'ignore_ament_install'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_utilities) by extensions ['colcon_pkg']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_utilities) by extension 'colcon_pkg'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_utilities) by extensions ['colcon_meta']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_utilities) by extension 'colcon_meta'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_utilities) by extensions ['ros']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_utilities) by extension 'ros'
+[0.849s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vox_nav/vox_nav_utilities' with type 'ros.ament_cmake' and name 'vox_nav_utilities'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_waypoint_nav_clients) by extensions ['ignore', 'ignore_ament_install']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_waypoint_nav_clients) by extension 'ignore'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_waypoint_nav_clients) by extension 'ignore_ament_install'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_waypoint_nav_clients) by extensions ['colcon_pkg']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_waypoint_nav_clients) by extension 'colcon_pkg'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_waypoint_nav_clients) by extensions ['colcon_meta']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_waypoint_nav_clients) by extension 'colcon_meta'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_waypoint_nav_clients) by extensions ['ros']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/vox_nav/vox_nav_waypoint_nav_clients) by extension 'ros'
+[0.853s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vox_nav/vox_nav_waypoint_nav_clients' with type 'ros.ament_cmake' and name 'vox_nav_waypoint_nav_clients'
+[0.853s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.853s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.853s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.853s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.853s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'cropmap_nav2' in 'src/cropmap_nav2'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robot_control' in 'src/robot_control'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robot_description' in 'src/robot_description'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vox_nav_msgs' in 'src/vox_nav/vox_nav_msgs'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robot_bringup' in 'src/robot_bringup'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vox_nav_utilities' in 'src/vox_nav/vox_nav_utilities'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vox_nav_control' in 'src/vox_nav/vox_nav_control'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vox_nav_map_server' in 'src/vox_nav/vox_nav_map_server'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vox_nav_navigators' in 'src/vox_nav/vox_nav_navigators'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vox_nav_planning' in 'src/vox_nav/vox_nav_planning'
+[0.922s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vox_nav_waypoint_nav_clients' in 'src/vox_nav/vox_nav_waypoint_nav_clients'
+[0.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.927s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/manish/eiratech_ws/install
+[0.930s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 449 installed packages in /opt/ros/humble
+[0.936s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.049s] Level 5:colcon.colcon_core.verb:set package 'vox_nav_bringup' build argument 'cmake_args' from command line to 'None'
+[1.049s] Level 5:colcon.colcon_core.verb:set package 'vox_nav_bringup' build argument 'cmake_target' from command line to 'None'
+[1.049s] Level 5:colcon.colcon_core.verb:set package 'vox_nav_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.049s] Level 5:colcon.colcon_core.verb:set package 'vox_nav_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.049s] Level 5:colcon.colcon_core.verb:set package 'vox_nav_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.049s] Level 5:colcon.colcon_core.verb:set package 'vox_nav_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.049s] Level 5:colcon.colcon_core.verb:set package 'vox_nav_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.049s] Level 5:colcon.colcon_core.verb:set package 'vox_nav_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.049s] Level 5:colcon.colcon_core.verb:set package 'vox_nav_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.050s] DEBUG:colcon.colcon_core.verb:Building package 'vox_nav_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/manish/eiratech_ws/build/vox_nav_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/manish/eiratech_ws/install/vox_nav_bringup', 'merge_install': False, 'path': '/home/manish/eiratech_ws/src/vox_nav/vox_nav_bringup', 'symlink_install': False, 'test_result_base': None}
+[1.050s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.052s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.052s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/manish/eiratech_ws/src/vox_nav/vox_nav_bringup' with build type 'ament_cmake'
+[1.052s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/manish/eiratech_ws/src/vox_nav/vox_nav_bringup'
+[1.060s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.060s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.060s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.065s] ERROR:colcon.colcon_cmake.task.cmake.build:Failed to find the following files:
+- /home/manish/eiratech_ws/install/vox_nav_msgs/share/vox_nav_msgs/package.sh
+- /home/manish/eiratech_ws/install/vox_nav_utilities/share/vox_nav_utilities/package.sh
+- /home/manish/eiratech_ws/install/vox_nav_control/share/vox_nav_control/package.sh
+- /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/package.sh
+Check that the following packages have been built:
+- vox_nav_msgs
+- vox_nav_utilities
+- vox_nav_control
+- vox_nav_planning
+[1.066s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vox_nav_bringup)
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/home/manish/eiratech_ws/install/vox_nav_bringup' for CMake module files
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/home/manish/eiratech_ws/install/vox_nav_bringup' for CMake config files
+[1.074s] Level 1:colcon.colcon_core.environment:checking '/home/manish/eiratech_ws/install/vox_nav_bringup/bin'
+[1.074s] Level 1:colcon.colcon_core.environment:checking '/home/manish/eiratech_ws/install/vox_nav_bringup/lib/pkgconfig/vox_nav_bringup.pc'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/manish/eiratech_ws/install/vox_nav_bringup/lib/python3.10/site-packages'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/manish/eiratech_ws/install/vox_nav_bringup/bin'
+[1.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/manish/eiratech_ws/install/vox_nav_bringup/share/vox_nav_bringup/package.ps1'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/manish/eiratech_ws/install/vox_nav_bringup/share/vox_nav_bringup/package.dsv'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/manish/eiratech_ws/install/vox_nav_bringup/share/vox_nav_bringup/package.sh'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/manish/eiratech_ws/install/vox_nav_bringup/share/vox_nav_bringup/package.bash'
+[1.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/manish/eiratech_ws/install/vox_nav_bringup/share/vox_nav_bringup/package.zsh'
+[1.083s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/manish/eiratech_ws/install/vox_nav_bringup/share/colcon-core/packages/vox_nav_bringup)
+[1.084s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.086s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.086s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[1.086s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.099s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.099s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.099s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.139s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.140s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/manish/eiratech_ws/install/local_setup.ps1'
+[1.142s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/manish/eiratech_ws/install/_local_setup_util_ps1.py'
+[1.146s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/manish/eiratech_ws/install/setup.ps1'
+[1.150s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/manish/eiratech_ws/install/local_setup.sh'
+[1.151s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/manish/eiratech_ws/install/_local_setup_util_sh.py'
+[1.152s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/manish/eiratech_ws/install/setup.sh'
+[1.158s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/manish/eiratech_ws/install/local_setup.bash'
+[1.159s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/manish/eiratech_ws/install/setup.bash'
+[1.162s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/manish/eiratech_ws/install/local_setup.zsh'
+[1.163s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/manish/eiratech_ws/install/setup.zsh'

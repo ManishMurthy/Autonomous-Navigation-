@@ -11,7 +11,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/base_link.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/base_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -20,17 +20,17 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/base_link.STL" />
+	      <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
 
-  <!-- Base Footprint for Nav2 -->
+  <!-- Base Footprint -->
   <link name="base_footprint"/>
-  <joint name="base_footprint_joint" type="fixed">
+  <joint name="base_footprint_ref_joint" type="fixed">
     <origin xyz="0 0 .25" rpy="0 0 0" />
     <parent link="base_footprint" />
-    <child link="base_link" />
+    <child link="base_link" />  <!-- Fixed typo: was "childggg" -->
     <axis xyz="0 1 0" />
   </joint>
 
@@ -38,13 +38,13 @@
   <link name="wheel_front_right">
     <inertial>
       <origin xyz="-3.8916E-11 0.012822 1.02E-07" rpy="0 0 0" />
-      <mass value="2.5" />
+      <mass value="2.5" />  <!-- Increased mass for better physics -->
       <inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.04" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/wheel_front_right.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_right.STL" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -53,7 +53,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/wheel_front_right.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_right.STL" />
       </geometry>
     </collision>
   </link>
@@ -75,7 +75,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/wheel_back_right.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_right.STL" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -84,7 +84,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/wheel_back_right.STL" />
+	      <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_right.STL" />
       </geometry>
     </collision>
   </link>
@@ -106,7 +106,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/wheel_back_left.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_left.STL" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -115,7 +115,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/wheel_back_left.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_back_left.STL" />
       </geometry>
     </collision>
   </link>
@@ -137,7 +137,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/wheel_front_left.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_left.STL" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -146,7 +146,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/wheel_front_left.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/wheel_front_left.STL" />
       </geometry>
     </collision>
   </link>
@@ -162,13 +162,13 @@
   <link name="back_camera">
     <inertial>
       <origin xyz="-0.032487 0.0089676 -0.0027971" rpy="0 0 0" />
-      <mass value="0.2" />
+      <mass value="0.2" />  <!-- Added mass for physics -->
       <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/back_camera.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/back_camera.STL" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -186,13 +186,13 @@
   <link name="front_camera">
     <inertial>
       <origin xyz="0.012395 -0.012586 0.0091516" rpy="0 0 0" />
-      <mass value="0.2" />
+      <mass value="0.2" />  <!-- Added mass for physics -->
       <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/front_camera.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/front_camera.STL" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -216,7 +216,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/TC_V0.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/TC_V0.STL" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -225,7 +225,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/TC_V0.STL" />
+        <mesh filename="file:///home/manish/eiratech_ws/install/robot_description/share/robot_description/meshes/TC_V0.STL" />
       </geometry>
     </collision>
   </link>
@@ -236,7 +236,7 @@
     <axis xyz="0 0 0" />
   </joint>
 
-  <!-- Camera Dummy Links for proper orientation -->
+  <!-- Camera Dummy Links (keep existing) -->
   <link name="front_camera_dummy"/>
   <joint name="front_camera_dummy_joint" type="fixed">
     <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708" />
@@ -252,6 +252,10 @@
     <child link="back_camera_dummy" />
     <axis xyz="1 0 0" />
   </joint>
+
+  <!-- ========================================= -->
+  <!-- ADDED SENSORS -->
+  <!-- ========================================= -->
 
   <!-- Lidar Sensor -->
   <link name="lidar_link">
@@ -277,12 +281,13 @@
     </collision>
   </link>
   <joint name="lidar_joint" type="fixed">
-    <origin xyz="0 0 0.4" rpy="0 0 0" />
+    <origin xyz="0 0 0.4" rpy="0 0 0" />  <!-- Mounted on top of robot -->
     <parent link="TC_V0" />
     <child link="lidar_link" />
   </joint>
 
   <!-- IMU Sensor -->
+    <!-- IMU Sensor -->
   <link name="imu_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -305,11 +310,12 @@
       </geometry>
     </collision>
   </link>
-  <joint name="imu_joint" type="fixed">
+    <joint name="imu_joint" type="fixed">
     <origin xyz="0 0 0.1" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="imu_link" />
   </joint>
+
 
   <!-- GPS Antenna -->
   <link name="gps_link">
@@ -335,195 +341,166 @@
     </collision>
   </link>
   <joint name="gps_joint" type="fixed">
-    <origin xyz="-0.2 0 0.5" rpy="0 0 0" />
-    <parent link="TC_V0" />
+    <origin xyz="-0.2 0 0.5" rpy="0 0 0" />  <!-- Behind lidar -->
+    <parent link="base_link" />
     <child link="gps_link" />
   </joint>
 
-  <!-- ========================================= -->
-  <!-- GAZEBO FORTRESS PLUGINS (CORRECTED) -->
-  <!-- ========================================= -->
-
-  <!-- Main Robot Control Plugin -->
   <gazebo>
-    <!-- Skid Steering Drive Plugin -->
-    <plugin filename="libignition-gazebo-diff-drive-system.so" name="ignition::gazebo::systems::DiffDrive">
-      <!-- Left side wheels -->
-      <left_joint>wheel_front_left_joint</left_joint>
-      <left_joint>wheel_back_left_joint</left_joint>
-      <!-- Right side wheels -->
-      <right_joint>wheel_front_right_joint</right_joint>
-      <right_joint>wheel_back_right_joint</right_joint>
-      
-      <!-- Robot dimensions -->
-      <wheel_separation>0.5604</wheel_separation>
-      <wheel_radius>0.1</wheel_radius>
-      
-      <!-- Control topics for Nav2 -->
-      <topic>cmd_vel</topic>
-      <odom_topic>odom</odom_topic>
-      
-      <!-- Reference frames for Nav2 -->
-      <frame_id>odom</frame_id>
-      <child_frame_id>base_footprint</child_frame_id>
-      
-      <!-- Publishing settings -->
-      <odom_publish_frequency>50</odom_publish_frequency>
-      <publish_odom>true</publish_odom>
-      <publish_odom_tf>true</publish_odom_tf>
-      <publish_wheel_tf>false</publish_wheel_tf>
-      
-      <!-- Performance limits (Stage 1 acceptance criteria) -->
-      <max_linear_velocity>2.0</max_linear_velocity>
-      <min_linear_velocity>-1.0</min_linear_velocity>
-      <max_angular_velocity>2.0</max_angular_velocity>
-      <min_angular_velocity>-2.0</min_angular_velocity>
-      <max_linear_acceleration>1.0</max_linear_acceleration>
-      <max_angular_acceleration>2.0</max_angular_acceleration>
-    </plugin>
+  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+       <!-- Robot parameters -->
+    <wheel_separation>0.5604</wheel_separation>
+    <wheel_diameter>0.2</wheel_diameter>
+    
+    <!-- Topics -->
+    <command_topic>cmd_vel</command_topic>
+    <odometry_topic>odom</odometry_topic>
+    <odometry_frame>odom</odometry_frame>
+    <robot_base_frame>base_footprint</robot_base_frame> <!-- base_link-->
+    
+    <!-- Publishing -->
+    <publish_wheel_tf>true</publish_wheel_tf>
+    <publish_odom>true</publish_odom>
+    <publish_odom_tf>true</publish_odom_tf>
+    <update_rate>50</update_rate>
+  </plugin>
+</gazebo>
 
-    <!-- Joint State Publisher -->
-    <plugin filename="libignition-gazebo-joint-state-publisher-system.so" name="ignition::gazebo::systems::JointStatePublisher">
-      <topic>joint_states</topic>
-    </plugin>
-
-    <!-- Pose Publisher -->
-    <plugin filename="libignition-gazebo-pose-publisher-system.so" name="ignition::gazebo::systems::PosePublisher">
-      <publish_link_pose>true</publish_link_pose>
-      <publish_collision_pose>false</publish_collision_pose>
-      <publish_visual_pose>false</publish_visual_pose>
-      <use_pose_vector_msg>true</use_pose_vector_msg>
-    </plugin>
-  </gazebo>
-
-  <!-- Lidar Sensor Plugin (Nav2 Compatible) -->
-  <gazebo reference="lidar_link">
-    <sensor name="lidar_sensor" type="lidar">
-      <pose>0 0 0 0 0 0</pose>
-      <topic>scan</topic>
-      <update_rate>20</update_rate>
-      <ray>
-        <scan>
-          <horizontal>
-            <samples>720</samples>
-            <resolution>1</resolution>
-            <min_angle>-3.14159</min_angle>
-            <max_angle>3.14159</max_angle>
-          </horizontal>
-        </scan>
-        <range>
-          <min>0.1</min>
-          <max>15.0</max>
-          <resolution>0.01</resolution>
-        </range>
-        <noise>
-          <type>gaussian</type>
-          <mean>0.0</mean>
-          <stddev>0.02</stddev>
-        </noise>
-      </ray>
-      <plugin filename="libignition-gazebo-sensors-system.so" name="ignition::gazebo::systems::Sensors">
-        <render_engine>ogre2</render_engine>
-      </plugin>
-    </sensor>
-  </gazebo>
-
- <!-- GPS Sensor Plugin -->
-  <gazebo reference="gps_link">
-    <sensor name="gps_sensor" type="navsat">
-      <pose>0 0 0 0 0 0</pose>
-      <topic>gps/fix</topic>
-      <update_rate>5</update_rate>
-      <navsat>
-        <position_sensing>
-          <horizontal>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-4</stddev>
-            </noise>
-          </horizontal>
-          <vertical>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-4</stddev>
-            </noise>
-          </vertical>
-        </position_sensing>
-        <velocity_sensing>
-          <horizontal>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>1e-3</stddev>
-            </noise>
-          </horizontal>
-          <vertical>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>1e-3</stddev>
-            </noise>
-          </vertical>
-        </velocity_sensing>
-      </navsat>
-      <plugin filename="libignition-gazebo-sensors-system.so" name="ignition::gazebo::systems::Sensors">
-        <render_engine>ogre2</render_engine>
-      </plugin>
-    </sensor>
-  </gazebo>
-
+  <gazebo>
+   <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+    <update_rate>50</update_rate>
+    <joint_name>wheel_front_left_joint</joint_name>
+    <joint_name>wheel_front_right_joint</joint_name>
+    <joint_name>wheel_back_left_joint</joint_name>
+    <joint_name>wheel_back_right_joint</joint_name>
+  </plugin>
+</gazebo>    
   
-  <!-- IMU Sensor Plugin -->
+  <!-- Lidar -->
+  <gazebo reference="lidar_link">
+  <sensor type="ray" name="lidar_sensor">
+    <pose>0 0 0 0 0 0</pose>
+    <visualize>false</visualize>
+    <update_rate>20</update_rate>
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>720</samples>
+          <resolution>1</resolution>
+          <min_angle>-3.14159</min_angle>
+          <max_angle>3.14159</max_angle>
+        </horizontal>
+      </scan>
+      <range>
+        <min>0.1</min>
+        <max>15.0</max>
+        <resolution>0.01</resolution>
+      </range>
+      <noise>
+        <type>gaussian</type>
+        <mean>0.0</mean>
+        <stddev>0.02</stddev>
+      </noise>
+    </ray>
+    <plugin name="gazebo_ros_ray_sensor" filename="libgazebo_ros_ray_sensor.so">
+  <ros>
+    <namespace>/</namespace>
+    <remapping>~/out:=scan</remapping>
+   </ros>
+    <output_type>sensor_msgs/LaserScan</output_type>
+    <frame_name>lidar_link</frame_name>
+  </plugin>
+  </sensor>
+</gazebo>
+
+   <!-- Front camera -->
+  <gazebo reference="front_camera_dummy">
+  <sensor type="depth" name="front_camera_sensor">
+    <update_rate>30</update_rate>
+    <camera name="front_camera">
+      <horizontal_fov>1.047</horizontal_fov>
+      <image>
+        <width>640</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </camera>
+    <plugin name="front_camera_controller" filename="libgazebo_ros_camera.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>30.0</updateRate>
+      <cameraName>front_camera_sensor</cameraName>
+      <imageTopicName>front_camera_sensor/image_raw</imageTopicName>
+      <depthImageTopicName>front_camera_sensor/depth/image_raw</depthImageTopicName>
+      <pointCloudTopicName>front_camera_sensor/points</pointCloudTopicName>
+      <cameraInfoTopicName>front_camera_sensor/camera_info</cameraInfoTopicName>
+      <depthImageCameraInfoTopicName>front_camera_sensor/depth/camera_info</depthImageCameraInfoTopicName>
+      <frameName>base_link</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+
+  <!-- Back Camera -->
+  <gazebo reference="back_camera_dummy">
+  <sensor type="camera" name="back_camera_sensor">
+    <update_rate>30</update_rate>
+    <camera name="back_camera">
+      <horizontal_fov>1.047</horizontal_fov>
+      <image>
+        <width>1920</width>
+        <height>1080</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </camera>
+    <plugin name="back_camera_controller" filename="libgazebo_ros_camera.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>30.0</updateRate>
+      <cameraName>back_camera_sensor</cameraName>
+      <imageTopicName>back_camera_sensor/image_raw</imageTopicName>
+      <depthImageTopicName>back_camera_sensor/depth/image_raw</depthImageTopicName>
+      <pointCloudTopicName>back_camera_sensor/points</pointCloudTopicName>
+      <cameraInfoTopicName>back_camera_sensor/camera_info</cameraInfoTopicName>
+      <depthImageCameraInfoTopicName>back_camera_sensor/depth/camera_info</depthImageCameraInfoTopicName>
+      <frameName>base_link</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+
+  <!-- IMU sensor -->
   <gazebo reference="imu_link">
-    <sensor name="imu_sensor" type="imu">
-      <pose>0 0 0 0 0 0</pose>
-      <topic>imu</topic>
-      <update_rate>100</update_rate>
-      <imu>
-        <angular_velocity>
-          <x>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-4</stddev>
-            </noise>
-          </x>
-          <y>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-4</stddev>
-            </noise>
-          </y>
-          <z>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>2e-4</stddev>
-            </noise>
-          </z>
-        </angular_velocity>
-        <linear_acceleration>
-          <x>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
-            </noise>
-          </x>
-          <y>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
-            </noise>
-          </y>
-          <z>
-            <noise type="gaussian">
-              <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
-            </noise>
-          </z>
-        </linear_acceleration>
-      </imu>
-      <plugin filename="libignition-gazebo-sensors-system.so" name="ignition::gazebo::systems::Sensors">
-        <render_engine>ogre2</render_engine>
-      </plugin>
-    </sensor>
-  </gazebo>
+  <sensor name="imu_sensor" type="imu">
+    <update_rate>100</update_rate>
+    <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+      <topicName>imu</topicName>
+      <bodyName>imu_link</bodyName>
+      <updateRateHZ>100.0</updateRateHZ>
+      <gaussianNoise>0.0</gaussianNoise>
+      <xyzOffset>0 0 0</xyzOffset>
+      <rpyOffset>0 0 0</rpyOffset>
+      <frameName>imu_link</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+
+  <!-- GPS sensor -->
+  <gazebo reference="gps_link">
+  <sensor name="gps_sensor" type="gps">
+    <update_rate>5</update_rate>
+    <plugin name="gazebo_ros_gps" filename="libgazebo_ros_gps_sensor.so">
+      <topicName>gps/fix</topicName>
+      <frameName>gps_link</frameName>
+      <updateRate>5.0</updateRate>
+      <gaussianNoise>0.0001</gaussianNoise>
+    </plugin>
+  </sensor>
+</gazebo>
 
   <!-- Wheel Physics Properties -->
   <gazebo reference="wheel_front_left">
@@ -568,4 +545,3 @@
   </gazebo>
 
 </robot>
-

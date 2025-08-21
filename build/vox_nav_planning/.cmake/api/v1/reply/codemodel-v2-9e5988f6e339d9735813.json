@@ -1,0 +1,151 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-2e6bab1b5e31b3ad18e0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vox_nav_planning",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "elevation_control_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-elevation_control_planner-6aa462dda56b9d15c7bc.json",
+					"name" : "elevation_control_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "elevation_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-elevation_planner-62d7dfde01defbe5bfac.json",
+					"name" : "elevation_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "optimal_elevation_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-optimal_elevation_planner-9a33fbb1806164ed5c99.json",
+					"name" : "optimal_elevation_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osm_elevation_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osm_elevation_planner-525dd1df4910761ef963.json",
+					"name" : "osm_elevation_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "planner_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-planner_server-af993bc7e87b3faaeb3f.json",
+					"name" : "planner_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "polytunnel_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-polytunnel_planner-bd8021d7b820d3261be3.json",
+					"name" : "polytunnel_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "se2_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-se2_planner-3fd106920b7bdd96235a.json",
+					"name" : "se2_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "se3_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-se3_planner-6c501eed6e48416b11ef.json",
+					"name" : "se3_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d1fd0c54b8fbbad179b2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vox_nav_ompl_planners::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vox_nav_ompl_planners-f0c11bf7b8fd13415873.json",
+					"name" : "vox_nav_ompl_planners",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vox_nav_planning_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vox_nav_planning_uninstall-7d853bee21407771fc45.json",
+					"name" : "vox_nav_planning_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/manish/eiratech_ws/build/vox_nav_planning",
+		"source" : "/home/manish/eiratech_ws/src/vox_nav/vox_nav_planning"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

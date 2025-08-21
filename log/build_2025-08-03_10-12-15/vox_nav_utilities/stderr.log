@@ -1,0 +1,141 @@
+[33mCMake Warning (dev) at CMakeLists.txt:31 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/elevation_state_space.hpp:22[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:16[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/gps_waypoint_collector.hpp:30[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/gps_waypoint_collector.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/pcl2octomap_converter_node.hpp:39[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/pcl2octomap_converter_node.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/elevation_state_space.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:16[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:[m[K In constructor ‘[01m[Kompl::base::OctoCostOptimizationObjective::OctoCostOptimizationObjective(const SpaceInformationPtr&, const std::shared_ptr<octomap::OcTree>&)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:29:5:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   29 |     [01;35m[K"OctoCost Optimization objective bases on an Octomap with %d nodes"[m[K,
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   30 |     [32m[Kelevated_surfels_octree_->size()[m[K);
+      |     [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                   [32m[K|[m[K
+      |                                   [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:29:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   29 |     "OctoCost Optimization objective bases on an Octomap with [01;36m[K%d[m[K nodes",
+      |                                                               [01;36m[K~^[m[K
+      |                                                                [01;36m[K|[m[K
+      |                                                                [01;36m[Kint[m[K
+      |                                                               [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/elevation_state_space.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:16[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:[m[K In constructor ‘[01m[Kompl::base::OctoCellValidStateSampler::OctoCellValidStateSampler(const SpaceInformationPtr&, geometry_msgs::msg::PoseStamped, geometry_msgs::msg::PoseStamped, const SharedPtr&)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:278:14:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<pcl::PointSurfel, Eigen::aligned_allocator<pcl::PointSurfel> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  278 |     logger_, [01;35m[K"OctoCellValidStateSampler bases on an Octomap with %d surfels"[m[K,
+      |              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  279 |     [32m[Kworkspace_surfels_->points.size()[m[K);
+      |     [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                    [32m[K|[m[K
+      |                                    [32m[Kstd::vector<pcl::PointSurfel, Eigen::aligned_allocator<pcl::PointSurfel> >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:278:67:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  278 |     logger_, "OctoCellValidStateSampler bases on an Octomap with [01;36m[K%d[m[K surfels",
+      |                                                                  [01;36m[K~^[m[K
+      |                                                                   [01;36m[K|[m[K
+      |                                                                   [01;36m[Kint[m[K
+      |                                                                  [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/elevation_state_space.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:16[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:[m[K In member function ‘[01m[Kvoid ompl::base::OctoCellValidStateSampler::updateSearchArea(geometry_msgs::msg::PoseStamped, geometry_msgs::msg::PoseStamped)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:336:24:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<pcl::PointSurfel, Eigen::aligned_allocator<pcl::PointSurfel> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  336 |   RCLCPP_INFO(logger_, [01;35m[K"Updated search area surfels, %d"[m[K, [32m[Ksearch_area_surfels_->points.size()[m[K);
+      |                        [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                            [32m[K|[m[K
+      |                                                                                            [32m[Kstd::vector<pcl::PointSurfel, Eigen::aligned_allocator<pcl::PointSurfel> >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:336:55:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  336 |   RCLCPP_INFO(logger_, "Updated search area surfels, [01;36m[K%d[m[K", search_area_surfels_->points.size());
+      |                                                      [01;36m[K~^[m[K
+      |                                                       [01;36m[K|[m[K
+      |                                                       [01;36m[Kint[m[K
+      |                                                      [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/elevation_state_space.hpp:19[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:16[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:342:14:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<pcl::PointSurfel, Eigen::aligned_allocator<pcl::PointSurfel> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  342 |     logger_, [01;35m[K"Uniformly sampled %d search area surfels,"[m[K, [32m[Ksearch_area_surfels_->points.size()[m[K);
+      |              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                            [32m[K|[m[K
+      |                                                                                            [32m[Kstd::vector<pcl::PointSurfel, Eigen::aligned_allocator<pcl::PointSurfel> >::size_type {aka long unsigned int}[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:342:34:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  342 |     logger_, "Uniformly sampled [01;36m[K%d[m[K search area surfels,", search_area_surfels_->points.size());
+      |                                 [01;36m[K~^[m[K
+      |                                  [01;36m[K|[m[K
+      |                                  [01;36m[Kint[m[K
+      |                                 [32m[K%ld[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/elevation_state_space.hpp:27[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/elevation_state_space.cpp:16[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/pcl_helpers.hpp:[m[K In function ‘[01m[KP vox_nav_utilities::getNearstRPoints(double, const P&, const T&) [with P = pcl::PointSurfel; T = std::shared_ptr<pcl::PointCloud<pcl::PointSurfel> >][m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/pcl_helpers.hpp:309:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  309 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+In file included from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/include/vox_nav_utilities/gps_waypoint_collector.hpp:30[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_utilities/src/gps_waypoint_collector_node.cpp:17[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K

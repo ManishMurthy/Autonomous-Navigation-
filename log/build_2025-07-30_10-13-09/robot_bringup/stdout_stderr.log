@@ -1,0 +1,74 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/manish/eiratech_ws/build/robot_bringup
+-- Install configuration: ""
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/launch
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/gz_sim.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/teleop.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/bridge.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/safety.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/launch/gazebo_sim.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/rviz
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/rviz/robot_gazebo.rviz
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_5_integrated.world
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/sdf.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/fix_heightmaps.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_3_wavy.world
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/media
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/media/materials
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/media/materials/textures
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/media/materials/textures/grass.png
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/media/materials/textures/flat_normal.png
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/farm_world.world
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_4_obstacle_heightmap.png
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/my_field_map.png
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_1_slope_heightmap.png
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_1_slope.world
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_5_integrated_heightmap.png
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/test_terrain_5_integrated.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/field_obstacles.world
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_4_obstacle.world
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/generated_obstacles.world
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_2_crater_heightmap.png
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_3_wavy_heightmap.png
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/test_terrain_4_obstacle.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/test_terrain_1_slope.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/test_terrain_2_crater.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/test_terrain_3_wavy.launch.py
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/worlds/terrain_2_crater.world
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.sh
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.dsv
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/environment/path.sh
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/environment/path.dsv
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/local_setup.bash
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/local_setup.sh
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/local_setup.zsh
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/local_setup.dsv
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/package.dsv
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/ament_index/resource_index/packages/robot_bringup
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig.cmake
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig-version.cmake
+-- Installing: /home/manish/eiratech_ws/install/robot_bringup/share/robot_bringup/package.xml

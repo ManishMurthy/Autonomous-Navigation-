@@ -1,0 +1,70 @@
+[0.014s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_planning': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_planning -- -j12 -l12
+[0.156s] [ 10%] Built target planner_server
+[0.157s] [ 21%] Built target se3_planner
+[0.157s] [ 31%] Built target se2_planner
+[0.165s] [ 57%] Built target vox_nav_ompl_planners
+[0.166s] [ 68%] Built target elevation_planner
+[0.166s] [ 78%] Built target polytunnel_planner
+[0.204s] [ 89%] Built target elevation_control_planner
+[0.205s] [100%] Built target osm_elevation_planner
+[0.215s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_planning' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/manish/eiratech_ws/build/vox_nav_planning -- -j12 -l12
+[0.216s] Invoking command in '/home/manish/eiratech_ws/build/vox_nav_planning': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_planning
+[0.221s] -- Install configuration: ""
+[0.222s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libosm_elevation_planner.so
+[0.222s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_planner.so
+[0.223s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_control_planner.so
+[0.223s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libpolytunnel_planner.so
+[0.224s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libse2_planner.so
+[0.224s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libse3_planner.so
+[0.225s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libvox_nav_ompl_planners.so
+[0.225s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/lib/vox_nav_planning/planner_server
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include/
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/se2_planner.hpp
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/elevation_planner.hpp
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/osm_elevation_planner.hpp
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/elevation_control_planner.hpp
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/polytunnel_planner.hpp
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/se3_planner.hpp
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/optimal_elevation_planner.hpp
+[0.226s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/InformedSGCP.hpp
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/KinoPlanner.hpp
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/CostTrustKinoPlanner.hpp
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/LQRPlanner.hpp
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/RRTStarF.hpp
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/LQRRRTStar.hpp
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/planner_server.hpp
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/planner_core.hpp
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/base_simplified.stl
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/car_control_planner_benchmarking.yaml
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/drone.stl
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/quadrotor_control_planner_benchmarking.yaml
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch/car_control_planner_benchmarking.launch.py
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch/quadrotor_control_planner_benchmarking.launch.py
+[0.227s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/library_path.sh
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/library_path.dsv
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/plugins.xml
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/package_run_dependencies/vox_nav_planning
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/parent_prefix_path/vox_nav_planning
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/ament_prefix_path.sh
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/ament_prefix_path.dsv
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/path.sh
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/path.dsv
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.bash
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.sh
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.zsh
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.dsv
+[0.228s] -- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/package.dsv
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/packages/vox_nav_planning
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/vox_nav_planning__pluginlib__plugin/vox_nav_planning
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/ament_cmake_export_libraries-extras.cmake
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/vox_nav_planningConfig.cmake
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/vox_nav_planningConfig-version.cmake
+[0.228s] -- Up-to-date: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/package.xml
+[0.229s] Invoked command in '/home/manish/eiratech_ws/build/vox_nav_planning' returned '0': CMAKE_PREFIX_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities:/home/manish/eiratech_ws/install/vox_nav_msgs:/home/manish/eiratech_ws/install/vox_nav_waypoint_nav_clients:/home/manish/eiratech_ws/install/vox_nav_bringup:/home/manish/eiratech_ws/install/vox_nav_planning:/home/manish/eiratech_ws/install/vox_nav_navigators:/home/manish/eiratech_ws/install/vox_nav_map_server:/home/manish/eiratech_ws/install/vox_nav_control:/home/manish/eiratech_ws/install/robot_bringup:/home/manish/eiratech_ws/install/robot_description:/home/manish/eiratech_ws/install/robot_control:/home/manish/eiratech_ws/install/cropmap_nav2:/opt/ros/humble LD_LIBRARY_PATH=/home/manish/eiratech_ws/install/vox_nav_utilities/lib:/home/manish/eiratech_ws/install/vox_nav_msgs/lib:/home/manish/eiratech_ws/install/vox_nav_planning/lib:/home/manish/eiratech_ws/install/vox_nav_navigators/lib:/home/manish/eiratech_ws/install/vox_nav_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/manish/eiratech_ws/build/vox_nav_planning

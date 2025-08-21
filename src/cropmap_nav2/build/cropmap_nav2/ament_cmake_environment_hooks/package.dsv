@@ -1,0 +1,4 @@
+source;share/cropmap_nav2/local_setup.bash
+source;share/cropmap_nav2/local_setup.dsv
+source;share/cropmap_nav2/local_setup.sh
+source;share/cropmap_nav2/local_setup.zsh

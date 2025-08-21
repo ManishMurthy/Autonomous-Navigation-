@@ -1,0 +1,8 @@
+source;share/vox_nav_waypoint_nav_clients/hook/cmake_prefix_path.ps1
+source;share/vox_nav_waypoint_nav_clients/hook/cmake_prefix_path.dsv
+source;share/vox_nav_waypoint_nav_clients/hook/cmake_prefix_path.sh
+source;share/vox_nav_waypoint_nav_clients/local_setup.bash
+source;share/vox_nav_waypoint_nav_clients/local_setup.dsv
+source;share/vox_nav_waypoint_nav_clients/local_setup.ps1
+source;share/vox_nav_waypoint_nav_clients/local_setup.sh
+source;share/vox_nav_waypoint_nav_clients/local_setup.zsh

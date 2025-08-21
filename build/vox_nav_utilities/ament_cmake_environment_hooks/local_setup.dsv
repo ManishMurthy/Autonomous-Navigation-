@@ -1,0 +1,3 @@
+source;share/vox_nav_utilities/environment/ament_prefix_path.sh
+source;share/vox_nav_utilities/environment/library_path.sh
+source;share/vox_nav_utilities/environment/path.sh

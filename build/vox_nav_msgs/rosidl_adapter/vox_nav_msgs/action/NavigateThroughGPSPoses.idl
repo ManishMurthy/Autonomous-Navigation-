@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from vox_nav_msgs/action/NavigateThroughGPSPoses.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "geometry_msgs/msg/PoseStamped.idl"
+#include "sensor_msgs/msg/NavSatFix.idl"
+#include "std_msgs/msg/Empty.idl"
+
+module vox_nav_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct NavigateThroughGPSPoses_Goal {
+      sequence<sensor_msgs::msg::NavSatFix> gps_poses;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct NavigateThroughGPSPoses_Result {
+      std_msgs::msg::Empty result;
+    };
+    struct NavigateThroughGPSPoses_Feedback {
+      geometry_msgs::msg::PoseStamped current_pose;
+
+      builtin_interfaces::msg::Duration navigation_time;
+
+      float distance_remaining;
+    };
+  };
+};

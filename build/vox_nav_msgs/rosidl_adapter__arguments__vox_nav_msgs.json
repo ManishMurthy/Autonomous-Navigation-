@@ -1,0 +1,18 @@
+{
+  "package_name": "vox_nav_msgs",
+  "non_idl_tuples": [
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:msg/Object.msg",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:msg/ObjectArray.msg",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:msg/OrientedNavSatFix.msg",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:msg/SemanticRoadLabel.msg",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:srv/GetOctomap.srv",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:srv/GetOSMRoadTopologyMap.srv",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:srv/GetPointCloud.srv",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:srv/GetTraversabilityMap.srv",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:action/ComputePathToPose.action",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:action/FollowPath.action",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:action/NavigateToPose.action",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:action/NavigateThroughGPSPoses.action",
+    "/home/manish/eiratech_ws/src/vox_nav/vox_nav_msgs:action/NavigateThroughPoses.action"
+  ]
+}

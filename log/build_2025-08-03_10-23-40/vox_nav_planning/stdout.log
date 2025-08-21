@@ -1,0 +1,93 @@
+[ 15%] [32mBuilding CXX object CMakeFiles/vox_nav_ompl_planners.dir/src/native_planners/LQRRRTStar.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/vox_nav_ompl_planners.dir/src/native_planners/LQRPlanner.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/elevation_planner.dir/src/plugins/elevation_planner.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/se3_planner.dir/src/plugins/se3_planner.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/vox_nav_ompl_planners.dir/src/native_planners/RRTStarF.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/se2_planner.dir/src/plugins/se2_planner.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/planner_server.dir/src/planner_server.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/vox_nav_ompl_planners.dir/src/native_planners/InformedSGCP.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/polytunnel_planner.dir/src/plugins/polytunnel_planner.cpp.o[0m
+[ 52%] [32m[1mLinking CXX executable planner_server[0m
+[ 57%] [32m[1mLinking CXX shared library libvox_nav_ompl_planners.so[0m
+[ 57%] Built target planner_server
+[ 57%] Built target vox_nav_ompl_planners
+[ 63%] [32mBuilding CXX object CMakeFiles/elevation_control_planner.dir/src/plugins/elevation_control_planner.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/osm_elevation_planner.dir/src/plugins/osm_elevation_planner.cpp.o[0m
+[ 73%] [32m[1mLinking CXX shared library libpolytunnel_planner.so[0m
+[ 73%] Built target polytunnel_planner
+[ 78%] [32m[1mLinking CXX shared library libse2_planner.so[0m
+[ 84%] [32m[1mLinking CXX shared library libelevation_planner.so[0m
+[ 84%] Built target se2_planner
+[ 89%] [32m[1mLinking CXX shared library libse3_planner.so[0m
+[ 89%] Built target elevation_planner
+[ 89%] Built target se3_planner
+[ 94%] [32m[1mLinking CXX shared library libosm_elevation_planner.so[0m
+[ 94%] Built target osm_elevation_planner
+[100%] [32m[1mLinking CXX shared library libelevation_control_planner.so[0m
+[100%] Built target elevation_control_planner
+-- Install configuration: ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libosm_elevation_planner.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_planning/lib/libosm_elevation_planner.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_planner.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_planner.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_control_planner.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_planning/lib/libelevation_control_planner.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libpolytunnel_planner.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_planning/lib/libpolytunnel_planner.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libse2_planner.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_planning/lib/libse2_planner.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libse3_planner.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_planning/lib/libse3_planner.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/lib/libvox_nav_ompl_planners.so
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_planning/lib/libvox_nav_ompl_planners.so" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/lib/vox_nav_planning/planner_server
+-- Set runtime path of "/home/manish/eiratech_ws/install/vox_nav_planning/lib/vox_nav_planning/planner_server" to ""
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include/
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/se2_planner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/elevation_planner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/osm_elevation_planner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/elevation_control_planner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/polytunnel_planner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/se3_planner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/plugins/optimal_elevation_planner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/InformedSGCP.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/KinoPlanner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/CostTrustKinoPlanner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/LQRPlanner.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/RRTStarF.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/native_planners/LQRRRTStar.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/planner_server.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/include//vox_nav_planning/planner_core.hpp
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/base_simplified.stl
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/car_control_planner_benchmarking.yaml
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/drone.stl
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/config/quadrotor_control_planner_benchmarking.yaml
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch/car_control_planner_benchmarking.launch.py
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/launch/quadrotor_control_planner_benchmarking.launch.py
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/library_path.sh
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/library_path.dsv
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/plugins.xml
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/package_run_dependencies/vox_nav_planning
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/parent_prefix_path/vox_nav_planning
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/ament_prefix_path.sh
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/ament_prefix_path.dsv
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/path.sh
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/environment/path.dsv
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.bash
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.sh
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.zsh
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/local_setup.dsv
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/package.dsv
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/packages/vox_nav_planning
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/ament_index/resource_index/vox_nav_planning__pluginlib__plugin/vox_nav_planning
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/vox_nav_planningConfig.cmake
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/cmake/vox_nav_planningConfig-version.cmake
+-- Installing: /home/manish/eiratech_ws/install/vox_nav_planning/share/vox_nav_planning/package.xml

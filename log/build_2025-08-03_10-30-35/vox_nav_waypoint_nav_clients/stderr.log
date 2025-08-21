@@ -1,0 +1,50 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/include/vox_nav_waypoint_nav_clients/navigate_through_poses_client.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_poses_client.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_poses_client.cpp:[m[K In member function ‘[01m[Kvoid vox_nav_waypoint_nav_clients::NavigateThroughPosesClient::feedbackCallback(rclcpp_action::ClientGoalHandle<vox_nav_msgs::action::NavigateThroughPoses>::SharedPtr, std::shared_ptr<const vox_nav_msgs::action::NavigateThroughPoses_Feedback_<std::allocator<void> > >)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_poses_client.cpp:158:7:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  158 |       [01;35m[K"Current waypoint: %i"[m[K, [32m[Kfeedback->distance_remaining[m[K);
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[K|[m[K
+      |                                         [32m[Kdouble[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_poses_client.cpp:158:27:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  158 |       "Current waypoint: [01;36m[K%i[m[K", feedback->distance_remaining);
+      |                          [01;36m[K~^[m[K
+      |                           [01;36m[K|[m[K
+      |                           [01;36m[Kint[m[K
+      |                          [32m[K%f[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/include/vox_nav_waypoint_nav_clients/navigate_through_gps_poses_client.hpp:18[m[K,
+                 from [01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_gps_poses_client.cpp:15[m[K:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_gps_poses_client.cpp:[m[K In member function ‘[01m[Kvoid vox_nav_waypoint_nav_clients::NavigateThroughGPSPosesClient::feedbackCallback(rclcpp_action::ClientGoalHandle<vox_nav_msgs::action::NavigateThroughGPSPoses>::SharedPtr, std::shared_ptr<const vox_nav_msgs::action::NavigateThroughGPSPoses_Feedback_<std::allocator<void> > >)[m[K’:
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_gps_poses_client.cpp:156:7:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  156 |       [01;35m[K"Current gps waypoint: %i"[m[K, [32m[Kfeedback->distance_remaining[m[K);
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                             [32m[K|[m[K
+      |                                             [32m[Kdouble[m[K
+[01m[K/home/manish/eiratech_ws/src/vox_nav/vox_nav_waypoint_nav_clients/src/navigate_through_gps_poses_client.cpp:156:31:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  156 |       "Current gps waypoint: [01;36m[K%i[m[K", feedback->distance_remaining);
+      |                              [01;36m[K~^[m[K
+      |                               [01;36m[K|[m[K
+      |                               [01;36m[Kint[m[K
+      |                              [32m[K%f[m[K

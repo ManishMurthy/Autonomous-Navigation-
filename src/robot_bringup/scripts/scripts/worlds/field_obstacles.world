@@ -1,0 +1,292 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="my_field_map_world">
+    
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Sun -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Border Walls (Black boundary in your map) -->
+    <model name="wall_north">
+      <static>true</static>
+      <pose>10 19.9 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>20 0.2 1</size></box></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>20 0.2 1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="wall_south">
+      <static>true</static>
+      <pose>10 0.1 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>20 0.2 1</size></box></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>20 0.2 1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="wall_east">
+      <static>true</static>
+      <pose>19.9 10 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.2 20 1</size></box></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.2 20 1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="wall_west">
+      <static>true</static>
+      <pose>0.1 10 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.2 20 1</size></box></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.2 20 1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Large Rectangular Obstacles (Black rectangles in your map) -->
+    
+    <!-- Upper left square obstacle -->
+    <model name="obstacle_square_1">
+      <static>true</static>
+      <pose>6 14 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>2 2 1</size></box></geometry>
+          <material><ambient>0.3 0.3 0.3 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>2 2 1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Tall rectangular obstacle (center-right) -->
+    <model name="obstacle_tall">
+      <static>true</static>
+      <pose>15 10 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>1.5 4 1</size></box></geometry>
+          <material><ambient>0.3 0.3 0.3 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>1.5 4 1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Wide rectangular obstacle (lower center) -->
+    <model name="obstacle_wide">
+      <static>true</static>
+      <pose>10 5 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>4 1.5 1</size></box></geometry>
+          <material><ambient>0.3 0.3 0.3 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>4 1.5 1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Small elongated obstacle (left side) -->
+    <model name="obstacle_small">
+      <static>true</static>
+      <pose>4 6 0.3 0 0 1.57</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>1.5 0.5 0.6</size></box></geometry>
+          <material><ambient>0.4 0.4 0.4 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>1.5 0.5 0.6</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Small Circular Obstacles (Black dots in your map) -->
+    <!-- These represent trees, rocks, or small obstacles -->
+    
+    <model name="tree_1">
+      <static>true</static>
+      <pose>3 16 0.4 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+          <material><ambient>0.2 0.6 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="tree_2">
+      <static>true</static>
+      <pose>8 16 0.4 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+          <material><ambient>0.2 0.6 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="tree_3">
+      <static>true</static>
+      <pose>17 16 0.4 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+          <material><ambient>0.2 0.6 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="tree_4">
+      <static>true</static>
+      <pose>3 12 0.4 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+          <material><ambient>0.2 0.6 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="tree_5">
+      <static>true</static>
+      <pose>18 12 0.4 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+          <material><ambient>0.2 0.6 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="tree_6">
+      <static>true</static>
+      <pose>11 8 0.4 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+          <material><ambient>0.2 0.6 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="rock_1">
+      <static>true</static>
+      <pose>3 3 0.3 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="rock_2">
+      <static>true</static>
+      <pose>17 3 0.3 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="rock_3">
+      <static>true</static>
+      <pose>16 7 0.3 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="rock_4">
+      <static>true</static>
+      <pose>7 3 0.3 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="rock_5">
+      <static>true</static>
+      <pose>18 17 0.3 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><sphere><radius>0.4</radius></sphere></geometry>
+        </collision>
+      </link>
+    </model>
+
+  </world>
+</sdf>

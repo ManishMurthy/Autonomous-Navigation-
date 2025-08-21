@@ -1,0 +1,4 @@
+source;share/vox_nav_bringup/local_setup.bash
+source;share/vox_nav_bringup/local_setup.dsv
+source;share/vox_nav_bringup/local_setup.sh
+source;share/vox_nav_bringup/local_setup.zsh

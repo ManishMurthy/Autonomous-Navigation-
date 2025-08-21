@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from vox_nav_msgs/msg/SemanticRoadLabel.msg
+// generated code does not contain a copyright notice
+
+
+module vox_nav_msgs {
+  module msg {
+    module SemanticRoadLabel_Constants {
+      const string MAJOR_ROADS_WHITE = "255255255";
+      const string MISC_ORANGE = "255127000";
+      const string MINOR_ROAD_MAROON = "127000000";
+      const string FOOTWAY_OLIVE = "127127000";
+      const string TRACK_NAVY = "000000127";
+    };
+    struct SemanticRoadLabel {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

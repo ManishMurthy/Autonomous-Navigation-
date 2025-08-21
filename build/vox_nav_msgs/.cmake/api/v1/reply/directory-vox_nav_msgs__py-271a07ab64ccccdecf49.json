@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "vox_nav_msgs__py",
+		"source" : "/home/manish/eiratech_ws/build/vox_nav_msgs/vox_nav_msgs__py"
+	}
+}

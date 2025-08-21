@@ -14,7 +14,7 @@ def generate_launch_description():
     
     # Launch configuration variables
     use_sim_time = LaunchConfiguration('use_sim_time')
-    map_yaml_file = LaunchConfiguration('map')
+   # map_yaml_file = LaunchConfiguration('map')
     nav_params_file = LaunchConfiguration('params_file')
     autostart = LaunchConfiguration('autostart')
     
@@ -25,16 +25,24 @@ def generate_launch_description():
         description='Use simulation clock'
     )
     
-    # Fixed map path - use absolute path to avoid issues
-    declare_map_yaml_cmd = DeclareLaunchArgument(
-        'map',
-        default_value='/home/manish/eiratech_ws/install/cropmap_nav2/share/cropmap_nav2/maps/my_field_map.yaml',
-        description='Full path to map file'
+    # Add terrain mesh publisher
+    terrain_mesh_publisher = Node(
+        package='visualization_msgs',
+        executable='mesh_marker_publisher',  # We'll create this
+        name='terrain_mesh_publisher',
+        output='screen',
+        parameters=[{
+            'mesh_file': '/home/manish/eiratech_ws/src/robot_bringup/models/terrain_1/media/terrain_1.dae',
+            'frame_id': 'map',
+            'marker_scale': [1.0, 1.0, 1.0],
+            'marker_position': [0.0, 0.0, 0.0],
+            'marker_orientation': [0.0, 0.0, 0.0, 1.0]
+        }]
     )
         
     declare_params_file_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value=os.path.join(cropmap_nav2_dir, 'config', 'nav2_params.yaml'),
+        default_value=os.path.join(cropmap_nav2_dir, 'config', 'nav2_params_2D.yaml'),
         description='Full path to Nav2 parameters'
     )
     
@@ -43,23 +51,35 @@ def generate_launch_description():
         default_value='true', 
         description='Automatically startup nav2'
     )
+    
+    # KEEP this for initial localization - AMCL needs a starting point
+    # This will be overridden by AMCL once localization starts
+    # Horizontal +90 degree rotation to match Gazebo orientation
+    ###
+ #   static_transform_map_odom = Node(
+ #       package='tf2_ros',
+ #       executable='static_transform_publisher',
+ #       name='map_odom_publisher',
+ #       arguments=['0', '0', '0', '1.5708', '0', '0', 'map', 'odom'],  # +90 degrees around X-axis (horizontal)
+#        parameters=[{'use_sim_time': use_sim_time}]
+    #)
 
-    # Static transform for reliable map frame
-    static_transform = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='map_odom_publisher',
-        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
-        parameters=[{'use_sim_time': use_sim_time}]
-    )
-
+    # Add missing base_footprint to base_link transform to fix TF tree
+   # base_footprint_to_base_link = Node(
+     #   package='tf2_ros',
+      #  executable='static_transform_publisher',
+       # name='base_footprint_to_base_link',
+       # arguments=['0', '0', '0', '0', '0', '0', 'base_footprint', 'base_link'],
+       # parameters=[{'use_sim_time': use_sim_time}]
+    #)
+    
     # Use navigation launch only (more stable than bringup)
     nav2_bringup = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             PathJoinSubstitution([
                 FindPackageShare('nav2_bringup'),
                 'launch',
-                'navigation_launch.py'  # Changed from bringup_launch.py
+                'navigation_launch.py'  
             ])
         ]),
         launch_arguments={
@@ -68,7 +88,7 @@ def generate_launch_description():
             'autostart': autostart
         }.items()
     )
-
+    
     # Localization launch separately for better control
     localization_bringup = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
@@ -85,7 +105,7 @@ def generate_launch_description():
             'autostart': autostart
         }.items()
     )
-
+    
     # RViz
     rviz_config_file = os.path.join(cropmap_nav2_dir, 'rviz2', 'carter_navigation.rviz')
     rviz_node = Node(
@@ -96,20 +116,21 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}],
         output='screen'
     )
-
+    
     # Create the launch description
     ld = LaunchDescription()
     
     # Declare launch options
     ld.add_action(declare_use_sim_time_cmd)
-    ld.add_action(declare_map_yaml_cmd)
+    #ld.add_action(declare_map_yaml_cmd)
     ld.add_action(declare_params_file_cmd)
     ld.add_action(declare_autostart_cmd)
     
     # Add nodes in order
-    ld.add_action(static_transform)      # Reliable map frame first
-    ld.add_action(localization_bringup)  # Map server and AMCL
-    ld.add_action(nav2_bringup)          # Navigation components
-    ld.add_action(rviz_node)             # RViz last
+    #ld.add_action(static_transform_map_odom)     # Provides initial map frame
+    #ld.add_action(base_footprint_to_base_link)   # Fix TF tree connection
+    ld.add_action(localization_bringup)         # Map server and AMCL
+    ld.add_action(nav2_bringup)                 # Navigation components
+    ld.add_action(rviz_node)                    # RViz last
     
     return ld

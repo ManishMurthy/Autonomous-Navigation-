@@ -1,0 +1,39 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vox_nav_msgs/srv/GetTraversabilityMap.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PoseArray.idl"
+#include "octomap_msgs/msg/Octomap.idl"
+#include "sensor_msgs/msg/PointCloud2.idl"
+
+module vox_nav_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "request")
+    struct GetTraversabilityMap_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "result" "\n"
+      " The original octomap that was acquired by conversion of pcd map")
+    struct GetTraversabilityMap_Response {
+      octomap_msgs::msg::Octomap original_octomap;
+
+      octomap_msgs::msg::Octomap collision_octomap;
+
+      @verbatim (language="comment", text=
+        "The map that was created by elevated surfels, these are candidate nodes for navigation")
+      octomap_msgs::msg::Octomap elevated_surfel_octomap;
+
+      @verbatim (language="comment", text=
+        "6DOF poses of each surfel")
+      geometry_msgs::msg::PoseArray elevated_surfel_poses;
+
+      sensor_msgs::msg::PointCloud2 traversable_elevated_cloud;
+
+      sensor_msgs::msg::PointCloud2 traversable_cloud;
+
+      boolean is_valid;
+    };
+  };
+};
